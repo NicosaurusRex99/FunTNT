@@ -16,13 +16,14 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 
-@Mod(modid = FunTNT.MODID, name = FunTNT.NAME, version = FunTNT.VERSION)
+@Mod(modid = FunTNT.MODID, name = FunTNT.NAME, version = FunTNT.VERSION, updateJSON = FunTNT.UPDATE_URL)
 public class FunTNT
 {
     public static final String MODID = "funtnt";
     public static final String NAME = "Fun TNT";
     public static final String VERSION = "1.12.2.0";
-
+    public static final String UPDATE_URL = "https://raw.githubusercontent.com/NicosaurusRex99/FunTNT/master/funtnt_update.json";
+    
     @SidedProxy(clientSide = "naturix.funtnt.proxy.ClientProxy", serverSide = "naturix.funtnt.proxy.ServerProxy")
     public static CommonProxy proxy;
 
