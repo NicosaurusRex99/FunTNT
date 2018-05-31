@@ -1,0 +1,12 @@
+{
+  "forge_marker": 1,
+  "defaults": {
+    "model": "funtnt:tnt_8"
+  },
+  "variants": {
+    "normal": [{}],
+    "inventory": [{}],
+	"explode=true": [{}],
+	"explode=false": [{}]
+  }
+}

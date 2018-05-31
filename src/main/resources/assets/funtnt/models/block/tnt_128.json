@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+       "down": "funtnt:blocks/tnt_bottom_128",
+         "up": "funtnt:blocks/tnt_top_128",
+      "north": "funtnt:blocks/tnt_side_128",
+      "south": "funtnt:blocks/tnt_side_128",
+       "west": "funtnt:blocks/tnt_side_128",
+       "east": "funtnt:blocks/tnt_side_128",
+   "particle": "funtnt:blocks/tnt_side_128"
+  }
+}

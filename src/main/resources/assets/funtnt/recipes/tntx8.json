@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "XWX",
+    "WXW",
+	"XWX"
+  ],
+  "key": {
+    "X": {
+      "item": "minecraft:gunpowder"
+    },
+    "W": {
+      "item": "funtnt:tnt_2"
+    }
+  },
+  "result": {
+    "item": "funtnt:tnt_8"
+  }
+}
