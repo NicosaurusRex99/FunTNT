@@ -15,12 +15,15 @@ public class ModLangProvider extends LanguageProvider {
     @Override
     protected void addTranslations() {
         addBlock(ModBlocks.BABY_BOOMER, "Baby Boomer TNT");
+        addBlock(ModBlocks.NUKE, "NUKE!!!");
+        addBlock(ModBlocks.FERTILIZER, "Fertilizer Bomb");
+
         addItem(()-> ModBlocks.BABY_BOOMER.asItem(), "Baby Boomer TNT");
         addItem(()-> ModBlocks.NUKE.asItem(), "NUKE!!!");
+        addItem(()-> ModBlocks.FERTILIZER.asItem(), "Fertilizer Bomb");
         addItem(()-> ModItems.DYNAMITE.get(), "Dynamite");
 
 
-        addBlock(ModBlocks.NUKE, "NUKE!!!");
 
         addEntityType(ModEntities.BABY_BOOMER, "Primed Baby Boomer");
         addEntityType(ModEntities.NUKE, "If you can read this, its too late");

@@ -7,6 +7,7 @@ import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.level.block.Block;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.registry.ModBlocks;
 import nicusha.tnt.registry.ModItems;
@@ -18,17 +19,18 @@ public class ModModelProvider extends ModelProvider {
 
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
-        TexturedModel babyBoomerModel = TexturedModel.CUBE_TOP_BOTTOM.get(ModBlocks.BABY_BOOMER.get());
-        Identifier babyBoomerId = babyBoomerModel.create(ModBlocks.BABY_BOOMER.get(), blockModels.modelOutput);
-        blockModels.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(ModBlocks.BABY_BOOMER.get(), BlockModelGenerators.plainVariant(babyBoomerId)));
-        blockModels.registerSimpleItemModel(ModBlocks.BABY_BOOMER.get(), babyBoomerId);
-
-        TexturedModel nukeModel = TexturedModel.CUBE_TOP_BOTTOM.get(ModBlocks.NUKE.get());
-        Identifier nukeId = nukeModel.create(ModBlocks.NUKE.get(), blockModels.modelOutput);
-        blockModels.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(ModBlocks.NUKE.get(), BlockModelGenerators.plainVariant(nukeId)));
-        blockModels.registerSimpleItemModel(ModBlocks.NUKE.get(), nukeId);
-
+        registerTnt(ModBlocks.BABY_BOOMER.get(), blockModels);
+        registerTnt(ModBlocks.NUKE.get(), blockModels);
+        registerTnt(ModBlocks.FERTILIZER.get(), blockModels);
 
         itemModels.generateFlatItem(ModItems.DYNAMITE.get(), ModelTemplates.FLAT_ITEM);
+    }
+
+
+    private void registerTnt(Block block, BlockModelGenerators generators) {
+        TexturedModel model = TexturedModel.CUBE_TOP_BOTTOM.get(block);
+        Identifier modelId = model.create(block, generators.modelOutput);
+        generators.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(block, BlockModelGenerators.plainVariant(modelId)));
+        generators.registerSimpleItemModel(block, modelId);
     }
 }

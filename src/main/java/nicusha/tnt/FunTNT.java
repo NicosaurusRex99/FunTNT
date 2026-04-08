@@ -9,9 +9,6 @@ import nicusha.tnt.registry.ModBlocks;
 import nicusha.tnt.registry.ModCreativeTabs;
 import nicusha.tnt.registry.ModEntities;
 import nicusha.tnt.registry.ModItems;
-import org.slf4j.Logger;
-
-import com.mojang.logging.LogUtils;
 
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
@@ -19,7 +16,6 @@ import net.neoforged.fml.common.Mod;
 @Mod(FunTNT.MODID)
 public class FunTNT {
     public static final String MODID = "fun_tnt";
-    private static final Logger LOGGER = LogUtils.getLogger();
 
     public FunTNT(IEventBus bus, Dist dist) {
         ModBlocks.BLOCKS.register(bus);

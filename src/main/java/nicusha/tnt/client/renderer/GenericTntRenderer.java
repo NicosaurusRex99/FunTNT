@@ -12,15 +12,19 @@ import net.minecraft.client.renderer.entity.state.TntRenderState;
 import net.minecraft.client.renderer.state.level.CameraRenderState;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.item.PrimedTnt;
-import nicusha.tnt.registry.ModBlocks;
+import net.minecraft.world.level.block.Block;
 
-public class NukeRenderer extends EntityRenderer<PrimedTnt, TntRenderState> {
+import java.util.function.Supplier;
+
+public class GenericTntRenderer extends EntityRenderer<PrimedTnt, TntRenderState> {
     private final BlockModelResolver blockModelResolver;
+    private final Supplier<? extends Block> blockSupplier;
 
-    public NukeRenderer(EntityRendererProvider.Context context) {
+    public GenericTntRenderer(EntityRendererProvider.Context context, Supplier<? extends Block> blockSupplier) {
         super(context);
         this.shadowRadius = 0.5F;
         this.blockModelResolver = context.getBlockModelResolver();
+        this.blockSupplier = blockSupplier;
     }
 
     @Override
@@ -32,7 +36,7 @@ public class NukeRenderer extends EntityRenderer<PrimedTnt, TntRenderState> {
     public void extractRenderState(PrimedTnt entity, TntRenderState state, float partialTicks) {
         super.extractRenderState(entity, state, partialTicks);
         state.fuseRemainingInTicks = (float)entity.getFuse() - partialTicks + 1.0F;
-        this.blockModelResolver.update(state.blockState, ModBlocks.NUKE.get().defaultBlockState(), TntRenderer.BLOCK_DISPLAY_CONTEXT);
+        this.blockModelResolver.update(state.blockState, blockSupplier.get().defaultBlockState(), TntRenderer.BLOCK_DISPLAY_CONTEXT);
     }
 
     @Override

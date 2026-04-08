@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "B": "#c:fertilizers",
+    "S": "#minecraft:villager_plantable_seeds",
+    "T": "minecraft:tnt"
+  },
+  "pattern": [
+    "BBB",
+    "BTB",
+    "SSS"
+  ],
+  "result": {
+    "id": "fun_tnt:fertilizer"
+  }
+}

@@ -19,14 +19,13 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        this.tag(BlockTags.MINEABLE_WITH_HOE).add(ModBlocks.BABY_BOOMER.get());
+        this.tag(BlockTags.MINEABLE_WITH_HOE).add(ModBlocks.BABY_BOOMER.get()).add(ModBlocks.FERTILIZER.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.NUKE.get());
-        this.tag(BlockTags.NEEDS_STONE_TOOL).add(ModBlocks.BABY_BOOMER.get()).add(ModBlocks.NUKE.get());
+        this.tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.NUKE.get());
         this.tag(BlockTags.BLOCKS_WIND_CHARGE_EXPLOSIONS).add(ModBlocks.BABY_BOOMER.get()).add(ModBlocks.NUKE.get());
         this.tag(BlockTags.PREVENT_MOB_SPAWNING_INSIDE).add(ModBlocks.BABY_BOOMER.get()).add(ModBlocks.NUKE.get());
-        this.tag(BlockTags.AZALEA_ROOT_REPLACEABLE).add(ModBlocks.BABY_BOOMER.get()).add(ModBlocks.NUKE.get());
 
         var tnt = TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath("c", "tnt"));
-        this.tag(tnt).add(ModBlocks.BABY_BOOMER.get()).add(ModBlocks.NUKE.get());
+        this.tag(tnt).add(ModBlocks.BABY_BOOMER.get()).add(ModBlocks.NUKE.get()).add(ModBlocks.FERTILIZER.get());
     }
 }
