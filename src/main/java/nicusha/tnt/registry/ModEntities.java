@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.entities.BabyBoomerEntity;
+import nicusha.tnt.entities.DynamiteEntity;
 import nicusha.tnt.entities.NukeEntity;
 
 public class ModEntities {
@@ -17,5 +18,6 @@ public class ModEntities {
 
     public static final DeferredHolder<EntityType<?>, EntityType<BabyBoomerEntity>> BABY_BOOMER = ENTITIES.register("baby_boomer", () -> EntityType.Builder.<BabyBoomerEntity>of(BabyBoomerEntity::new, MobCategory.MISC).sized(0.98F, 0.98F).clientTrackingRange(64).build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "baby_boomer"))));
     public static final DeferredHolder<EntityType<?>, EntityType<NukeEntity>> NUKE = ENTITIES.register("nuke", () -> EntityType.Builder.<NukeEntity>of(NukeEntity::new, MobCategory.MISC).sized(0.98F, 0.98F).clientTrackingRange(64).build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "nuke"))));
+    public static final DeferredHolder<EntityType<?>, EntityType<DynamiteEntity>> DYNAMITE = ENTITIES.register("dynamite", () -> EntityType.Builder.<DynamiteEntity>of(DynamiteEntity::new, MobCategory.MISC).sized(0.1F, 0.1F).clientTrackingRange(64).build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "dynamite"))));
 
 }

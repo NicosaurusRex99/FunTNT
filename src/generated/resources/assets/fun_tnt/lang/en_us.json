@@ -6,6 +6,7 @@
   "entity.fun_tnt.nuke": "If you can read this, its too late",
   "fun_tnt.oppenheimer": "I am become Death, the destroyer of worlds.",
   "item.fun_tnt.baby_boomer": "Baby Boomer TNT",
-  "item.fun_tnt.nuke": "NUKE",
+  "item.fun_tnt.dynamite": "Dynamite",
+  "item.fun_tnt.nuke": "NUKE!!!",
   "itemGroup.fun_tnt": "Fun TNT"
 }

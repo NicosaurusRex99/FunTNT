@@ -3,11 +3,13 @@ package nicusha.tnt.data;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
+import net.minecraft.client.data.models.model.ModelTemplates;
 import net.minecraft.client.data.models.model.TexturedModel;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.registry.ModBlocks;
+import nicusha.tnt.registry.ModItems;
 
 public class ModModelProvider extends ModelProvider {
     public ModModelProvider(PackOutput output) {
@@ -25,5 +27,8 @@ public class ModModelProvider extends ModelProvider {
         Identifier nukeId = nukeModel.create(ModBlocks.NUKE.get(), blockModels.modelOutput);
         blockModels.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(ModBlocks.NUKE.get(), BlockModelGenerators.plainVariant(nukeId)));
         blockModels.registerSimpleItemModel(ModBlocks.NUKE.get(), nukeId);
+
+
+        itemModels.generateFlatItem(ModItems.DYNAMITE.get(), ModelTemplates.FLAT_ITEM);
     }
 }

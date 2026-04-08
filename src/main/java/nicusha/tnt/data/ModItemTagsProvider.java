@@ -9,6 +9,7 @@ import net.minecraft.tags.TagKey;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.registry.ModBlocks;
+import nicusha.tnt.registry.ModItems;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -19,11 +20,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        this.tag(ItemTags.CREEPER_IGNITERS).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem());
+        this.tag(ItemTags.CREEPER_IGNITERS).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModItems.DYNAMITE.get());
 
         var explosives = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "explosives"));
         var tnt = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "tnt"));
-        this.tag(explosives).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem());
+        this.tag(explosives).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModItems.DYNAMITE.get());
         this.tag(tnt).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem());
     }
 }

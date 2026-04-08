@@ -1,7 +1,10 @@
 package nicusha.tnt.entities;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerLevel;
+import net.minecraft.tags.BlockTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityReference;
 import net.minecraft.world.entity.EntityType;
@@ -9,6 +12,7 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.Utils;
@@ -56,6 +60,10 @@ public class NukeEntity extends PrimedTnt {
                     living.hurt(customNukeDamage, 10000.0F);
                 }
             }
+            if (this.level() instanceof ServerLevel serverLevel) {
+                serverLevel.sendParticles(ParticleTypes.EXPLOSION_EMITTER, this.getX(), this.getY(), this.getZ(), 100, 5.0, 5.0, 5.0, 0.1);
+                serverLevel.sendParticles(ParticleTypes.CLOUD, this.getX(), this.getY(), this.getZ(), 200, 10.0, 2.0, 10.0, 0.05);
+            }
 
             for (int x = -radius; x <= radius; x++) {
                 for (int y = -radius; y <= radius; y++) {
@@ -65,6 +73,12 @@ public class NukeEntity extends PrimedTnt {
                             BlockState state = this.level().getBlockState(targetPos);
 
                             if (!state.isAir() && state.getDestroySpeed(this.level(), targetPos) >= 0) {
+                                this.level().removeBlock(targetPos, false);
+                            }
+                            if (!state.getFluidState().isEmpty()) {
+                                this.level().setBlock(targetPos, Blocks.AIR.defaultBlockState(), 3);
+                            }
+                            else if (!state.isAir() && state.getDestroySpeed(this.level(), targetPos) >= 0) {
                                 this.level().removeBlock(targetPos, false);
                             }
                         }

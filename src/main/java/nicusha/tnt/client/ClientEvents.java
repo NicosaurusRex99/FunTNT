@@ -1,5 +1,6 @@
 package nicusha.tnt.client;
 
+import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import nicusha.tnt.client.renderer.BabyBoomerRenderer;
@@ -11,5 +12,6 @@ public class ClientEvents {
     public static void registerRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerEntityRenderer(ModEntities.BABY_BOOMER.get(), BabyBoomerRenderer::new);
         event.registerEntityRenderer(ModEntities.NUKE.get(), NukeRenderer::new);
+        event.registerEntityRenderer(ModEntities.DYNAMITE.get(), ThrownItemRenderer::new);
     }
 }

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": "minecraft:gunpowder",
+    "P": "minecraft:paper",
+    "S": "minecraft:string"
+  },
+  "pattern": [
+    "S",
+    "G",
+    "P"
+  ],
+  "result": {
+    "count": 3,
+    "id": "fun_tnt:dynamite"
+  }
+}

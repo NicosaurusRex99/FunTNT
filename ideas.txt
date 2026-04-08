@@ -1,0 +1,7 @@
+Items
+- Throwable dynamite
+- Mining drill
+
+Blocks
+- Fertilizer TNT
+- CryoTNT
