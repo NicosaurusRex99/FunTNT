@@ -17,8 +17,13 @@ public class ModModelProvider extends ModelProvider {
     @Override
     protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
         TexturedModel babyBoomerModel = TexturedModel.CUBE_TOP_BOTTOM.get(ModBlocks.BABY_BOOMER.get());
-        Identifier modelId = babyBoomerModel.create(ModBlocks.BABY_BOOMER.get(), blockModels.modelOutput);
-        blockModels.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(ModBlocks.BABY_BOOMER.get(), BlockModelGenerators.plainVariant(modelId)));
-        blockModels.registerSimpleItemModel(ModBlocks.BABY_BOOMER.get(), modelId);
+        Identifier babyBoomerId = babyBoomerModel.create(ModBlocks.BABY_BOOMER.get(), blockModels.modelOutput);
+        blockModels.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(ModBlocks.BABY_BOOMER.get(), BlockModelGenerators.plainVariant(babyBoomerId)));
+        blockModels.registerSimpleItemModel(ModBlocks.BABY_BOOMER.get(), babyBoomerId);
+
+        TexturedModel nukeModel = TexturedModel.CUBE_TOP_BOTTOM.get(ModBlocks.NUKE.get());
+        Identifier nukeId = nukeModel.create(ModBlocks.NUKE.get(), blockModels.modelOutput);
+        blockModels.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(ModBlocks.NUKE.get(), BlockModelGenerators.plainVariant(nukeId)));
+        blockModels.registerSimpleItemModel(ModBlocks.NUKE.get(), nukeId);
     }
 }

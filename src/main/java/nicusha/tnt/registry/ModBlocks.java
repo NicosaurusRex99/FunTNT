@@ -11,11 +11,13 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.blocks.BabyBoomerBlock;
+import nicusha.tnt.blocks.NukeBlock;
 
 public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(FunTNT.MODID);
 
     public static final DeferredBlock<BabyBoomerBlock> BABY_BOOMER = registerBlock("baby_boomer", () -> new BabyBoomerBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, "baby_boomer"))).strength(2.0f)));
+    public static final DeferredBlock<NukeBlock> NUKE = registerBlock("nuke", () -> new NukeBlock(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, "nuke"))).strength(2.0f)));
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, java.util.function.Supplier<T> blockSupplier) {
         DeferredBlock<T> block = BLOCKS.register(name, blockSupplier);

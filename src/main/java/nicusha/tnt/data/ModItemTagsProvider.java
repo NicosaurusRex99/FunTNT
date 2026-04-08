@@ -19,11 +19,11 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        this.tag(ItemTags.CREEPER_IGNITERS).add(ModBlocks.BABY_BOOMER.asItem());
+        this.tag(ItemTags.CREEPER_IGNITERS).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem());
 
         var explosives = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "explosives"));
         var tnt = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "tnt"));
-        this.tag(explosives).add(ModBlocks.BABY_BOOMER.asItem());
-        this.tag(tnt).add(ModBlocks.BABY_BOOMER.asItem());
+        this.tag(explosives).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem());
+        this.tag(tnt).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem());
     }
 }

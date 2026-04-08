@@ -14,5 +14,6 @@ public class DataGenerators {
         event.createBlockAndItemTags(ModBlockTagsProvider::new, (output, lookup, blockTags) -> new ModItemTagsProvider(output, lookup));
         event.createProvider((output, lookup) -> ModLootTableProvider.create(output, lookup));
 
+        event.getGenerator().addProvider(true, new ModDamageTypeProvider(event.getGenerator().getPackOutput(), event.getLookupProvider()));
         event.getGenerator().addProvider(true, new RecipeProvider.Runner(event.getGenerator().getPackOutput(), event.getLookupProvider()) {@Override public String getName() { return "TNT Recipes"; } @Override protected RecipeProvider createRecipeProvider(HolderLookup.Provider registries, RecipeOutput recipeOutput) {return new ModRecipeProvider(registries, recipeOutput);}});}
 }
