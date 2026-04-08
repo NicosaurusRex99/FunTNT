@@ -1,0 +1,24 @@
+package nicusha.tnt.data;
+
+import net.minecraft.client.data.models.BlockModelGenerators;
+import net.minecraft.client.data.models.ItemModelGenerators;
+import net.minecraft.client.data.models.ModelProvider;
+import net.minecraft.client.data.models.model.TexturedModel;
+import net.minecraft.data.PackOutput;
+import net.minecraft.resources.Identifier;
+import nicusha.tnt.FunTNT;
+import nicusha.tnt.registry.ModBlocks;
+
+public class ModModelProvider extends ModelProvider {
+    public ModModelProvider(PackOutput output) {
+        super(output, FunTNT.MODID);
+    }
+
+    @Override
+    protected void registerModels(BlockModelGenerators blockModels, ItemModelGenerators itemModels) {
+        TexturedModel babyBoomerModel = TexturedModel.CUBE_TOP_BOTTOM.get(ModBlocks.BABY_BOOMER.get());
+        Identifier modelId = babyBoomerModel.create(ModBlocks.BABY_BOOMER.get(), blockModels.modelOutput);
+        blockModels.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(ModBlocks.BABY_BOOMER.get(), BlockModelGenerators.plainVariant(modelId)));
+        blockModels.registerSimpleItemModel(ModBlocks.BABY_BOOMER.get(), modelId);
+    }
+}
