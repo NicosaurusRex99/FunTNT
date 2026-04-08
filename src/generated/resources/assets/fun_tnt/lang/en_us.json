@@ -2,7 +2,7 @@
   "block.fun_tnt.baby_boomer": "Baby Boomer TNT",
   "block.fun_tnt.fertilizer": "Fertilizer Bomb",
   "block.fun_tnt.nuke": "NUKE!!!",
-  "death.attack.funtnt.nuke": "%1$s was obliterated by a Nuclear Blast",
+  "death.attack.fun_tnt.nuke": "%1$s was obliterated by a Nuclear Blast",
   "entity.fun_tnt.baby_boomer": "Primed Baby Boomer",
   "entity.fun_tnt.nuke": "If you can read this, its too late",
   "fun_tnt.too_late": "It is too late now...",

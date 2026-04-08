@@ -1,0 +1,14 @@
+{
+  "block.fun_tnt.baby_boomer": "बेबी बूमर टीएनटी",
+  "block.fun_tnt.fertilizer": "उर्वरक बम",
+  "block.fun_tnt.nuke": "परमाणु!!!",
+  "death.attack.fun_tnt.nuke": "%1$s परमाणु विस्फोट से नष्ट हो गया",
+  "entity.fun_tnt.baby_boomer": "प्राइमेड बेबी बूमर",
+  "entity.fun_tnt.nuke": "यदि आप इसे पढ़ सकते हैं, तो बहुत देर हो चुकी है",
+  "fun_tnt.too_late": "अब बहुत देर हो चुकी है...",
+  "item.fun_tnt.baby_boomer": "बेबी बूमर टीएनटी",
+  "item.fun_tnt.dynamite": "बारूद",
+  "item.fun_tnt.fertilizer": "उर्वरक बम",
+  "item.fun_tnt.nuke": "परमाणु!!!",
+  "itemGroup.fun_tnt": "मजेदार टीएनटी"
+}

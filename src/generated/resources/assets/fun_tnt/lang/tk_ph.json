@@ -1,0 +1,14 @@
+{
+  "block.fun_tnt.baby_boomer": "Baby Boomer TNT",
+  "block.fun_tnt.fertilizer": "Tohum bomba",
+  "block.fun_tnt.nuke": "NUKE !!!",
+  "death.attack.fun_tnt.nuke": "% 1adro partlamasy bilen 1 $ s ýok edildi",
+  "entity.fun_tnt.baby_boomer": "Esasy çaga bumeri",
+  "entity.fun_tnt.nuke": "Muny okap bilýän bolsaňyz, gaty giç",
+  "fun_tnt.too_late": "Indi gaty giç ...",
+  "item.fun_tnt.baby_boomer": "Baby Boomer TNT",
+  "item.fun_tnt.dynamite": "Dinamit",
+  "item.fun_tnt.fertilizer": "Tohum bomba",
+  "item.fun_tnt.nuke": "NUKE !!!",
+  "itemGroup.fun_tnt": "Gyzykly TNT"
+}

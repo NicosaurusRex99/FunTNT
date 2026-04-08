@@ -1,0 +1,14 @@
+{
+  "block.fun_tnt.baby_boomer": "TNT del Baby Boomer",
+  "block.fun_tnt.fertilizer": "Bomba fertilizzante",
+  "block.fun_tnt.nuke": "NUKA!!!",
+  "death.attack.fun_tnt.nuke": "%1$s è stato annientato da un'esplosione nucleare",
+  "entity.fun_tnt.baby_boomer": "Baby Boomer innescato",
+  "entity.fun_tnt.nuke": "Se riesci a leggere questo, è troppo tardi",
+  "fun_tnt.too_late": "Ormai è troppo tardi...",
+  "item.fun_tnt.baby_boomer": "TNT del Baby Boomer",
+  "item.fun_tnt.dynamite": "Dinamite",
+  "item.fun_tnt.fertilizer": "Bomba fertilizzante",
+  "item.fun_tnt.nuke": "NUKA!!!",
+  "itemGroup.fun_tnt": "Divertente TNT"
+}

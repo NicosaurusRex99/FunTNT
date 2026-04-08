@@ -1,35 +1,63 @@
 package nicusha.tnt.data;
 
 import net.minecraft.data.PackOutput;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import nicusha.tnt.FunTNT;
+import nicusha.tnt.Utils;
 import nicusha.tnt.registry.ModBlocks;
 import nicusha.tnt.registry.ModEntities;
 import nicusha.tnt.registry.ModItems;
 
+import java.util.function.Supplier;
+
 public class ModLangProvider extends LanguageProvider {
-    public ModLangProvider(PackOutput output) {
-        super(output, FunTNT.MODID, "en_us");
+    protected final String locale;
+
+    public ModLangProvider(PackOutput output, String locale) {
+        super(output, FunTNT.MODID, locale);
+        this.locale = locale;
     }
 
     @Override
     protected void addTranslations() {
-        addBlock(ModBlocks.BABY_BOOMER, "Baby Boomer TNT");
-        addBlock(ModBlocks.NUKE, "NUKE!!!");
-        addBlock(ModBlocks.FERTILIZER, "Fertilizer Bomb");
+        addAuto(ModBlocks.BABY_BOOMER, "Baby Boomer TNT");
+        addAuto(ModBlocks.NUKE, "NUKE!!!");
+        addAuto(ModBlocks.FERTILIZER, "Fertilizer Bomb");
 
-        addItem(()-> ModBlocks.BABY_BOOMER.asItem(), "Baby Boomer TNT");
-        addItem(()-> ModBlocks.NUKE.asItem(), "NUKE!!!");
-        addItem(()-> ModBlocks.FERTILIZER.asItem(), "Fertilizer Bomb");
-        addItem(()-> ModItems.DYNAMITE.get(), "Dynamite");
+        addAuto(ModBlocks.BABY_BOOMER.get().asItem(), "Baby Boomer TNT");
+        addAuto(ModBlocks.NUKE.get().asItem(), "NUKE!!!");
+        addAuto(ModBlocks.FERTILIZER.get().asItem(), "Fertilizer Bomb");
+        addAuto(ModItems.DYNAMITE.get(), "Dynamite");
 
+        addAuto(ModEntities.BABY_BOOMER.get(), "Primed Baby Boomer");
+        addAuto(ModEntities.NUKE.get(), "If you can read this, its too late");
 
+        addAuto("itemGroup." + FunTNT.MODID, "Fun TNT");
+        addAuto(FunTNT.MODID + ".too_late", "It is too late now...");
+        addAuto("death.attack." + FunTNT.MODID + ".nuke", "%1$s was obliterated by a Nuclear Blast");
+    }
 
-        addEntityType(ModEntities.BABY_BOOMER, "Primed Baby Boomer");
-        addEntityType(ModEntities.NUKE, "If you can read this, its too late");
+    private void addAuto(Object key, String englishValue) {
+        String targetText = englishValue;
 
-        add("itemGroup." + FunTNT.MODID, "Fun TNT");
-        add(FunTNT.MODID + ".too_late", "It is too late now...");
-        add("death.attack.funtnt.nuke", "%1$s was obliterated by a Nuclear Blast");
+        if (!locale.equals("en_us")) {
+            String langCode = locale.split("_")[0];
+            targetText = Utils.translate(langCode, englishValue);
+        }
+
+        if (key instanceof Supplier<?> s) {
+            Object val = s.get();
+            if (val instanceof Block b) add(b, targetText);
+            else if (val instanceof Item i) add(i, targetText);
+            else if (val instanceof EntityType<?> e) add(e, targetText);
+        } else {
+            if (key instanceof Block b) add(b, targetText);
+            else if (key instanceof Item i) add(i, targetText);
+            else if (key instanceof EntityType<?> e) add(e, targetText);
+            else if (key instanceof String s) add(s, targetText);
+        }
     }
 }
