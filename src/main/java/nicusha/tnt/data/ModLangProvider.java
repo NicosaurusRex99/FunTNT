@@ -26,7 +26,7 @@ public class ModLangProvider extends LanguageProvider {
         addEntityType(ModEntities.NUKE, "If you can read this, its too late");
 
         add("itemGroup." + FunTNT.MODID, "Fun TNT");
-        add(FunTNT.MODID + ".oppenheimer", "I am become Death, the destroyer of worlds.");
+        add(FunTNT.MODID + ".too_late", "It is too late now...");
         add("death.attack.funtnt.nuke", "%1$s was obliterated by a Nuclear Blast");
     }
 }

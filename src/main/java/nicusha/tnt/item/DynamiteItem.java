@@ -19,9 +19,7 @@ public class DynamiteItem extends Item {
     @Override
     public InteractionResult use(Level level, Player player, InteractionHand hand) {
         ItemStack itemstack = player.getItemInHand(hand);
-
         level.playSound(null, player.getX(), player.getY(), player.getZ(), SoundEvents.SNOWBALL_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (level.getRandom().nextFloat() * 0.4F + 0.8F));
-
         if (!level.isClientSide()) {
             DynamiteEntity dynamite = new DynamiteEntity(level, player);
             dynamite.setItem(itemstack);

@@ -45,7 +45,7 @@ public class NukeEntity extends PrimedTnt {
         BlockPos center = this.blockPosition();
 
         if (!this.level().isClientSide()) {
-            String quote = FunTNT.MODID + ".oppenheimer";
+            String quote = FunTNT.MODID + ".too_late";
             var players = this.level().getEntitiesOfClass(net.minecraft.world.entity.player.Player.class, this.getBoundingBox().inflate(radius));
 
             for (var player : players) {
