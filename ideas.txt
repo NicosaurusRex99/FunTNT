@@ -3,3 +3,6 @@ Items
 
 Blocks
 - Tripmine
+
+Misc
+- Config options for radius, explosion strength, damage
