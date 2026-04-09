@@ -26,14 +26,21 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.BABY_BOOMER, "Baby Boomer TNT");
         addAuto(ModBlocks.NUKE, "NUKE!!!");
         addAuto(ModBlocks.FERTILIZER, "Fertilizer Bomb");
+        addAuto(ModBlocks.CRYO, "Cryo TNT");
+        addAuto(ModBlocks.GRAVITY, "Gravity TNT");
 
         addAuto(ModBlocks.BABY_BOOMER.get().asItem(), "Baby Boomer TNT");
         addAuto(ModBlocks.NUKE.get().asItem(), "NUKE!!!");
         addAuto(ModBlocks.FERTILIZER.get().asItem(), "Fertilizer Bomb");
         addAuto(ModItems.DYNAMITE.get(), "Dynamite");
+        addAuto(ModBlocks.CRYO.get().asItem(), "Cryo TNT");
+        addAuto(ModBlocks.GRAVITY.get().asItem(), "Gravity TNT");
 
+        addAuto(ModEntities.FERTILIZER.get(), "Primed Fertilizer TNT");
         addAuto(ModEntities.BABY_BOOMER.get(), "Primed Baby Boomer");
         addAuto(ModEntities.NUKE.get(), "If you can read this, its too late");
+        addAuto(ModEntities.CRYO.get(), "Primed Cryo TNT");
+        addAuto(ModEntities.GRAVITY.get(), "Primed Gravity TNT");
 
         addAuto("itemGroup." + FunTNT.MODID, "Fun TNT");
         addAuto(FunTNT.MODID + ".too_late", "It is too late now...");

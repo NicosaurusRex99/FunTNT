@@ -1,14 +1,21 @@
 {
   "block.fun_tnt.baby_boomer": "団塊の世代のTNT",
+  "block.fun_tnt.cryo": "クライオTNT",
   "block.fun_tnt.fertilizer": "肥料爆弾",
+  "block.fun_tnt.gravity": "重力TNT",
   "block.fun_tnt.nuke": "ヌケ！！",
   "death.attack.fun_tnt.nuke": "%1$sは核爆発によって消滅しました",
   "entity.fun_tnt.baby_boomer": "プライムされた団塊の世代",
+  "entity.fun_tnt.cryo": "下塗りクライオ TNT",
+  "entity.fun_tnt.fertilizer": "プライム肥料 TNT",
+  "entity.fun_tnt.gravity": "プライミング重力 TNT",
   "entity.fun_tnt.nuke": "これが読めるならもう手遅れだ",
   "fun_tnt.too_late": "もう手遅れです...",
   "item.fun_tnt.baby_boomer": "団塊の世代のTNT",
+  "item.fun_tnt.cryo": "クライオTNT",
   "item.fun_tnt.dynamite": "ダイナマイト",
   "item.fun_tnt.fertilizer": "肥料爆弾",
+  "item.fun_tnt.gravity": "重力TNT",
   "item.fun_tnt.nuke": "ヌケ！！",
   "itemGroup.fun_tnt": "楽しいTNT"
 }

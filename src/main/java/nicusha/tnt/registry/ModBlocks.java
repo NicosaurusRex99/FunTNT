@@ -21,6 +21,8 @@ public class ModBlocks {
     public static final DeferredBlock<Block> FERTILIZER = registerTnt("fertilizer", FertilizerEntity::new, 80);
     public static final DeferredBlock<Block> NUKE = registerTnt("nuke", NukeEntity::new, 200);
     public static final DeferredBlock<Block> BABY_BOOMER = registerTnt("baby_boomer", BabyBoomerEntity::new, 40);
+    public static final DeferredBlock<Block> CRYO = registerTnt("cryo", CryoTntEntity::new, 40);
+    public static final DeferredBlock<Block> GRAVITY = registerTnt("gravity", GravityTntEntity::new, 100);
 
     private static DeferredBlock<Block> registerTnt(String name, BaseCustomTntBlock.TntFactory<?> factory, int fuse) {
         return registerBlock(name, () -> new BaseCustomTntBlock(Block.Properties.ofFullCopy(Blocks.TNT).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, name))), factory, fuse));

@@ -1,14 +1,21 @@
 {
   "block.fun_tnt.baby_boomer": "เบบี้บูมเมอร์ ทีเอ็นที",
+  "block.fun_tnt.cryo": "ไครโอ ทีเอ็นที",
   "block.fun_tnt.fertilizer": "ปุ๋ยระเบิด",
+  "block.fun_tnt.gravity": "แรงโน้มถ่วงทีเอ็นที",
   "block.fun_tnt.nuke": "นิวเคลียร์!!!",
   "death.attack.fun_tnt.nuke": "%1$s ถูกทำลายโดยระเบิดนิวเคลียร์",
   "entity.fun_tnt.baby_boomer": "รองพื้นเบบี้บูมเมอร์",
+  "entity.fun_tnt.cryo": "ลงสีพื้น Cryo TNT",
+  "entity.fun_tnt.fertilizer": "ปุ๋ยรองพื้นทีเอ็นที",
+  "entity.fun_tnt.gravity": "รองพื้น Gravity TNT",
   "entity.fun_tnt.nuke": "หากคุณสามารถอ่านข้อความนี้ได้ มันก็สายเกินไป",
   "fun_tnt.too_late": "ตอนนี้มันสายเกินไปแล้ว...",
   "item.fun_tnt.baby_boomer": "เบบี้บูมเมอร์ ทีเอ็นที",
+  "item.fun_tnt.cryo": "ไครโอ ทีเอ็นที",
   "item.fun_tnt.dynamite": "ระเบิด",
   "item.fun_tnt.fertilizer": "ปุ๋ยระเบิด",
+  "item.fun_tnt.gravity": "แรงโน้มถ่วงทีเอ็นที",
   "item.fun_tnt.nuke": "นิวเคลียร์!!!",
   "itemGroup.fun_tnt": "ทีเอ็นทีแสนสนุก"
 }

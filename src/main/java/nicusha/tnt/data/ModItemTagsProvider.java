@@ -6,6 +6,8 @@ import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.Items;
 import net.neoforged.neoforge.common.data.ItemTagsProvider;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.registry.ModBlocks;
@@ -20,11 +22,24 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider pProvider) {
-        this.tag(ItemTags.CREEPER_IGNITERS).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModItems.DYNAMITE.get());
+        this.tag(ItemTags.CREEPER_IGNITERS).add(ModItems.DYNAMITE.get());
 
-        var explosives = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "explosives"));
-        var tnt = TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "tnt"));
-        this.tag(explosives).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModItems.DYNAMITE.get());
-        this.tag(tnt).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem());
+        var explosives = commonTag("explosives");
+        var tnt = commonTag("tnt");
+        var ice = commonTag("ice");
+
+        tag(explosives).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModItems.DYNAMITE.get()).add(ModBlocks.CRYO.asItem()).add(ModBlocks.GRAVITY.asItem());
+        tag(tnt).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModBlocks.FERTILIZER.asItem()).add(ModBlocks.CRYO.asItem()).add(ModBlocks.GRAVITY.asItem());
+        tag(ice).add(Items.ICE).add(Items.BLUE_ICE).add(Items.PACKED_ICE);
+    }
+
+    private TagKey<Item> commonTag(String name){
+        return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", name));
+    }
+    private TagKey<Item> minecraftTag(String name){
+        return TagKey.create(Registries.ITEM, Identifier.withDefaultNamespace(name));
+    }
+    private TagKey<Item> customTag(String name){
+        return TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(FunTNT.MODID, name));
     }
 }

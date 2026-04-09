@@ -19,6 +19,8 @@ public class ModBlockLoot extends BlockLootSubProvider {
         dropSelf(ModBlocks.BABY_BOOMER.get());
         dropSelf(ModBlocks.NUKE.get());
         dropSelf(ModBlocks.FERTILIZER.get());
+        dropSelf(ModBlocks.CRYO.get());
+        dropSelf(ModBlocks.GRAVITY.get());
     }
 
     @Override

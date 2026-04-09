@@ -22,6 +22,8 @@ public class ModModelProvider extends ModelProvider {
         registerTnt(ModBlocks.BABY_BOOMER.get(), blockModels);
         registerTnt(ModBlocks.NUKE.get(), blockModels);
         registerTnt(ModBlocks.FERTILIZER.get(), blockModels);
+        registerTnt(ModBlocks.CRYO.get(), blockModels);
+        registerTnt(ModBlocks.GRAVITY.get(), blockModels);
 
         itemModels.generateFlatItem(ModItems.DYNAMITE.get(), ModelTemplates.FLAT_ITEM);
     }

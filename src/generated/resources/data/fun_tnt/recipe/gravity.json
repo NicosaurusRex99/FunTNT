@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "P": "minecraft:sticky_piston",
+    "T": "minecraft:tnt"
+  },
+  "pattern": [
+    " C ",
+    "PTP",
+    " C "
+  ],
+  "result": {
+    "id": "fun_tnt:gravity"
+  }
+}
