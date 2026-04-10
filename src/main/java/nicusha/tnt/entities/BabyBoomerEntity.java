@@ -8,6 +8,7 @@ import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
+import nicusha.tnt.Config;
 import nicusha.tnt.registry.ModEntities;
 
 import javax.annotation.Nullable;
@@ -23,7 +24,7 @@ public class BabyBoomerEntity extends PrimedTnt {
         this.setPos(x, y, z);
         double d0 = level.getRandom().nextDouble() * (double)((float)Math.PI * 2F);
         this.setDeltaMovement(-Math.sin(d0) * 0.02D, 0.2F, -Math.cos(d0) * 0.02D);
-        this.setFuse(80);
+        this.setFuse(Config.BABY_BOOMER_FUSE.get());
         this.xo = x;
         this.yo = y;
         this.zo = z;
@@ -33,7 +34,7 @@ public class BabyBoomerEntity extends PrimedTnt {
     @Override
     protected void explode() {
         if (this.level() instanceof ServerLevel serverLevel) {
-            double radius = 5.0D;
+            int radius = Config.BABY_BOOMER_RADIUS.getAsInt();
             AABB area = this.getBoundingBox().inflate(radius);
             List<AgeableMob> nearbyMobs = serverLevel.getEntitiesOfClass(AgeableMob.class, area);
             for (AgeableMob mob : nearbyMobs) {

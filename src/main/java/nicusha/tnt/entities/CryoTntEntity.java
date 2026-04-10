@@ -11,6 +11,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.AABB;
+import nicusha.tnt.Config;
 import nicusha.tnt.registry.ModEntities;
 
 import javax.annotation.Nullable;
@@ -26,7 +27,7 @@ public class CryoTntEntity extends PrimedTnt {
         this.setPos(x, y, z);
         double d0 = level.getRandom().nextDouble() * (double)((float)Math.PI * 2F);
         this.setDeltaMovement(-Math.sin(d0) * 0.02D, 0.2F, -Math.cos(d0) * 0.02D);
-        this.setFuse(80);
+        this.setFuse(Config.CRYO_FUSE.get());
         this.xo = x;
         this.yo = y;
         this.zo = z;
@@ -35,7 +36,7 @@ public class CryoTntEntity extends PrimedTnt {
 
     @Override
     protected void explode() {
-        float radius = 6.0F;
+        float radius = Config.CRYO_RADIUS.getAsInt();
         BlockPos center = this.blockPosition();
 
         if (!this.level().isClientSide()) {

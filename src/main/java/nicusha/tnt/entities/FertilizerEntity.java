@@ -16,6 +16,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.state.BlockState;
+import nicusha.tnt.Config;
 import nicusha.tnt.registry.ModEntities;
 
 import javax.annotation.Nullable;
@@ -30,7 +31,7 @@ public class FertilizerEntity extends PrimedTnt {
         this.setPos(x, y, z);
         double d0 = level.getRandom().nextDouble() * (double) ((float) Math.PI * 2F);
         this.setDeltaMovement(-Math.sin(d0) * 0.02, 0.2, -Math.cos(d0) * 0.02);
-        this.setFuse(80);
+        this.setFuse(Config.FERTILIZER_FUSE.get());
         this.xo = x;
         this.yo = y;
         this.zo = z;
@@ -40,7 +41,7 @@ public class FertilizerEntity extends PrimedTnt {
     @Override
     protected void explode() {
         if (this.level() instanceof ServerLevel serverLevel) {
-            int radius = 10;
+            int radius = Config.FERTILIZER_RADIUS.getAsInt();
             BlockPos center = this.blockPosition();
             serverLevel.playSound(null, this.getX(), this.getY(), this.getZ(), SoundEvents.BONE_MEAL_USE, SoundSource.BLOCKS, 2.0F, 0.5F);
             for (BlockPos pos : BlockPos.betweenClosed(center.offset(-radius, -2, -radius), center.offset(radius, 2, radius))) {

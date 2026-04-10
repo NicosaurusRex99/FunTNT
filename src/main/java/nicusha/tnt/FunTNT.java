@@ -1,6 +1,7 @@
 package nicusha.tnt;
 
-import net.neoforged.api.distmarker.Dist;
+import net.neoforged.fml.ModContainer;
+import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.loading.FMLEnvironment;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import nicusha.tnt.client.ClientEvents;
@@ -17,7 +18,7 @@ import net.neoforged.fml.common.Mod;
 public class FunTNT {
     public static final String MODID = "fun_tnt";
 
-    public FunTNT(IEventBus bus, Dist dist) {
+    public FunTNT(IEventBus bus, ModContainer container) {
         ModBlocks.BLOCKS.register(bus);
         ModItems.ITEMS.register(bus);
         ModCreativeTabs.TABS.register(bus);
@@ -29,6 +30,8 @@ public class FunTNT {
         if (FMLEnvironment.getDist().isClient()) {
             bus.addListener(ClientEvents::registerRenderers);
         }
+
+        container.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {

@@ -11,6 +11,7 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.Vec3;
+import nicusha.tnt.Config;
 import nicusha.tnt.registry.ModEntities;
 
 import javax.annotation.Nullable;
@@ -25,7 +26,7 @@ public class GravityTntEntity extends PrimedTnt {
         this.setPos(x, y, z);
         double d0 = level.getRandom().nextDouble() * (double)((float)Math.PI * 2F);
         this.setDeltaMovement(-Math.sin(d0) * 0.02D, 0.2F, -Math.cos(d0) * 0.02D);
-        this.setFuse(80);
+        this.setFuse(Config.GRAVITY_FUSE.getAsInt());
         this.xo = x;
         this.yo = y;
         this.zo = z;
@@ -36,7 +37,7 @@ public class GravityTntEntity extends PrimedTnt {
     public void tick() {
         super.tick();
         if (this.getFuse() > 0) {
-            double pullRadius = 8.0D;
+            double pullRadius = Config.GRAVITY_RADIUS.getAsInt();
             AABB gravityWell = this.getBoundingBox().inflate(pullRadius);
 
             List<Entity> targets = this.level().getEntitiesOfClass(Entity.class, gravityWell);

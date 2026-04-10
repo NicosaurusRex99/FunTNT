@@ -4,16 +4,15 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EntityReference;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.item.PrimedTnt;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
+import nicusha.tnt.Config;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.Utils;
 import nicusha.tnt.registry.ModEntities;
@@ -21,7 +20,7 @@ import org.jetbrains.annotations.Nullable;
 
 public class NukeEntity extends PrimedTnt {
 
-    private static final int DEFAULT_FUSE = 300;
+    private static final int DEFAULT_FUSE = Config.NUKE_FUSE.getAsInt();
 
     public NukeEntity(EntityType<? extends PrimedTnt> type, Level level) {
         super(type, level);
@@ -41,7 +40,7 @@ public class NukeEntity extends PrimedTnt {
 
     @Override
     protected void explode() {
-        int radius = 128;
+        int radius = Config.NUKE_RADIUS.getAsInt();
         BlockPos center = this.blockPosition();
 
         if (!this.level().isClientSide()) {
