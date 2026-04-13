@@ -28,6 +28,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.FERTILIZER, "Fertilizer Bomb");
         addAuto(ModBlocks.CRYO, "Cryo TNT");
         addAuto(ModBlocks.GRAVITY, "Gravity TNT");
+        addAuto(ModBlocks.TRIP_MINE, "Trip Mine");
 
         addAuto(ModBlocks.BABY_BOOMER.get().asItem(), "Baby Boomer TNT");
         addAuto(ModBlocks.NUKE.get().asItem(), "NUKE!!!");
@@ -35,6 +36,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModItems.DYNAMITE.get(), "Dynamite");
         addAuto(ModBlocks.CRYO.get().asItem(), "Cryo TNT");
         addAuto(ModBlocks.GRAVITY.get().asItem(), "Gravity TNT");
+        addAuto(ModBlocks.TRIP_MINE.asItem(), "Trip Mine");
 
         addAuto(ModEntities.FERTILIZER.get(), "Primed Fertilizer TNT");
         addAuto(ModEntities.BABY_BOOMER.get(), "Primed Baby Boomer");

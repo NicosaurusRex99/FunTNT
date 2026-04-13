@@ -3,7 +3,8 @@
   "block.fun_tnt.cryo": "Cryo TNT",
   "block.fun_tnt.fertilizer": "Bombe d'engrais",
   "block.fun_tnt.gravity": "TNT gravitationnel",
-  "block.fun_tnt.nuke": "Nuke!!!",
+  "block.fun_tnt.nuke": "NUQUE !!!",
+  "block.fun_tnt.trip_mine": "Voyage mine",
   "death.attack.fun_tnt.nuke": "%1$s a été anéanti par une explosion nucléaire",
   "entity.fun_tnt.baby_boomer": "Un baby-boomer préparé",
   "entity.fun_tnt.cryo": "Cryo TNT apprêté",
@@ -16,6 +17,7 @@
   "item.fun_tnt.dynamite": "Dynamiter",
   "item.fun_tnt.fertilizer": "Bombe d'engrais",
   "item.fun_tnt.gravity": "TNT gravitationnel",
-  "item.fun_tnt.nuke": "Nuke!!!",
+  "item.fun_tnt.nuke": "NUQUE !!!",
+  "item.fun_tnt.trip_mine": "Voyage mine",
   "itemGroup.fun_tnt": "TNT amusante"
 }

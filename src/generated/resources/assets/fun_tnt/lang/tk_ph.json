@@ -4,6 +4,7 @@
   "block.fun_tnt.fertilizer": "Tohum bomba",
   "block.fun_tnt.gravity": "Agyrlyk TNT",
   "block.fun_tnt.nuke": "NUKE !!!",
+  "block.fun_tnt.trip_mine": "Mina syýahaty",
   "death.attack.fun_tnt.nuke": "% 1adro partlamasy bilen 1 $ s ýok edildi",
   "entity.fun_tnt.baby_boomer": "Esasy çaga bumeri",
   "entity.fun_tnt.cryo": "Esasy Cryo TNT",
@@ -17,5 +18,6 @@
   "item.fun_tnt.fertilizer": "Tohum bomba",
   "item.fun_tnt.gravity": "Agyrlyk TNT",
   "item.fun_tnt.nuke": "NUKE !!!",
+  "item.fun_tnt.trip_mine": "Mina syýahaty",
   "itemGroup.fun_tnt": "Gyzykly TNT"
 }

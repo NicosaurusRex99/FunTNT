@@ -4,6 +4,7 @@
   "block.fun_tnt.fertilizer": "Fertilizer Bomb",
   "block.fun_tnt.gravity": "Gravity TNT",
   "block.fun_tnt.nuke": "NUKE!!!",
+  "block.fun_tnt.trip_mine": "Trip Mine",
   "death.attack.fun_tnt.nuke": "%1$s was obliterated by a Nuclear Blast",
   "entity.fun_tnt.baby_boomer": "Primed Baby Boomer",
   "entity.fun_tnt.cryo": "Primed Cryo TNT",
@@ -17,5 +18,6 @@
   "item.fun_tnt.fertilizer": "Fertilizer Bomb",
   "item.fun_tnt.gravity": "Gravity TNT",
   "item.fun_tnt.nuke": "NUKE!!!",
+  "item.fun_tnt.trip_mine": "Trip Mine",
   "itemGroup.fun_tnt": "Fun TNT"
 }

@@ -4,6 +4,7 @@
   "block.fun_tnt.fertilizer": "Düngerbombe",
   "block.fun_tnt.gravity": "Schwerkraft-TNT",
   "block.fun_tnt.nuke": "NUKE!!!",
+  "block.fun_tnt.trip_mine": "Trip Mine",
   "death.attack.fun_tnt.nuke": "%1$s wurde durch eine nukleare Explosion ausgelöscht",
   "entity.fun_tnt.baby_boomer": "Vorbereiteter Babyboomer",
   "entity.fun_tnt.cryo": "Vorbereitetes Kryo-TNT",
@@ -17,5 +18,6 @@
   "item.fun_tnt.fertilizer": "Düngerbombe",
   "item.fun_tnt.gravity": "Schwerkraft-TNT",
   "item.fun_tnt.nuke": "NUKE!!!",
+  "item.fun_tnt.trip_mine": "Trip Mine",
   "itemGroup.fun_tnt": "Lustiges TNT"
 }

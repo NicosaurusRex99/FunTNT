@@ -4,9 +4,10 @@
   "block.fun_tnt.fertilizer": "قنبلة الأسمدة",
   "block.fun_tnt.gravity": "الجاذبية تي ان تي",
   "block.fun_tnt.nuke": "نووي!!!",
+  "block.fun_tnt.trip_mine": "رحلة الألغام",
   "death.attack.fun_tnt.nuke": "تم تدمير %1$s بواسطة انفجار نووي",
   "entity.fun_tnt.baby_boomer": "معدة بيبي بومر",
-  "entity.fun_tnt.cryo": "معدة كريو تي ان تي",
+  "entity.fun_tnt.cryo": "معدة كريو تي إن تي",
   "entity.fun_tnt.fertilizer": "الأسمدة الأولية تي إن تي",
   "entity.fun_tnt.gravity": "معدة الجاذبية TNT",
   "entity.fun_tnt.nuke": "إذا كنت تستطيع قراءة هذا، فقد فات الأوان",
@@ -17,5 +18,6 @@
   "item.fun_tnt.fertilizer": "قنبلة الأسمدة",
   "item.fun_tnt.gravity": "الجاذبية تي ان تي",
   "item.fun_tnt.nuke": "نووي!!!",
+  "item.fun_tnt.trip_mine": "رحلة الألغام",
   "itemGroup.fun_tnt": "تي ان تي الممتعة"
 }

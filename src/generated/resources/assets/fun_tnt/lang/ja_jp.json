@@ -4,6 +4,7 @@
   "block.fun_tnt.fertilizer": "肥料爆弾",
   "block.fun_tnt.gravity": "重力TNT",
   "block.fun_tnt.nuke": "ヌケ！！",
+  "block.fun_tnt.trip_mine": "トリップマイン",
   "death.attack.fun_tnt.nuke": "%1$sは核爆発によって消滅しました",
   "entity.fun_tnt.baby_boomer": "プライムされた団塊の世代",
   "entity.fun_tnt.cryo": "下塗りクライオ TNT",
@@ -17,5 +18,6 @@
   "item.fun_tnt.fertilizer": "肥料爆弾",
   "item.fun_tnt.gravity": "重力TNT",
   "item.fun_tnt.nuke": "ヌケ！！",
+  "item.fun_tnt.trip_mine": "トリップマイン",
   "itemGroup.fun_tnt": "楽しいTNT"
 }

@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "pressed=false": {
+      "model": "fun_tnt:block/trip_mine"
+    },
+    "pressed=true": {
+      "model": "fun_tnt:block/trip_mine_pressed"
+    }
+  }
+}

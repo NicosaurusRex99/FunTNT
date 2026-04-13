@@ -4,10 +4,11 @@
   "block.fun_tnt.fertilizer": "Удобрительная бомба",
   "block.fun_tnt.gravity": "Гравитационный ТНТ",
   "block.fun_tnt.nuke": "ЯДЕРНЫЙ!!!",
+  "block.fun_tnt.trip_mine": "Поездка на шахту",
   "death.attack.fun_tnt.nuke": "%1$s был уничтожен ядерным взрывом",
   "entity.fun_tnt.baby_boomer": "Праймовый бэби-бумер",
-  "entity.fun_tnt.cryo": "Праймированный крио ТНТ",
-  "entity.fun_tnt.fertilizer": "Грунтовочное удобрение ТНТ",
+  "entity.fun_tnt.cryo": "Загрунтованный крио ТНТ",
+  "entity.fun_tnt.fertilizer": "Грунтовочное удобрение TNT",
   "entity.fun_tnt.gravity": "Заряженный гравитационный тротил",
   "entity.fun_tnt.nuke": "Если ты можешь это прочитать, то уже слишком поздно",
   "fun_tnt.too_late": "Теперь уже слишком поздно...",
@@ -17,5 +18,6 @@
   "item.fun_tnt.fertilizer": "Удобрительная бомба",
   "item.fun_tnt.gravity": "Гравитационный ТНТ",
   "item.fun_tnt.nuke": "ЯДЕРНЫЙ!!!",
+  "item.fun_tnt.trip_mine": "Поездка на шахту",
   "itemGroup.fun_tnt": "Веселый ТНТ"
 }

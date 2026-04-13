@@ -4,6 +4,7 @@
   "block.fun_tnt.fertilizer": "Bomba de fertilizante",
   "block.fun_tnt.gravity": "Gravidade TNT",
   "block.fun_tnt.nuke": "NUKE!!!",
+  "block.fun_tnt.trip_mine": "Viagem minha",
   "death.attack.fun_tnt.nuke": "%1$s foi destruído por uma explosão nuclear",
   "entity.fun_tnt.baby_boomer": "Baby Boomer Preparado",
   "entity.fun_tnt.cryo": "Cryo TNT preparado",
@@ -17,5 +18,6 @@
   "item.fun_tnt.fertilizer": "Bomba de fertilizante",
   "item.fun_tnt.gravity": "Gravidade TNT",
   "item.fun_tnt.nuke": "NUKE!!!",
+  "item.fun_tnt.trip_mine": "Viagem minha",
   "itemGroup.fun_tnt": "TNT divertido"
 }

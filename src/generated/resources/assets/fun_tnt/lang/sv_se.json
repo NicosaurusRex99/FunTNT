@@ -4,11 +4,12 @@
   "block.fun_tnt.fertilizer": "Gödselbomb",
   "block.fun_tnt.gravity": "Gravity TNT",
   "block.fun_tnt.nuke": "NUKE!!!",
+  "block.fun_tnt.trip_mine": "Trip Mina",
   "death.attack.fun_tnt.nuke": "%1$s utplånades av en kärnvapenexplosion",
   "entity.fun_tnt.baby_boomer": "Grundmålad Baby Boomer",
   "entity.fun_tnt.cryo": "Grundmålad Cryo TNT",
   "entity.fun_tnt.fertilizer": "Grundmålat gödselmedel TNT",
-  "entity.fun_tnt.gravity": "Grundad gravity TNT",
+  "entity.fun_tnt.gravity": "Grundad gravitation TNT",
   "entity.fun_tnt.nuke": "Om du kan läsa detta är det för sent",
   "fun_tnt.too_late": "Det är för sent nu...",
   "item.fun_tnt.baby_boomer": "Baby Boomer TNT",
@@ -17,5 +18,6 @@
   "item.fun_tnt.fertilizer": "Gödselbomb",
   "item.fun_tnt.gravity": "Gravity TNT",
   "item.fun_tnt.nuke": "NUKE!!!",
+  "item.fun_tnt.trip_mine": "Trip Mina",
   "itemGroup.fun_tnt": "Kul TNT"
 }

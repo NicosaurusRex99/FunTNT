@@ -4,6 +4,7 @@
   "block.fun_tnt.fertilizer": "化肥炸弹",
   "block.fun_tnt.gravity": "重力炸药",
   "block.fun_tnt.nuke": "核弹！！！",
+  "block.fun_tnt.trip_mine": "绊雷",
   "death.attack.fun_tnt.nuke": "%1$s 被核爆炸摧毁",
   "entity.fun_tnt.baby_boomer": "婴儿潮一代已做好准备",
   "entity.fun_tnt.cryo": "已涂底的冷冻 TNT",
@@ -17,5 +18,6 @@
   "item.fun_tnt.fertilizer": "化肥炸弹",
   "item.fun_tnt.gravity": "重力炸药",
   "item.fun_tnt.nuke": "核弹！！！",
+  "item.fun_tnt.trip_mine": "绊雷",
   "itemGroup.fun_tnt": "有趣的TNT"
 }

@@ -25,5 +25,6 @@ public class ModRecipeProvider extends RecipeProvider {
         shaped(RecipeCategory.REDSTONE, ModBlocks.FERTILIZER.get()).pattern("BBB").pattern("BTB").pattern("SSS").define('B', ItemTags.create(Identifier.fromNamespaceAndPath("c", "fertilizers"))).define('T', Items.TNT).define('S', ItemTags.VILLAGER_PLANTABLE_SEEDS).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.CRYO.get()).pattern(" I ").pattern("ITI").pattern(" I ").define('T', Items.TNT).define('I', ItemTags.create(Identifier.fromNamespaceAndPath("c", "ice"))).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.GRAVITY.get()).pattern(" C ").pattern("PTP").pattern(" C ").define('C', Items.COPPER_INGOT).define('P', Blocks.STICKY_PISTON).define('T', Items.TNT).unlockedBy("has_copper", this.has(Items.COPPER_INGOT)).save(this.output);
+        shaped(RecipeCategory.REDSTONE, ModBlocks.TRIP_MINE.get()).pattern("P").pattern("T").define('P', Items.STONE_PRESSURE_PLATE).define('T', Items.TNT).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
     }
 }
