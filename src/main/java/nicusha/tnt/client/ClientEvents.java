@@ -16,6 +16,7 @@ public class ClientEvents {
         event.registerEntityRenderer(ModEntities.BABY_BOOMER.get(), context -> new GenericTntRenderer(context, ModBlocks.BABY_BOOMER));
         event.registerEntityRenderer(ModEntities.CRYO.get(), context -> new GenericTntRenderer(context, ModBlocks.CRYO));
         event.registerEntityRenderer(ModEntities.GRAVITY.get(), context -> new GenericTntRenderer(context, ModBlocks.GRAVITY));
+        event.registerEntityRenderer(ModEntities.RESTORATION.get(), context -> new GenericTntRenderer(context, ModBlocks.RESTORATION));
 
         event.registerEntityRenderer(ModEntities.DYNAMITE.get(), ThrownItemRenderer::new);
     }

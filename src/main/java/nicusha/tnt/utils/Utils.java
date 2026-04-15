@@ -1,4 +1,4 @@
-package nicusha.tnt;
+package nicusha.tnt.utils;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.damagesource.DamageSource;

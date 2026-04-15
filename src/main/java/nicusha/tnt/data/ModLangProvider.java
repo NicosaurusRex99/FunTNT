@@ -6,7 +6,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import nicusha.tnt.FunTNT;
-import nicusha.tnt.Utils;
+import nicusha.tnt.utils.Utils;
 import nicusha.tnt.registry.ModBlocks;
 import nicusha.tnt.registry.ModEntities;
 import nicusha.tnt.registry.ModItems;
@@ -29,6 +29,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.CRYO, "Cryo TNT");
         addAuto(ModBlocks.GRAVITY, "Gravity TNT");
         addAuto(ModBlocks.TRIP_MINE, "Trip Mine");
+        addAuto(ModBlocks.RESTORATION, "Restoration TNT");
 
         addAuto(ModBlocks.BABY_BOOMER.get().asItem(), "Baby Boomer TNT");
         addAuto(ModBlocks.NUKE.get().asItem(), "NUKE!!!");
@@ -37,12 +38,14 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.CRYO.get().asItem(), "Cryo TNT");
         addAuto(ModBlocks.GRAVITY.get().asItem(), "Gravity TNT");
         addAuto(ModBlocks.TRIP_MINE.asItem(), "Trip Mine");
+        addAuto(ModBlocks.RESTORATION.asItem(), "Restoration TNT");
 
         addAuto(ModEntities.FERTILIZER.get(), "Primed Fertilizer TNT");
         addAuto(ModEntities.BABY_BOOMER.get(), "Primed Baby Boomer");
         addAuto(ModEntities.NUKE.get(), "If you can read this, its too late");
         addAuto(ModEntities.CRYO.get(), "Primed Cryo TNT");
         addAuto(ModEntities.GRAVITY.get(), "Primed Gravity TNT");
+        addAuto(ModEntities.RESTORATION.get(), "Primed Restoration TNT");
 
         addAuto("itemGroup." + FunTNT.MODID, "Fun TNT");
         addAuto(FunTNT.MODID + ".too_late", "It is too late now...");

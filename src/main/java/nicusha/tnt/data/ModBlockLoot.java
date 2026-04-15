@@ -22,6 +22,7 @@ public class ModBlockLoot extends BlockLootSubProvider {
         dropSelf(ModBlocks.CRYO.get());
         dropSelf(ModBlocks.GRAVITY.get());
         dropSelf(ModBlocks.TRIP_MINE.get());
+        dropSelf(ModBlocks.RESTORATION.get());
     }
 
     @Override

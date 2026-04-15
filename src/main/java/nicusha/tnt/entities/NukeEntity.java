@@ -14,7 +14,7 @@ import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import nicusha.tnt.Config;
 import nicusha.tnt.FunTNT;
-import nicusha.tnt.Utils;
+import nicusha.tnt.utils.Utils;
 import nicusha.tnt.registry.ModEntities;
 import org.jetbrains.annotations.Nullable;
 

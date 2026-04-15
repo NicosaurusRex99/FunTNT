@@ -4,6 +4,7 @@
   "block.fun_tnt.fertilizer": "Bombe d'engrais",
   "block.fun_tnt.gravity": "TNT gravitationnel",
   "block.fun_tnt.nuke": "NUQUE !!!",
+  "block.fun_tnt.restoration": "Restauration TNT",
   "block.fun_tnt.trip_mine": "Voyage mine",
   "death.attack.fun_tnt.nuke": "%1$s a été anéanti par une explosion nucléaire",
   "entity.fun_tnt.baby_boomer": "Un baby-boomer préparé",
@@ -11,6 +12,7 @@
   "entity.fun_tnt.fertilizer": "Engrais Apprêt TNT",
   "entity.fun_tnt.gravity": "TNT gravitationnel amorcé",
   "entity.fun_tnt.nuke": "Si tu peux lire ceci, c'est trop tard",
+  "entity.fun_tnt.restoration": "TNT de restauration apprêté",
   "fun_tnt.too_late": "Il est trop tard maintenant...",
   "item.fun_tnt.baby_boomer": "TNT des baby-boomers",
   "item.fun_tnt.cryo": "Cryo TNT",
@@ -18,6 +20,7 @@
   "item.fun_tnt.fertilizer": "Bombe d'engrais",
   "item.fun_tnt.gravity": "TNT gravitationnel",
   "item.fun_tnt.nuke": "NUQUE !!!",
+  "item.fun_tnt.restoration": "Restauration TNT",
   "item.fun_tnt.trip_mine": "Voyage mine",
   "itemGroup.fun_tnt": "TNT amusante"
 }

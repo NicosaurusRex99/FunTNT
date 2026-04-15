@@ -4,6 +4,7 @@
   "block.fun_tnt.fertilizer": "Fertilizer Bomb",
   "block.fun_tnt.gravity": "Gravity TNT",
   "block.fun_tnt.nuke": "NUKE!!!",
+  "block.fun_tnt.restoration": "Restoration TNT",
   "block.fun_tnt.trip_mine": "Trip Mine",
   "death.attack.fun_tnt.nuke": "%1$s was obliterated by a Nuclear Blast",
   "entity.fun_tnt.baby_boomer": "Primed Baby Boomer",
@@ -11,6 +12,7 @@
   "entity.fun_tnt.fertilizer": "Primed Fertilizer TNT",
   "entity.fun_tnt.gravity": "Primed Gravity TNT",
   "entity.fun_tnt.nuke": "If you can read this, its too late",
+  "entity.fun_tnt.restoration": "Primed Restoration TNT",
   "fun_tnt.too_late": "It is too late now...",
   "item.fun_tnt.baby_boomer": "Baby Boomer TNT",
   "item.fun_tnt.cryo": "Cryo TNT",
@@ -18,6 +20,7 @@
   "item.fun_tnt.fertilizer": "Fertilizer Bomb",
   "item.fun_tnt.gravity": "Gravity TNT",
   "item.fun_tnt.nuke": "NUKE!!!",
+  "item.fun_tnt.restoration": "Restoration TNT",
   "item.fun_tnt.trip_mine": "Trip Mine",
   "itemGroup.fun_tnt": "Fun TNT"
 }

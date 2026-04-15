@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "B": "minecraft:bone_block",
+    "G": "#minecraft:grass_blocks",
+    "S": "#minecraft:saplings",
+    "T": "minecraft:tnt"
+  },
+  "pattern": [
+    "SGS",
+    "BTB",
+    "SGS"
+  ],
+  "result": {
+    "id": "fun_tnt:restoration"
+  }
+}

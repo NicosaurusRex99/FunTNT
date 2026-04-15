@@ -2,4 +2,3 @@ Items
 - Mining drill
 
 Blocks
-- Hole filler
