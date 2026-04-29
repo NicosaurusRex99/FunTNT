@@ -27,6 +27,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> GRAVITY = registerTnt("gravity", GravityTntEntity::new, 100);
     public static final DeferredBlock<TripMineBlock> TRIP_MINE = registerBlock("trip_mine", () -> new TripMineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(0.5f).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, "trip_mine")))));
     public static final DeferredBlock<Block> RESTORATION = registerTnt("restoration", RestorationTntEntity::new, 100);
+    public static final DeferredBlock<Block> LATELY = registerTnt("lately", LatelyEntity::new, 10);
 
     private static DeferredBlock<Block> registerTnt(String name, BaseCustomTntBlock.TntFactory<?> factory, int fuse) {
         return registerBlock(name, () -> new BaseCustomTntBlock(Block.Properties.ofFullCopy(Blocks.TNT).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, name))), factory, fuse));

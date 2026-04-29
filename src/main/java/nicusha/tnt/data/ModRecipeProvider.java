@@ -5,7 +5,6 @@ import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.resources.Identifier;
-import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Blocks;
@@ -28,5 +27,6 @@ public class ModRecipeProvider extends RecipeProvider {
         shaped(RecipeCategory.REDSTONE, ModBlocks.GRAVITY.get()).pattern(" C ").pattern("PTP").pattern(" C ").define('C', Items.COPPER_INGOT).define('P', Blocks.STICKY_PISTON).define('T', Items.TNT).unlockedBy("has_copper", this.has(Items.COPPER_INGOT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.TRIP_MINE.get()).pattern("P").pattern("T").define('P', Items.STONE_PRESSURE_PLATE).define('T', Items.TNT).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.RESTORATION.get()).define('T', Blocks.TNT).define('G', ItemTags.GRASS_BLOCKS).define('S', ItemTags.SAPLINGS).define('B', Blocks.BONE_BLOCK).pattern("SGS").pattern("BTB").pattern("SGS").unlockedBy("has_tnt", has(Blocks.TNT)).save(output);
+        shaped(RecipeCategory.REDSTONE, ModBlocks.LATELY.get()).pattern("SFS").pattern("FTF").pattern("SFS").define('S', Items.STRING).define('F', ItemTags.FISHES).define('T', Items.TNT).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
     }
 }

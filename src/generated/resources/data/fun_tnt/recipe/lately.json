@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "F": "#minecraft:fishes",
+    "S": "minecraft:string",
+    "T": "minecraft:tnt"
+  },
+  "pattern": [
+    "SFS",
+    "FTF",
+    "SFS"
+  ],
+  "result": {
+    "id": "fun_tnt:lately"
+  }
+}

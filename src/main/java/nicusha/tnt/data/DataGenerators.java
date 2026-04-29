@@ -14,6 +14,7 @@ public class DataGenerators {
         for (String lang : popularLanguages) {
             event.getGenerator().addProvider(true, new ModLangProvider(event.getGenerator().getPackOutput(), lang));
         }
+
         event.createProvider(ModModelProvider::new);
         event.createBlockAndItemTags(ModBlockTagsProvider::new, (output, lookup, blockTags) -> new ModItemTagsProvider(output, lookup));
         event.createProvider((output, lookup) -> ModLootTableProvider.create(output, lookup));

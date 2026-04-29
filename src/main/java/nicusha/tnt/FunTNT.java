@@ -23,14 +23,11 @@ public class FunTNT {
         ModItems.ITEMS.register(bus);
         ModCreativeTabs.TABS.register(bus);
         ModEntities.ENTITIES.register(bus);
-
         bus.addListener(this::addCreative);
         bus.addListener(DataGenerators::genData);
-
         if (FMLEnvironment.getDist().isClient()) {
             bus.addListener(ClientEvents::registerRenderers);
         }
-
         container.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
     }
 

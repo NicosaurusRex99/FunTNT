@@ -30,6 +30,7 @@ public class ModModelProvider extends ModelProvider {
         registerTnt(ModBlocks.CRYO.get(), blockModels);
         registerTnt(ModBlocks.GRAVITY.get(), blockModels);
         registerTnt(ModBlocks.RESTORATION.get(), blockModels);
+        registerTnt(ModBlocks.LATELY.get(), blockModels);
         itemModels.generateFlatItem(ModItems.DYNAMITE.get(), ModelTemplates.FLAT_ITEM);
         registerTripMine(ModBlocks.TRIP_MINE.get(), blockModels);
     }

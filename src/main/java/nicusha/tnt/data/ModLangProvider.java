@@ -30,6 +30,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.GRAVITY, "Gravity TNT");
         addAuto(ModBlocks.TRIP_MINE, "Trip Mine");
         addAuto(ModBlocks.RESTORATION, "Restoration TNT");
+        addAuto(ModBlocks.LATELY, "Cat Party TNT");
 
         addAuto(ModBlocks.BABY_BOOMER.get().asItem(), "Baby Boomer TNT");
         addAuto(ModBlocks.NUKE.get().asItem(), "NUKE!!!");
@@ -39,6 +40,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.GRAVITY.get().asItem(), "Gravity TNT");
         addAuto(ModBlocks.TRIP_MINE.asItem(), "Trip Mine");
         addAuto(ModBlocks.RESTORATION.asItem(), "Restoration TNT");
+        addAuto(ModBlocks.LATELY.asItem(), "Cat Party TNT");
 
         addAuto(ModEntities.FERTILIZER.get(), "Primed Fertilizer TNT");
         addAuto(ModEntities.BABY_BOOMER.get(), "Primed Baby Boomer");
@@ -46,10 +48,12 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModEntities.CRYO.get(), "Primed Cryo TNT");
         addAuto(ModEntities.GRAVITY.get(), "Primed Gravity TNT");
         addAuto(ModEntities.RESTORATION.get(), "Primed Restoration TNT");
+        addAuto(ModEntities.LATELY, "Primed Cat Party TNT");
 
         addAuto("itemGroup." + FunTNT.MODID, "Fun TNT");
         addAuto(FunTNT.MODID + ".too_late", "It is too late now...");
         addAuto("death.attack." + FunTNT.MODID + ".nuke", "%1$s was obliterated by a Nuclear Blast");
+        addAuto(FunTNT.MODID + ".sly_withers_lately.reference", "You don't have to stay so cool when you're trying not to break down");
     }
 
     private void addAuto(Object key, String englishValue) {
