@@ -5,6 +5,7 @@
   "block.fun_tnt.gravity": "แรงโน้มถ่วงทีเอ็นที",
   "block.fun_tnt.lately": "ปาร์ตี้แมว ทีเอ็นที",
   "block.fun_tnt.nuke": "นิวเคลียร์!!!",
+  "block.fun_tnt.paint": "ทาสี ทีเอ็นที",
   "block.fun_tnt.restoration": "การฟื้นฟูทีเอ็นที",
   "block.fun_tnt.trip_mine": "ทริปไมน์",
   "death.attack.fun_tnt.nuke": "%1$s ถูกทำลายโดยระเบิดนิวเคลียร์",
@@ -14,6 +15,7 @@
   "entity.fun_tnt.gravity": "รองพื้น Gravity TNT",
   "entity.fun_tnt.lately": "ไพรม์ แคท ปาร์ตี้ ทีเอ็นที",
   "entity.fun_tnt.nuke": "หากคุณสามารถอ่านข้อความนี้ได้ มันก็สายเกินไป",
+  "entity.fun_tnt.paint": "สีรองพื้นทีเอ็นที",
   "entity.fun_tnt.restoration": "รองพื้นฟื้นฟูทีเอ็นที",
   "fun_tnt.sly_withers_lately.reference": "คุณไม่จำเป็นต้องใจเย็นมากเมื่อคุณพยายามจะไม่พัง",
   "fun_tnt.too_late": "ตอนนี้มันสายเกินไปแล้ว...",
@@ -24,6 +26,7 @@
   "item.fun_tnt.gravity": "แรงโน้มถ่วงทีเอ็นที",
   "item.fun_tnt.lately": "ปาร์ตี้แมว ทีเอ็นที",
   "item.fun_tnt.nuke": "นิวเคลียร์!!!",
+  "item.fun_tnt.paint": "ทาสี ทีเอ็นที",
   "item.fun_tnt.restoration": "การฟื้นฟูทีเอ็นที",
   "item.fun_tnt.trip_mine": "ทริปไมน์",
   "itemGroup.fun_tnt": "ทีเอ็นทีแสนสนุก"

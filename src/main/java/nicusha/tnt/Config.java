@@ -11,6 +11,7 @@ public class Config {
     public static final ModConfigSpec.IntValue FERTILIZER_RADIUS = BUILDER.comment("Fertilizer radius").defineInRange("fertilizerRadius", 10, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue GRAVITY_RADIUS = BUILDER.comment("Gravity radius").defineInRange("gravityRadius", 12, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue RESTORATION_RADIUS = BUILDER.comment("Restoration radius").defineInRange("restorationRadius", 8, 0, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue PAINT_RADIUS = BUILDER.comment("Paint radius").defineInRange("paintRadius", 16, 0, Integer.MAX_VALUE);
 
     public static final ModConfigSpec.IntValue NUKE_FUSE = BUILDER.comment("Nuke fuse").comment("The delay from ignition to explosion").defineInRange("nukeFuse", 300, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue BABY_BOOMER_FUSE = BUILDER.comment("Baby boomer fuse").comment("The delay from ignition to explosion").defineInRange("babyBoomerFuse", 80, 0, Integer.MAX_VALUE);
@@ -18,6 +19,7 @@ public class Config {
     public static final ModConfigSpec.IntValue FERTILIZER_FUSE = BUILDER.comment("Fertilizer fuse").comment("The delay from ignition to explosion").defineInRange("fertilizerFuse", 80, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue GRAVITY_FUSE = BUILDER.comment("Gravity fuse").comment("The delay from ignition to explosion").defineInRange("gravityFuse", 80, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue RESTORATION_FUSE = BUILDER.comment("Restoration fuse").comment("The delay from ignition to explosion").defineInRange("restorationFuse", 80, 0, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue PAINT_FUSE = BUILDER.comment("Paint fuse").comment("The delay from ignition to explosion").defineInRange("paintFuse", 80, 0, Integer.MAX_VALUE);
 
     static final ModConfigSpec SPEC = BUILDER.build();
 

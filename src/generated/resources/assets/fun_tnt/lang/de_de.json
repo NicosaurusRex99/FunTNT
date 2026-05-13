@@ -5,6 +5,7 @@
   "block.fun_tnt.gravity": "Schwerkraft-TNT",
   "block.fun_tnt.lately": "Katzenparty TNT",
   "block.fun_tnt.nuke": "NUKE!!!",
+  "block.fun_tnt.paint": "Malen Sie TNT",
   "block.fun_tnt.restoration": "Restaurierung TNT",
   "block.fun_tnt.trip_mine": "Trip Mine",
   "death.attack.fun_tnt.nuke": "%1$s wurde durch eine nukleare Explosion ausgelöscht",
@@ -14,6 +15,7 @@
   "entity.fun_tnt.gravity": "Grundiertes Schwerkraft-TNT",
   "entity.fun_tnt.lately": "Grundierte Katzenparty TNT",
   "entity.fun_tnt.nuke": "Wenn Sie das lesen können, ist es zu spät",
+  "entity.fun_tnt.paint": "Grundierte Farbe TNT",
   "entity.fun_tnt.restoration": "Grundierte Restaurierung TNT",
   "fun_tnt.sly_withers_lately.reference": "Sie müssen nicht so cool bleiben, wenn Sie versuchen, nicht zusammenzubrechen",
   "fun_tnt.too_late": "Jetzt ist es zu spät...",
@@ -24,6 +26,7 @@
   "item.fun_tnt.gravity": "Schwerkraft-TNT",
   "item.fun_tnt.lately": "Katzenparty TNT",
   "item.fun_tnt.nuke": "NUKE!!!",
+  "item.fun_tnt.paint": "Malen Sie TNT",
   "item.fun_tnt.restoration": "Restaurierung TNT",
   "item.fun_tnt.trip_mine": "Trip Mine",
   "itemGroup.fun_tnt": "Lustiges TNT"

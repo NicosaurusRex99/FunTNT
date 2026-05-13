@@ -28,5 +28,6 @@ public class ModRecipeProvider extends RecipeProvider {
         shaped(RecipeCategory.REDSTONE, ModBlocks.TRIP_MINE.get()).pattern("P").pattern("T").define('P', Items.STONE_PRESSURE_PLATE).define('T', Items.TNT).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.RESTORATION.get()).define('T', Blocks.TNT).define('G', ItemTags.GRASS_BLOCKS).define('S', ItemTags.SAPLINGS).define('B', Blocks.BONE_BLOCK).pattern("SGS").pattern("BTB").pattern("SGS").unlockedBy("has_tnt", has(Blocks.TNT)).save(output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.LATELY.get()).pattern("SFS").pattern("FTF").pattern("SFS").define('S', Items.STRING).define('F', ItemTags.FISHES).define('T', Items.TNT).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
+        shaped(RecipeCategory.REDSTONE, ModBlocks.PAINT.get()).define('T', Items.TNT).define('D', ItemTags.DYES).define('P', Items.PAPER).pattern("DPD").pattern("PTP").pattern("DPD").unlockedBy("has_tnt", has(Items.TNT)).save(output);
     }
 }

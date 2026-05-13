@@ -2,6 +2,7 @@ package nicusha.tnt.data;
 
 import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
+import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.data.models.BlockModelGenerators;
 import net.minecraft.client.data.models.ItemModelGenerators;
 import net.minecraft.client.data.models.ModelProvider;
@@ -10,8 +11,10 @@ import net.minecraft.client.data.models.blockstates.PropertyDispatch;
 import net.minecraft.client.data.models.model.*;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.block.Block;
 import nicusha.tnt.FunTNT;
+import nicusha.tnt.blocks.PaintTntBlock;
 import nicusha.tnt.blocks.TripMineBlock;
 import nicusha.tnt.registry.ModBlocks;
 import nicusha.tnt.registry.ModItems;
@@ -31,6 +34,7 @@ public class ModModelProvider extends ModelProvider {
         registerTnt(ModBlocks.GRAVITY.get(), blockModels);
         registerTnt(ModBlocks.RESTORATION.get(), blockModels);
         registerTnt(ModBlocks.LATELY.get(), blockModels);
+        registerPaintTnt(ModBlocks.PAINT.get(), blockModels);
         itemModels.generateFlatItem(ModItems.DYNAMITE.get(), ModelTemplates.FLAT_ITEM);
         registerTripMine(ModBlocks.TRIP_MINE.get(), blockModels);
     }
@@ -101,12 +105,61 @@ public class ModModelProvider extends ModelProvider {
         return elements;
     }
 
+    private void registerPaintTnt(Block block, BlockModelGenerators generators) {
+        var propertyDispatch = PropertyDispatch.initial(PaintTntBlock.COLOR);
+        Identifier itemModelId = null;
+        for (DyeColor color : DyeColor.values()) {
+            Identifier colorModelId = ModelLocationUtils.getModelLocation(block).withSuffix("_" + color.getName());
+            if (color == DyeColor.WHITE) {
+                itemModelId = colorModelId;
+            }
+            generators.modelOutput.accept(colorModelId, () -> {
+                JsonObject json = new JsonObject();
+                json.addProperty("parent", "minecraft:block/cube_bottom_top");
+                JsonObject texObj = new JsonObject();
+                texObj.addProperty("top", "minecraft:block/tnt_top");
+                texObj.addProperty("bottom", "minecraft:block/tnt_bottom");
+                texObj.addProperty("side", "minecraft:block/tnt_side");
+                texObj.addProperty("particle", "minecraft:block/tnt_side");
+                json.add("textures", texObj);
+                JsonArray elements = new JsonArray();
+                JsonObject cube = new JsonObject();
+                cube.add("from", Stream.of(0, 0, 0).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
+                cube.add("to", Stream.of(16, 16, 16).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
+                JsonObject faces = new JsonObject();
+                int tintIdx = 0;
+                faces.add("down",  createTintedFace(new double[]{0, 0, 16, 16}, "#bottom", "down", tintIdx));
+                faces.add("up",    createTintedFace(new double[]{0, 0, 16, 16}, "#top", "up", tintIdx));
+                faces.add("north", createTintedFace(new double[]{0, 0, 16, 16}, "#side", "north", tintIdx));
+                faces.add("south", createTintedFace(new double[]{0, 0, 16, 16}, "#side", "south", tintIdx));
+                faces.add("west",  createTintedFace(new double[]{0, 0, 16, 16}, "#side", "west", tintIdx));
+                faces.add("east",  createTintedFace(new double[]{0, 0, 16, 16}, "#side", "east", tintIdx));
+                cube.add("faces", faces);
+                elements.add(cube);
+                json.add("elements", elements);
+                return json;
+            });
+            propertyDispatch.select(color, BlockModelGenerators.plainVariant(colorModelId));
+        }
+        generators.blockStateOutput.accept(MultiVariantGenerator.dispatch(block).with(propertyDispatch));
+        if (itemModelId != null) {
+            generators.registerSimpleItemModel(block, ModelLocationUtils.getModelLocation(block).withSuffix("_" + DyeColor.RED.getName()));
+        }
+    }
+
     private JsonObject createFace(double[] uv, String texture) {
         JsonObject face = new JsonObject();
         JsonArray uvArray = new JsonArray();
         for (double d : uv) uvArray.add(d);
         face.add("uv", uvArray);
         face.addProperty("texture", texture);
+        return face;
+    }
+
+    private JsonObject createTintedFace(double[] uv, String texture, String cullface, int tintIndex) {
+        JsonObject face = createFace(uv, texture);
+        face.addProperty("cullface", cullface);
+        face.addProperty("tintindex", tintIndex);
         return face;
     }
 }
