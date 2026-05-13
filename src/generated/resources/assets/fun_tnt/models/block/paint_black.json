@@ -1,0 +1,91 @@
+{
+  "parent": "minecraft:block/cube_bottom_top",
+  "elements": [
+    {
+      "faces": {
+        "down": {
+          "cullface": "down",
+          "texture": "#bottom",
+          "tintindex": 0,
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "east": {
+          "cullface": "east",
+          "texture": "#side",
+          "tintindex": 0,
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "north": {
+          "cullface": "north",
+          "texture": "#side",
+          "tintindex": 0,
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "south": {
+          "cullface": "south",
+          "texture": "#side",
+          "tintindex": 0,
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "up": {
+          "cullface": "up",
+          "texture": "#top",
+          "tintindex": 0,
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        },
+        "west": {
+          "cullface": "west",
+          "texture": "#side",
+          "tintindex": 0,
+          "uv": [
+            0.0,
+            0.0,
+            16.0,
+            16.0
+          ]
+        }
+      },
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        16,
+        16
+      ]
+    }
+  ],
+  "textures": {
+    "bottom": "minecraft:block/tnt_bottom",
+    "particle": "minecraft:block/tnt_side",
+    "side": "minecraft:block/tnt_side",
+    "top": "minecraft:block/tnt_top"
+  }
+}

@@ -5,6 +5,7 @@
   "block.fun_tnt.gravity": "TNT gravitationnel",
   "block.fun_tnt.lately": "Fête des chats TNT",
   "block.fun_tnt.nuke": "Nuke !!!",
+  "block.fun_tnt.paint": "Peinture TNT",
   "block.fun_tnt.restoration": "Restauration TNT",
   "block.fun_tnt.trip_mine": "Voyage mine",
   "death.attack.fun_tnt.nuke": "%1$s a été anéanti par une explosion nucléaire",
@@ -14,6 +15,7 @@
   "entity.fun_tnt.gravity": "TNT gravitationnel amorcé",
   "entity.fun_tnt.lately": "Fête de chat apprêtée TNT",
   "entity.fun_tnt.nuke": "Si tu peux lire ceci, c'est trop tard",
+  "entity.fun_tnt.paint": "Peinture apprêtée TNT",
   "entity.fun_tnt.restoration": "TNT de restauration apprêté",
   "fun_tnt.sly_withers_lately.reference": "Tu n'es pas obligé de rester aussi cool quand tu essaies de ne pas t'effondrer",
   "fun_tnt.too_late": "Il est trop tard maintenant...",
@@ -24,6 +26,7 @@
   "item.fun_tnt.gravity": "TNT gravitationnel",
   "item.fun_tnt.lately": "Fête des chats TNT",
   "item.fun_tnt.nuke": "Nuke !!!",
+  "item.fun_tnt.paint": "Peinture TNT",
   "item.fun_tnt.restoration": "Restauration TNT",
   "item.fun_tnt.trip_mine": "Voyage mine",
   "itemGroup.fun_tnt": "TNT amusante"

@@ -1,0 +1,52 @@
+{
+  "variants": {
+    "color=black": {
+      "model": "fun_tnt:block/paint_black"
+    },
+    "color=blue": {
+      "model": "fun_tnt:block/paint_blue"
+    },
+    "color=brown": {
+      "model": "fun_tnt:block/paint_brown"
+    },
+    "color=cyan": {
+      "model": "fun_tnt:block/paint_cyan"
+    },
+    "color=gray": {
+      "model": "fun_tnt:block/paint_gray"
+    },
+    "color=green": {
+      "model": "fun_tnt:block/paint_green"
+    },
+    "color=light_blue": {
+      "model": "fun_tnt:block/paint_light_blue"
+    },
+    "color=light_gray": {
+      "model": "fun_tnt:block/paint_light_gray"
+    },
+    "color=lime": {
+      "model": "fun_tnt:block/paint_lime"
+    },
+    "color=magenta": {
+      "model": "fun_tnt:block/paint_magenta"
+    },
+    "color=orange": {
+      "model": "fun_tnt:block/paint_orange"
+    },
+    "color=pink": {
+      "model": "fun_tnt:block/paint_pink"
+    },
+    "color=purple": {
+      "model": "fun_tnt:block/paint_purple"
+    },
+    "color=red": {
+      "model": "fun_tnt:block/paint_red"
+    },
+    "color=white": {
+      "model": "fun_tnt:block/paint_white"
+    },
+    "color=yellow": {
+      "model": "fun_tnt:block/paint_yellow"
+    }
+  }
+}

@@ -28,8 +28,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         var tnt = commonTag("tnt");
         var ice = commonTag("ice");
 
-        tag(explosives).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModItems.DYNAMITE.get()).add(ModBlocks.CRYO.asItem()).add(ModBlocks.GRAVITY.asItem());
-        tag(tnt).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModBlocks.FERTILIZER.asItem()).add(ModBlocks.CRYO.asItem()).add(ModBlocks.GRAVITY.asItem());
+        tag(explosives).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModItems.DYNAMITE.get()).add(ModBlocks.CRYO.asItem()).add(ModBlocks.GRAVITY.asItem()).add(ModBlocks.PAINT.asItem());
+        tag(tnt).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModBlocks.FERTILIZER.asItem()).add(ModBlocks.CRYO.asItem()).add(ModBlocks.GRAVITY.asItem()).add(ModBlocks.PAINT.asItem());
         tag(ice).add(Items.ICE).add(Items.BLUE_ICE).add(Items.PACKED_ICE);
     }
 

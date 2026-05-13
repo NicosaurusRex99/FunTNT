@@ -5,6 +5,7 @@
   "block.fun_tnt.gravity": "Agyrlyk TNT",
   "block.fun_tnt.lately": "Pişik partiýasy TNT",
   "block.fun_tnt.nuke": "NUKE !!!",
+  "block.fun_tnt.paint": "TNT boýag",
   "block.fun_tnt.restoration": "Dikeltmek TNT",
   "block.fun_tnt.trip_mine": "Mina syýahaty",
   "death.attack.fun_tnt.nuke": "% 1 ýadro partlamasy bilen% 1 $ ýok edildi",
@@ -14,6 +15,7 @@
   "entity.fun_tnt.gravity": "Esasy agyrlyk güýji TNT",
   "entity.fun_tnt.lately": "Esasy pişik partiýasy TNT",
   "entity.fun_tnt.nuke": "Muny okap bilýän bolsaňyz, gaty giç",
+  "entity.fun_tnt.paint": "Esasy boýag TNT",
   "entity.fun_tnt.restoration": "Esasy dikeldiş TNT",
   "fun_tnt.sly_withers_lately.reference": "Bölünmezlige synanyşanyňyzda gaty salkyn bolmak hökman däl",
   "fun_tnt.too_late": "Indi gaty giç ...",
@@ -24,6 +26,7 @@
   "item.fun_tnt.gravity": "Agyrlyk TNT",
   "item.fun_tnt.lately": "Pişik partiýasy TNT",
   "item.fun_tnt.nuke": "NUKE !!!",
+  "item.fun_tnt.paint": "TNT boýag",
   "item.fun_tnt.restoration": "Dikeltmek TNT",
   "item.fun_tnt.trip_mine": "Mina syýahaty",
   "itemGroup.fun_tnt": "Gyzykly TNT"

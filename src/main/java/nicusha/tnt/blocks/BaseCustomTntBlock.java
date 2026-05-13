@@ -114,6 +114,14 @@ public class BaseCustomTntBlock extends TntBlock {
         return super.updateShape(state, level, ticks, pos, directionToNeighbour, neighbourPos, neighbourState, random);
     }
 
+    public int getFuseTime() {
+        return fuseTime;
+    }
+
+    public TntFactory<? extends PrimedTnt> getEntityFactory() {
+        return entityFactory;
+    }
+
     @FunctionalInterface
     public interface TntFactory<T extends PrimedTnt> {
         T create(Level level, double x, double y, double z, @Nullable LivingEntity igniter);

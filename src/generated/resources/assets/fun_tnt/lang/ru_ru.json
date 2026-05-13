@@ -5,6 +5,7 @@
   "block.fun_tnt.gravity": "Гравитационный ТНТ",
   "block.fun_tnt.lately": "Кошачья вечеринка ТНТ",
   "block.fun_tnt.nuke": "ЯДЕРНЫЙ!!!",
+  "block.fun_tnt.paint": "Краска ТНТ",
   "block.fun_tnt.restoration": "Восстановление ТНТ",
   "block.fun_tnt.trip_mine": "Триповая шахта",
   "death.attack.fun_tnt.nuke": "%1$s был уничтожен ядерным взрывом",
@@ -14,6 +15,7 @@
   "entity.fun_tnt.gravity": "Заряженный гравитационный тротил",
   "entity.fun_tnt.lately": "Праймированная кошачья вечеринка TNT",
   "entity.fun_tnt.nuke": "Если ты можешь это прочитать, то уже слишком поздно",
+  "entity.fun_tnt.paint": "Грунтованная краска ТНТ",
   "entity.fun_tnt.restoration": "Праймированное восстановление ТНТ",
   "fun_tnt.sly_withers_lately.reference": "Тебе не обязательно сохранять хладнокровие, когда пытаешься не сломаться.",
   "fun_tnt.too_late": "Теперь уже слишком поздно...",
@@ -24,6 +26,7 @@
   "item.fun_tnt.gravity": "Гравитационный ТНТ",
   "item.fun_tnt.lately": "Кошачья вечеринка ТНТ",
   "item.fun_tnt.nuke": "ЯДЕРНЫЙ!!!",
+  "item.fun_tnt.paint": "Краска ТНТ",
   "item.fun_tnt.restoration": "Восстановление ТНТ",
   "item.fun_tnt.trip_mine": "Триповая шахта",
   "itemGroup.fun_tnt": "Веселый ТНТ"

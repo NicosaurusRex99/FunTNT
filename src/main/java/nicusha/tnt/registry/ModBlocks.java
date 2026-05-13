@@ -12,6 +12,7 @@ import net.neoforged.neoforge.registries.DeferredBlock;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.blocks.BaseCustomTntBlock;
+import nicusha.tnt.blocks.PaintTntBlock;
 import nicusha.tnt.blocks.TripMineBlock;
 import nicusha.tnt.entities.*;
 
@@ -28,6 +29,7 @@ public class ModBlocks {
     public static final DeferredBlock<TripMineBlock> TRIP_MINE = registerBlock("trip_mine", () -> new TripMineBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE).strength(0.5f).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, "trip_mine")))));
     public static final DeferredBlock<Block> RESTORATION = registerTnt("restoration", RestorationTntEntity::new, 100);
     public static final DeferredBlock<Block> LATELY = registerTnt("lately", LatelyEntity::new, 10);
+    public static final DeferredBlock<Block> PAINT = registerBlock("paint", () -> new PaintTntBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, "paint"))), PaintTntEntity::new, 100));
 
     private static DeferredBlock<Block> registerTnt(String name, BaseCustomTntBlock.TntFactory<?> factory, int fuse) {
         return registerBlock(name, () -> new BaseCustomTntBlock(Block.Properties.ofFullCopy(Blocks.TNT).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, name))), factory, fuse));

@@ -5,6 +5,7 @@
   "block.fun_tnt.gravity": "الجاذبية تي ان تي",
   "block.fun_tnt.lately": "حزب القط تي ان تي",
   "block.fun_tnt.nuke": "نووي!!!",
+  "block.fun_tnt.paint": "طلاء تي ان تي",
   "block.fun_tnt.restoration": "استعادة مادة تي ان تي",
   "block.fun_tnt.trip_mine": "رحلة الألغام",
   "death.attack.fun_tnt.nuke": "تم تدمير %1$s بواسطة انفجار نووي",
@@ -14,6 +15,7 @@
   "entity.fun_tnt.gravity": "معدة الجاذبية TNT",
   "entity.fun_tnt.lately": "معدة حزب القط تي ان تي",
   "entity.fun_tnt.nuke": "إذا كنت تستطيع قراءة هذا، فقد فات الأوان",
+  "entity.fun_tnt.paint": "طلاء معبأ بمادة تي إن تي",
   "entity.fun_tnt.restoration": "استعادة معدة تي ان تي",
   "fun_tnt.sly_withers_lately.reference": "ليس عليك أن تظل هادئًا جدًا عندما تحاول عدم الانهيار",
   "fun_tnt.too_late": "لقد فات الأوان الآن...",
@@ -24,6 +26,7 @@
   "item.fun_tnt.gravity": "الجاذبية تي ان تي",
   "item.fun_tnt.lately": "حزب القط تي ان تي",
   "item.fun_tnt.nuke": "نووي!!!",
+  "item.fun_tnt.paint": "طلاء تي ان تي",
   "item.fun_tnt.restoration": "استعادة مادة تي ان تي",
   "item.fun_tnt.trip_mine": "رحلة الألغام",
   "itemGroup.fun_tnt": "تي ان تي الممتعة"

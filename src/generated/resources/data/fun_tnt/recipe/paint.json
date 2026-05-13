@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "D": "#minecraft:dyes",
+    "P": "minecraft:paper",
+    "T": "minecraft:tnt"
+  },
+  "pattern": [
+    "DPD",
+    "PTP",
+    "DPD"
+  ],
+  "result": {
+    "id": "fun_tnt:paint"
+  }
+}
