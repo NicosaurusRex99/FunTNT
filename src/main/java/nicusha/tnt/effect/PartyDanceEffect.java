@@ -6,6 +6,7 @@ import net.minecraft.world.effect.MobEffect;
 import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.Mob;
+import net.minecraft.world.level.GameType;
 import nicusha.tnt.network.payload.SpinPlayerPayload;
 
 public class PartyDanceEffect extends MobEffect {
@@ -19,6 +20,11 @@ public class PartyDanceEffect extends MobEffect {
         float spinAmount = 15.0F;
 
         if (entity instanceof ServerPlayer serverPlayer) {
+            GameType gameMode = serverPlayer.gameMode.getGameModeForPlayer();
+                if(gameMode.isCreative() || gameMode == GameType.SPECTATOR){
+                    return true;
+                }
+
             serverPlayer.connection.send(new SpinPlayerPayload(spinAmount));
 
             float serverNewYRot = (serverPlayer.getYRot() + spinAmount) % 360.0F;
