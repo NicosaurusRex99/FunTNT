@@ -71,6 +71,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto("death.attack." + FunTNT.MODID + ".nuke", "%1$s was obliterated by a Nuclear Blast");
         addAuto(FunTNT.MODID + ".sly_withers_lately.reference", "You don't have to stay so cool when you're trying not to break down");
         addAuto("item.fun_tnt.party_music_disc.desc", "Free Sounds Library - Party Blast");
+        addAuto("effect.fun_tnt.party_dance", "Party Fever!");
         addAuto(ModEffects.PARTY_DANCE.get(), "Party Fever");
     }
 

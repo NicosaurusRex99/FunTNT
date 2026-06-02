@@ -1,7 +1,10 @@
 package nicusha.tnt.entities;
 
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.Identifier;
 import net.minecraft.sounds.SoundSource;
+import net.minecraft.tags.TagKey;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.entity.EntityReference;
 import net.minecraft.world.entity.EntityType;
@@ -46,20 +49,17 @@ public class PartyTntEntity extends PrimedTnt {
         this.level().playSound(null, pos, ModSounds.PARTY_BLAST.get(), SoundSource.RECORDS, 4.0F, 1.0F);
 
         AABB partyZone = new AABB(pos).inflate(Config.PARTY_RADIUS.get());
-        List<Mob> partyGoers = this.level().getEntitiesOfClass(Mob.class, partyZone);
+        List<LivingEntity> partyGoers = this.level().getEntitiesOfClass(LivingEntity.class, partyZone);
 
-        for (Mob mob : partyGoers) {
+        for (LivingEntity mob : partyGoers) {
             mob.addEffect(new MobEffectInstance(ModEffects.PARTY_DANCE.getDelegate(), 2200, 0, false, false));
-
-            mob.setTarget(null);
-            if (mob.getAttribute(Attributes.MOVEMENT_SPEED) != null) {
-                mob.getNavigation().stop();
-            }
         }
 
         List<ItemEntity> droppedItems = this.level().getEntitiesOfClass(ItemEntity.class, partyZone);
         for (ItemEntity itemEntity : droppedItems) {
-            itemEntity.setItem(ModItems.PARTY_MUSIC_DISC.toStack());
+            if(itemEntity.getItem().is(TagKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath("c", "music_discs")))) {
+                itemEntity.setItem(ModItems.PARTY_MUSIC_DISC.toStack());
+            }
         }
 
         this.discard();
