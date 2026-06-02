@@ -8,10 +8,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.LanguageProvider;
 import nicusha.tnt.FunTNT;
+import nicusha.tnt.registry.*;
 import nicusha.tnt.utils.Utils;
-import nicusha.tnt.registry.ModBlocks;
-import nicusha.tnt.registry.ModEntities;
-import nicusha.tnt.registry.ModItems;
 
 import java.io.Reader;
 import java.nio.file.Files;
@@ -42,6 +40,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.RESTORATION, "Restoration TNT");
         addAuto(ModBlocks.LATELY, "Cat Party TNT");
         addAuto(ModBlocks.PAINT, "Paint TNT");
+        addAuto(ModBlocks.PARTY, "Party TNT");
 
         addAuto(ModBlocks.BABY_BOOMER.get().asItem(), "Baby Boomer TNT");
         addAuto(ModBlocks.NUKE.get().asItem(), "NUKE!!!");
@@ -53,6 +52,8 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.RESTORATION.asItem(), "Restoration TNT");
         addAuto(ModBlocks.LATELY.asItem(), "Cat Party TNT");
         addAuto(ModBlocks.PAINT.asItem(), "Paint TNT");
+        addAuto(ModBlocks.PARTY.asItem(), "Party TNT");
+        addAuto(ModItems.PARTY_MUSIC_DISC.asItem(), "Party Blast");
 
         addAuto(ModEntities.FERTILIZER.get(), "Primed Fertilizer TNT");
         addAuto(ModEntities.BABY_BOOMER.get(), "Primed Baby Boomer");
@@ -62,11 +63,15 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModEntities.RESTORATION.get(), "Primed Restoration TNT");
         addAuto(ModEntities.LATELY, "Primed Cat Party TNT");
         addAuto(ModEntities.PAINT, "Primed Paint TNT");
+        addAuto(ModEntities.PARTY, "Party TNT");
+        addAuto(ModSounds.PARTY_BLAST, "Party Blast");
 
         addAuto("itemGroup." + FunTNT.MODID, "Fun TNT");
         addAuto(FunTNT.MODID + ".too_late", "It is too late now...");
         addAuto("death.attack." + FunTNT.MODID + ".nuke", "%1$s was obliterated by a Nuclear Blast");
         addAuto(FunTNT.MODID + ".sly_withers_lately.reference", "You don't have to stay so cool when you're trying not to break down");
+        addAuto("item.fun_tnt.party_music_disc.desc", "Free Sounds Library - Party Blast");
+        addAuto(ModEffects.PARTY_DANCE.get(), "Party Fever");
     }
 
     private void addAuto(Object key, String englishValue) {

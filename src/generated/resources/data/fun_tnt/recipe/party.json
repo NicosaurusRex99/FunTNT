@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": "minecraft:cyan_dye",
+    "D": "#c:music_discs",
+    "M": "minecraft:magenta_dye",
+    "P": "minecraft:paper",
+    "T": "minecraft:tnt"
+  },
+  "pattern": [
+    "MDM",
+    "CTC",
+    "MPM"
+  ],
+  "result": {
+    "id": "fun_tnt:party"
+  }
+}

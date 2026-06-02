@@ -32,6 +32,7 @@ public class ClientEvents {
         event.registerEntityRenderer(ModEntities.RESTORATION.get(), context -> new GenericTntRenderer(context, ModBlocks.RESTORATION));
         event.registerEntityRenderer(ModEntities.LATELY.get(), context -> new GenericTntRenderer(context, ModBlocks.LATELY));
         event.registerEntityRenderer(ModEntities.PAINT.get(), context -> new PaintTntEntityRenderer(context));
+        event.registerEntityRenderer(ModEntities.PARTY.get(), context -> new GenericTntRenderer(context, ModBlocks.PARTY));
 
         event.registerEntityRenderer(ModEntities.DYNAMITE.get(), ThrownItemRenderer::new);
     }

@@ -20,10 +20,10 @@ public class ModDamageTypeProvider extends DatapackBuiltinEntriesProvider {
     public static final ResourceKey<DamageType> NUKE = ResourceKey.create(Registries.DAMAGE_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "nuke"));
 
     public ModDamageTypeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, new RegistrySetBuilder().add(Registries.DAMAGE_TYPE, ModDamageTypeProvider::bootstrap), Set.of(FunTNT.MODID));
+        super(output, registries, new RegistrySetBuilder().add(Registries.DAMAGE_TYPE, ModDamageTypeProvider::bootstrap).add(Registries.JUKEBOX_SONG, ModJukeboxSongProvider::bootstrap), Set.of(FunTNT.MODID));
     }
 
     private static void bootstrap(BootstrapContext<DamageType> context) {
-        context.register(NUKE, new DamageType("funtnt.nuke", DamageScaling.ALWAYS, 0.1F));
+        context.register(NUKE, new DamageType(FunTNT.MODID + ".nuke", DamageScaling.ALWAYS, 0.1F));
     }
 }

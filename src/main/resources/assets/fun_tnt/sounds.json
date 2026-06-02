@@ -1,0 +1,11 @@
+{
+  "music_disc.party_blast": {
+    "category": "record",
+    "sounds": [
+      {
+        "name": "fun_tnt:music/party_blast",
+        "stream": true
+      }
+    ]
+  }
+}

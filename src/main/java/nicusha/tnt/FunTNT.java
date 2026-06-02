@@ -20,6 +20,8 @@ public class FunTNT {
         ModItems.ITEMS.register(bus);
         ModCreativeTabs.TABS.register(bus);
         ModEntities.ENTITIES.register(bus);
+        ModSounds.SOUND_EVENTS.register(bus);
+        ModEffects.MOB_EFFECTS.register(bus);
         bus.addListener(this::addCreative);
         bus.addListener(DataGenerators::genData);
         if (FMLEnvironment.getDist().isClient()) {

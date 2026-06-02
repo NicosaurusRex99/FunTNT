@@ -1,0 +1,10 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "item.fun_tnt.party_music_disc.desc"
+  },
+  "length_in_seconds": 110.0,
+  "sound_event": {
+    "sound_id": "fun_tnt:music_disc.party_blast"
+  }
+}

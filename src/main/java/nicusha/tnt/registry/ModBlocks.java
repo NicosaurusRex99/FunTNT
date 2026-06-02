@@ -30,6 +30,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> RESTORATION = registerTnt("restoration", RestorationTntEntity::new, 100);
     public static final DeferredBlock<Block> LATELY = registerTnt("lately", LatelyEntity::new, 10);
     public static final DeferredBlock<Block> PAINT = registerBlock("paint", () -> new PaintTntBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, "paint"))), PaintTntEntity::new, 100));
+    public static final DeferredBlock<Block> PARTY = registerTnt("party", PartyTntEntity::new, 40);
 
     private static DeferredBlock<Block> registerTnt(String name, BaseCustomTntBlock.TntFactory<?> factory, int fuse) {
         return registerBlock(name, () -> new BaseCustomTntBlock(Block.Properties.ofFullCopy(Blocks.TNT).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, name))), factory, fuse));

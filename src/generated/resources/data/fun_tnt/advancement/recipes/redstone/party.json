@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_party_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "fun_tnt:party_blast"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "fun_tnt:party"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_party_disc"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "fun_tnt:party"
+    ]
+  }
+}
