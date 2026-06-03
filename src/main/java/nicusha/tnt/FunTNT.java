@@ -3,6 +3,7 @@ package nicusha.tnt;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.config.ModConfig;
 import net.neoforged.fml.loading.FMLEnvironment;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.event.BuildCreativeModeTabContentsEvent;
 import nicusha.tnt.client.ClientEvents;
 import nicusha.tnt.data.DataGenerators;
@@ -28,6 +29,7 @@ public class FunTNT {
         if (FMLEnvironment.getDist().isClient()) {
             bus.addListener(ClientEvents::registerRenderers);
             bus.addListener(ClientEvents::registerBlockColors);
+            NeoForge.EVENT_BUS.addListener(ClientEvents::onItemTooltip);
         }
         bus.addListener(NetworkingRegistration::registerPackets);
         container.registerConfig(ModConfig.Type.COMMON, Config.SPEC);

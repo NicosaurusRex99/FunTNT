@@ -30,7 +30,7 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         var ice = commonTag("ice");
         var musicDiscs = commonTag("music_discs");
 
-        tag(explosives).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModItems.DYNAMITE.get()).add(ModBlocks.CRYO.asItem()).add(ModBlocks.GRAVITY.asItem()).add(ModBlocks.PAINT.asItem()).add(ModBlocks.PARTY.asItem());
+        tag(explosives).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModItems.DYNAMITE.get()).add(ModBlocks.CRYO.asItem()).add(ModBlocks.GRAVITY.asItem()).add(ModBlocks.PAINT.asItem()).add(ModBlocks.PARTY.asItem()).add(ModBlocks.THERMAL_FORGE.asItem());
         tag(tnt).add(ModBlocks.BABY_BOOMER.asItem()).add(ModBlocks.NUKE.asItem()).add(ModBlocks.FERTILIZER.asItem()).add(ModBlocks.CRYO.asItem()).add(ModBlocks.GRAVITY.asItem()).add(ModBlocks.PAINT.asItem()).add(ModBlocks.PARTY.asItem());
         tag(ice).add(Items.ICE).add(Items.BLUE_ICE).add(Items.PACKED_ICE);
         tag(musicDiscs).add(ModItems.PARTY_MUSIC_DISC.get());

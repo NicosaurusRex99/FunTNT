@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "F": "minecraft:furnace",
+    "T": "minecraft:tnt"
+  },
+  "pattern": [
+    " F ",
+    "FTF",
+    " F "
+  ],
+  "result": {
+    "count": 4,
+    "id": "fun_tnt:thermal_forge"
+  }
+}

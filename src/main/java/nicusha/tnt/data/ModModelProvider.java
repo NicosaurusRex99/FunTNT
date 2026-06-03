@@ -35,6 +35,7 @@ public class ModModelProvider extends ModelProvider {
         registerTnt(ModBlocks.RESTORATION.get(), blockModels);
         registerTnt(ModBlocks.LATELY.get(), blockModels);
         registerTnt(ModBlocks.PARTY.get(), blockModels);
+        registerTnt(ModBlocks.THERMAL_FORGE.get(), blockModels);
         registerPaintTnt(ModBlocks.PAINT.get(), blockModels);
         itemModels.generateFlatItem(ModItems.DYNAMITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PARTY_MUSIC_DISC.get(), ModelTemplates.MUSIC_DISC);

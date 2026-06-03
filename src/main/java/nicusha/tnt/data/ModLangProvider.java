@@ -41,6 +41,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.LATELY, "Cat Party TNT");
         addAuto(ModBlocks.PAINT, "Paint TNT");
         addAuto(ModBlocks.PARTY, "Party TNT");
+        addAuto(ModBlocks.THERMAL_FORGE, "Thermal Forge TNT");
 
         addAuto(ModBlocks.BABY_BOOMER.get().asItem(), "Baby Boomer TNT");
         addAuto(ModBlocks.NUKE.get().asItem(), "NUKE!!!");
@@ -54,6 +55,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.PAINT.asItem(), "Paint TNT");
         addAuto(ModBlocks.PARTY.asItem(), "Party TNT");
         addAuto(ModItems.PARTY_MUSIC_DISC.asItem(), "Party Blast");
+        addAuto(ModBlocks.THERMAL_FORGE.asItem(), "Thermal Forge TNT");
 
         addAuto(ModEntities.FERTILIZER.get(), "Primed Fertilizer TNT");
         addAuto(ModEntities.BABY_BOOMER.get(), "Primed Baby Boomer");
@@ -63,8 +65,8 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModEntities.RESTORATION.get(), "Primed Restoration TNT");
         addAuto(ModEntities.LATELY, "Primed Cat Party TNT");
         addAuto(ModEntities.PAINT, "Primed Paint TNT");
-        addAuto(ModEntities.PARTY, "Party TNT");
-        addAuto(ModSounds.PARTY_BLAST, "Party Blast");
+        addAuto(ModEntities.PARTY, "Primed Party TNT");
+        addAuto(ModEntities.THERMAL_FORGE, "Primed Thermal Forge TNT");
 
         addAuto("itemGroup." + FunTNT.MODID, "Fun TNT");
         addAuto(FunTNT.MODID + ".too_late", "It is too late now...");
@@ -73,6 +75,18 @@ public class ModLangProvider extends LanguageProvider {
         addAuto("item.fun_tnt.party_music_disc.desc", "Free Sounds Library - Party Blast");
         addAuto("effect.fun_tnt.party_dance", "Party Fever!");
         addAuto(ModEffects.PARTY_DANCE.get(), "Party Fever");
+        addAuto(ModSounds.PARTY_BLAST, "Party Blast");
+        addAuto("tooltip.fun_tnt.fertilizer.description", "Explodes into a burst of nutrients, instantly growing nearby crops and spreading flora.");
+        addAuto("tooltip.fun_tnt.nuke.description", "A catastrophic explosive that leaves a massive crater and flash-evaporates nearby water sources.");
+        addAuto("tooltip.fun_tnt.baby_boomer.description", "Converts all mobs into their baby variants.");
+        addAuto("tooltip.fun_tnt.cryo.description", "Unleashes a sub-zero shockwave, freezing water blocks into ice and trapping entities in frost.");
+        addAuto("tooltip.fun_tnt.gravity.description", "Distorts local physics upon detonation, forcefully pulling or launching all nearby entities.");
+        addAuto("tooltip.fun_tnt.trip_mine.description", "A stealthy, stone-disguised explosive device that detonates instantly when stepped off.");
+        addAuto("tooltip.fun_tnt.restoration.description", "A specialized anomaly charge that completely reverts explosion and terrain damage in its blast radius.");
+        addAuto("tooltip.fun_tnt.lately.description", "You might just have to detonate this one to find out!");
+        addAuto("tooltip.fun_tnt.paint.description", "Splashes a burst of colorful pigments across blocks and entities in its blast zone upon detonating.");
+        addAuto("tooltip.fun_tnt.party.description", "Triggers a server-authoritative dance rave, spinning nearby survival players and mobs to the beat. Also converts all music discs to the new track!");
+        addAuto("tooltip.fun_tnt.thermal_forge.description", "Emits an intense localized heatwave that cleanly smelts ore blocks into refined materials with Fortune I yields.");
     }
 
     private void addAuto(Object key, String englishValue) {

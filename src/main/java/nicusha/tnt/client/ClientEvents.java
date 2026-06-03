@@ -1,16 +1,18 @@
 package nicusha.tnt.client;
 
-import com.mojang.serialization.MapCodec;
-import net.minecraft.client.color.block.BlockColors;
 import net.minecraft.client.color.block.BlockTintSource;
-import net.minecraft.client.renderer.block.BlockAndTintGetter;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
-import net.minecraft.core.BlockPos;
-import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.resources.Identifier;
+import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.state.properties.Property;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.event.RegisterColorHandlersEvent;
+import net.neoforged.neoforge.event.entity.player.ItemTooltipEvent;
+import nicusha.tnt.FunTNT;
 import nicusha.tnt.blocks.PaintTntBlock;
 import nicusha.tnt.client.renderer.GenericTntRenderer;
 import nicusha.tnt.client.renderer.PaintTntEntityRenderer;
@@ -33,6 +35,7 @@ public class ClientEvents {
         event.registerEntityRenderer(ModEntities.LATELY.get(), context -> new GenericTntRenderer(context, ModBlocks.LATELY));
         event.registerEntityRenderer(ModEntities.PAINT.get(), context -> new PaintTntEntityRenderer(context));
         event.registerEntityRenderer(ModEntities.PARTY.get(), context -> new GenericTntRenderer(context, ModBlocks.PARTY));
+        event.registerEntityRenderer(ModEntities.THERMAL_FORGE.get(), context -> new GenericTntRenderer(context, ModBlocks.THERMAL_FORGE));
 
         event.registerEntityRenderer(ModEntities.DYNAMITE.get(), ThrownItemRenderer::new);
     }
@@ -53,5 +56,18 @@ public class ClientEvents {
             }
         };
         event.register(List.of(paintSource), ModBlocks.PAINT.get());
+    }
+
+    @SubscribeEvent
+    public static void onItemTooltip(final ItemTooltipEvent event) {
+        Item item = event.getItemStack().getItem();
+        if (item instanceof BlockItem) {
+            Identifier registryName = BuiltInRegistries.ITEM.getKey(item);
+            if (registryName != null && registryName.getNamespace().equals(FunTNT.MODID)) {
+                String blockId = registryName.getPath();
+                String tooltipKey = "tooltip." + FunTNT.MODID + "." + blockId + ".description";
+                event.getToolTip().add(Component.translatable(tooltipKey).withStyle(net.minecraft.ChatFormatting.GRAY));
+            }
+        }
     }
 }
