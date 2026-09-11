@@ -32,16 +32,11 @@ public class VolcanoTntBlock extends BaseCustomTntBlock {
     private static void primeVolcanoTnt(Level level, BlockPos pos, @Nullable LivingEntity igniter) {
         if (!level.isClientSide()) {
             VolcanoEntity tnt = new VolcanoEntity(ModEntities.VOLCANO_TNT.get(), level);
-
-            // The block position is the single authoritative anchor.
-            // Do not let VolcanoEntity try to discover the anchor from terrain.
             tnt.setPos(pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D);
             tnt.setOriginPos(pos);
-
             if (igniter != null) {
                 tnt.owner = EntityReference.of(igniter);
             }
-
             level.addFreshEntity(tnt);
             level.playSound(null, tnt.getX(), tnt.getY(), tnt.getZ(),
                     SoundEvents.TNT_PRIMED, SoundSource.BLOCKS, 1.0F, 0.8F);
@@ -57,11 +52,8 @@ public class VolcanoTntBlock extends BaseCustomTntBlock {
     }
 
     @Override
-    protected void neighborChanged(BlockState state, Level level, BlockPos pos, Block block,
-                                   @org.jspecify.annotations.Nullable Orientation orientation,
-                                   boolean movedByPiston) {
+    protected void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, @Nullable Orientation orientation, boolean movedByPiston) {
         super.neighborChanged(state, level, pos, block, orientation, movedByPiston);
-
         if (level.hasNeighborSignal(pos)) {
             primeVolcanoTnt(level, pos, null);
             level.removeBlock(pos, false);
@@ -69,8 +61,7 @@ public class VolcanoTntBlock extends BaseCustomTntBlock {
     }
 
     @Override
-    protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos,
-                                          Player player, InteractionHand hand, BlockHitResult hitResult) {
+    protected InteractionResult useItemOn(ItemStack stack, BlockState state, Level level, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hitResult) {
         if (stack.is(Items.FLINT_AND_STEEL) || stack.is(Items.FIRE_CHARGE)) {
             primeVolcanoTnt(level, pos, player);
             level.setBlock(pos, Blocks.AIR.defaultBlockState(), 11);
@@ -82,17 +73,14 @@ public class VolcanoTntBlock extends BaseCustomTntBlock {
                     stack.shrink(1);
                 }
             }
-
             return InteractionResult.SUCCESS;
         }
-
         return super.useItemOn(stack, state, level, pos, player, hand, hitResult);
     }
 
     @Override
     public void wasExploded(ServerLevel level, BlockPos pos, Explosion explosion) {
         super.wasExploded(level, pos, explosion);
-
         if (!level.isClientSide()) {
             VolcanoEntity tnt = new VolcanoEntity(ModEntities.VOLCANO_TNT.get(), level);
             tnt.setPos(pos.getX() + 0.5D, pos.getY(), pos.getZ() + 0.5D);

@@ -53,10 +53,8 @@ public class ModModelProvider extends ModelProvider {
 
     private void registerVolcanoTnt(Block block, BlockModelGenerators generators) {
         Identifier modelId = ModelLocationUtils.getModelLocation(block);
-
         generators.modelOutput.accept(modelId, () -> {
             JsonObject json = new JsonObject();
-
             JsonObject texObj = new JsonObject();
             texObj.addProperty("0", "minecraft:block/tnt_side");
             texObj.addProperty("1", "minecraft:block/tnt_bottom");
@@ -66,40 +64,31 @@ public class ModModelProvider extends ModelProvider {
             texObj.addProperty("5", "minecraft:block/lava_still");
             texObj.addProperty("particle", "minecraft:block/tnt_side");
             json.add("textures", texObj);
-
             json.add("elements", createVolcanoElements());
-
             JsonObject display = new JsonObject();
-
             JsonObject gui = new JsonObject();
             gui.add("rotation", Stream.of(30, 225, 0).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
             gui.add("translation", Stream.of(0, -1, 0).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
             gui.add("scale", Stream.of(0.55, 0.55, 0.55).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
             display.add("gui", gui);
-
             JsonObject thirdperson = new JsonObject();
             thirdperson.add("rotation", Stream.of(75, 45, 0).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
             thirdperson.add("translation", Stream.of(0, 2.5, 0).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
             thirdperson.add("scale", Stream.of(0.375, 0.375, 0.375).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
             display.add("thirdperson_righthand", thirdperson);
-
             JsonObject firstperson = new JsonObject();
             firstperson.add("rotation", Stream.of(0, 45, 0).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
             firstperson.add("scale", Stream.of(0.4, 0.4, 0.4).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
             display.add("firstperson_righthand", firstperson);
-
             json.add("display", display);
-
             return json;
         });
-
         generators.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(block, BlockModelGenerators.plainVariant(modelId)));
         generators.registerSimpleItemModel(block, modelId);
     }
 
     private JsonArray createVolcanoElements() {
         JsonArray elements = new JsonArray();
-
         JsonObject tntBase = new JsonObject();
         tntBase.addProperty("name", "tnt_base");
         tntBase.add("from", Stream.of(0, 0, 0).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
@@ -113,7 +102,6 @@ public class ModModelProvider extends ModelProvider {
         baseFaces.add("down",  createFace(new double[]{0, 0, 16, 16}, "#1"));
         tntBase.add("faces", baseFaces);
         elements.add(tntBase);
-
         JsonObject basaltSkirt = new JsonObject();
         basaltSkirt.addProperty("name", "basalt_skirt");
         basaltSkirt.add("from", Stream.of(-0.5, 0, -0.5).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
@@ -126,7 +114,6 @@ public class ModModelProvider extends ModelProvider {
         skirtFaces.add("up",    createFace(new double[]{0, 0, 16, 16}, "#3"));
         basaltSkirt.add("faces", skirtFaces);
         elements.add(basaltSkirt);
-
         JsonObject midCone = new JsonObject();
         midCone.addProperty("name", "volcano_mid_cone");
         midCone.add("from", Stream.of(1, 8, 1).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
@@ -139,7 +126,6 @@ public class ModModelProvider extends ModelProvider {
         midFaces.add("up",    createFace(new double[]{1, 1, 15, 15}, "#3"));
         midCone.add("faces", midFaces);
         elements.add(midCone);
-
         JsonObject topPeak = new JsonObject();
         topPeak.addProperty("name", "volcano_top_peak");
         topPeak.add("from", Stream.of(3, 12, 3).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
@@ -152,7 +138,6 @@ public class ModModelProvider extends ModelProvider {
         topFaces.add("up",    createFace(new double[]{3, 3, 13, 13}, "#3"));
         topPeak.add("faces", topFaces);
         elements.add(topPeak);
-
         JsonObject craterRim = new JsonObject();
         craterRim.addProperty("name", "crater_rim");
         craterRim.add("from", Stream.of(4, 15, 4).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
@@ -165,7 +150,6 @@ public class ModModelProvider extends ModelProvider {
         rimFaces.add("up",    createFace(new double[]{4, 4, 12, 12}, "#3"));
         craterRim.add("faces", rimFaces);
         elements.add(craterRim);
-
         JsonObject lavaCore = new JsonObject();
         lavaCore.addProperty("name", "lava_core");
         lavaCore.add("from", Stream.of(5, 12, 5).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
@@ -178,7 +162,6 @@ public class ModModelProvider extends ModelProvider {
         lavaFaces.add("up",    createFace(new double[]{5, 5, 11, 11}, "#5"));
         lavaCore.add("faces", lavaFaces);
         elements.add(lavaCore);
-
         JsonObject magmaPeak = new JsonObject();
         magmaPeak.addProperty("name", "bubbling_magma_peak");
         magmaPeak.add("from", Stream.of(7, 17, 7).collect(JsonArray::new, JsonArray::add, JsonArray::addAll));
@@ -191,7 +174,6 @@ public class ModModelProvider extends ModelProvider {
         magmaFaces.add("up",    createFace(new double[]{7, 7, 9, 9}, "#5"));
         magmaPeak.add("faces", magmaFaces);
         elements.add(magmaPeak);
-
         return elements;
     }
 
