@@ -25,9 +25,11 @@ public class Config {
     public static final ModConfigSpec.IntValue PARTY_FUSE = BUILDER.comment("Party fuse").comment("The delay from ignition to explosion").defineInRange("partyFuse", 40, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue THERMAL_FORGE_FUSE = BUILDER.comment("Thermal forge fuse").comment("The delay from ignition to explosion").defineInRange("thermalForgeFuse", 60, 0, Integer.MAX_VALUE);
 
-
-    public static final ModConfigSpec.IntValue PARTY_DURATION = BUILDER.comment("Party duration").comment("The duration of the party in ticks").defineInRange("partyDuration", 2200, 0, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue VOLCANO_HEIGHT = BUILDER.comment("Volcano target height in blocks/layers").defineInRange("volcanoHeight", 14, 3, 64);
+    public static final ModConfigSpec.IntValue VOLCANO_BASE_RADIUS = BUILDER.comment("Volcano base radius in blocks").comment("Higher values create a wider base footprint").defineInRange("volcanoBaseRadius", 38, 4, 128);
+    public static final ModConfigSpec.IntValue VOLCANO_VENTING_TICKS = BUILDER.comment("Smoke venting phase duration in ticks before cone construction").defineInRange("volcanoVentingTicks", 80, 10, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue VOLCANO_ERUPTION_TICKS = BUILDER.comment("Eruption phase duration in ticks launching magma bombs").defineInRange("volcanoEruptionTicks", 240, 20, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue VOLCANO_TICKS_PER_LAYER = BUILDER.comment("Delay in ticks per layer placement during cone construction").defineInRange("volcanoTicksPerLayer", 5, 1, 100);
 
     static final ModConfigSpec SPEC = BUILDER.build();
-
 }

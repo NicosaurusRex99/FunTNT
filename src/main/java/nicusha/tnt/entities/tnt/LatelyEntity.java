@@ -1,4 +1,4 @@
-package nicusha.tnt.entities;
+package nicusha.tnt.entities.tnt;
 
 import net.minecraft.ChatFormatting;
 import net.minecraft.core.BlockPos;

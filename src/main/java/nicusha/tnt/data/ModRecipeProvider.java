@@ -31,5 +31,6 @@ public class ModRecipeProvider extends RecipeProvider {
         shaped(RecipeCategory.REDSTONE, ModBlocks.PAINT.get()).define('T', Items.TNT).define('D', ItemTags.DYES).define('P', Items.PAPER).pattern("DPD").pattern("PTP").pattern("DPD").unlockedBy("has_tnt", has(Items.TNT)).save(output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.PARTY.get()).pattern("MDM").pattern("CTC").pattern("MPM").define('T', Items.TNT).define('D', ItemTags.create(Identifier.fromNamespaceAndPath("c", "music_discs"))).define('M', Items.MAGENTA_DYE).define('C', Items.CYAN_DYE).define('P', Items.PAPER).unlockedBy("has_party_disc", this.has(ModItems.PARTY_MUSIC_DISC.get())).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.THERMAL_FORGE.get(), 4).pattern(" F ").pattern("FTF").pattern(" F ").define('T', Blocks.TNT).define('F', Blocks.FURNACE).unlockedBy("has_tnt", has(Blocks.TNT)).save(this.output);
+        shaped(RecipeCategory.REDSTONE, ModBlocks.VOLCANO.get()).pattern("BLB").pattern("MTM").pattern("BBB").define('B', Blocks.BASALT).define('M', Blocks.MAGMA_BLOCK).define('L', Items.LAVA_BUCKET).define('T', Items.TNT).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
     }
 }

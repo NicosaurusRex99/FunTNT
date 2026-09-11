@@ -42,6 +42,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.PAINT, "Paint TNT");
         addAuto(ModBlocks.PARTY, "Party TNT");
         addAuto(ModBlocks.THERMAL_FORGE, "Thermal Forge TNT");
+        addAuto(ModBlocks.VOLCANO, "Volcano TNT");
 
         addAuto(ModBlocks.BABY_BOOMER.get().asItem(), "Baby Boomer TNT");
         addAuto(ModBlocks.NUKE.get().asItem(), "NUKE!!!");
@@ -56,6 +57,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModBlocks.PARTY.asItem(), "Party TNT");
         addAuto(ModItems.PARTY_MUSIC_DISC.asItem(), "Party Blast");
         addAuto(ModBlocks.THERMAL_FORGE.asItem(), "Thermal Forge TNT");
+        addAuto(ModBlocks.VOLCANO.asItem(), "Volcano TNT");
 
         addAuto(ModEntities.FERTILIZER.get(), "Primed Fertilizer TNT");
         addAuto(ModEntities.BABY_BOOMER.get(), "Primed Baby Boomer");
@@ -67,6 +69,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto(ModEntities.PAINT, "Primed Paint TNT");
         addAuto(ModEntities.PARTY, "Primed Party TNT");
         addAuto(ModEntities.THERMAL_FORGE, "Primed Thermal Forge TNT");
+        addAuto(ModEntities.VOLCANO_TNT, "Primed Volcano TNT");
 
         addAuto("itemGroup." + FunTNT.MODID, "Fun TNT");
         addAuto(FunTNT.MODID + ".too_late", "It is too late now...");
@@ -87,6 +90,7 @@ public class ModLangProvider extends LanguageProvider {
         addAuto("tooltip.fun_tnt.paint.description", "Splashes a burst of colorful pigments across blocks and entities in its blast zone upon detonating.");
         addAuto("tooltip.fun_tnt.party.description", "Triggers a server-authoritative dance rave, spinning nearby survival players and mobs to the beat. Also converts all music discs to the new track!");
         addAuto("tooltip.fun_tnt.thermal_forge.description", "Emits an intense localized heatwave that cleanly smelts ore blocks into refined materials with Fortune I yields.");
+        addAuto("tooltip.fun_tnt.volcano.description", "Sets off a volcanic eruption");
     }
 
     private void addAuto(Object key, String englishValue) {

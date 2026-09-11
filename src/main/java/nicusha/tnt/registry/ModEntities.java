@@ -9,6 +9,7 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 import nicusha.tnt.FunTNT;
 import nicusha.tnt.entities.*;
+import nicusha.tnt.entities.tnt.*;
 
 public class ModEntities {
 
@@ -24,7 +25,8 @@ public class ModEntities {
     public static final DeferredHolder<EntityType<?>, EntityType<PaintTntEntity>> PAINT = ENTITIES.register("paint", () -> EntityType.Builder.<PaintTntEntity>of(PaintTntEntity::new, MobCategory.MISC).sized(0.98F, 0.98F).clientTrackingRange(64).build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "paint"))));
     public static final DeferredHolder<EntityType<?>, EntityType<PartyTntEntity>> PARTY = ENTITIES.register("party", () -> EntityType.Builder.<PartyTntEntity>of(PartyTntEntity::new, MobCategory.MISC).sized(0.98F, 0.98F).clientTrackingRange(64).build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "party"))));
     public static final DeferredHolder<EntityType<?>, EntityType<ThermalForgeTntEntity>> THERMAL_FORGE = ENTITIES.register("thermal_forge", () -> EntityType.Builder.<ThermalForgeTntEntity>of(ThermalForgeTntEntity::new, MobCategory.MISC).sized(0.98F, 0.98F).clientTrackingRange(64).build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "thermal_forge"))));
+    public static final DeferredHolder<EntityType<?>, EntityType<VolcanoEntity>> VOLCANO_TNT = ENTITIES.register("volcano_tnt", () -> EntityType.Builder.<VolcanoEntity>of(VolcanoEntity::new, MobCategory.MISC).sized(0.98F, 0.98F).clientTrackingRange(10).updateInterval(1).build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "volcano_tnt"))));
 
     public static final DeferredHolder<EntityType<?>, EntityType<DynamiteEntity>> DYNAMITE = ENTITIES.register("dynamite", () -> EntityType.Builder.<DynamiteEntity>of(DynamiteEntity::new, MobCategory.MISC).sized(0.1F, 0.1F).clientTrackingRange(64).build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "dynamite"))));
-
+    public static final DeferredHolder<EntityType<?>, EntityType<MagmaBombEntity>> MAGMA_BOMB = ENTITIES.register("magma_bomb", () -> EntityType.Builder.<MagmaBombEntity>of(MagmaBombEntity::new, MobCategory.MISC).sized(0.31F, 0.31F).clientTrackingRange(8).updateInterval(2).build(ResourceKey.create(Registries.ENTITY_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "magma_bomb"))));
 }

@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "Dikeltmek TNT",
   "block.fun_tnt.thermal_forge": "Malylylyk ýasama TNT",
   "block.fun_tnt.trip_mine": "Mina syýahaty",
+  "block.fun_tnt.volcano": "Wulkan TNT",
   "death.attack.fun_tnt.nuke": "% 1adro partlamasy bilen 1 $ s ýok edildi",
   "effect.fun_tnt.party_dance": "Partiýa gyzzyrmasy!",
   "entity.fun_tnt.baby_boomer": "Esasy çaga bumeri",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "Partiýa TNT",
   "entity.fun_tnt.restoration": "Esasy dikeldiş TNT",
   "entity.fun_tnt.thermal_forge": "Esasy termiki ýasama TNT",
+  "entity.fun_tnt.volcano_tnt": "Esasy wulkan TNT",
   "fun_tnt.sly_withers_lately.reference": "Bölünmezlige synanyşanyňyzda gaty salkyn bolmak hökman däl",
   "fun_tnt.too_late": "Indi gaty giç ...",
   "item.fun_tnt.baby_boomer": "Baby Boomer TNT",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "Dikeltmek TNT",
   "item.fun_tnt.thermal_forge": "Malylylyk ýasama TNT",
   "item.fun_tnt.trip_mine": "Mina syýahaty",
+  "item.fun_tnt.volcano": "Wulkan TNT",
   "itemGroup.fun_tnt": "Gyzykly TNT",
   "tooltip.fun_tnt.baby_boomer.description": "Mobhli märekäni çaga görnüşlerine öwürýär.",
   "tooltip.fun_tnt.cryo.description": "Suw bloklaryny buzda doňdurýar we aýazda duzaga düşýän sub-nol zarba tolkunyny çykarýar.",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "Serweriň abraýly tans tolkunyny döredýär, golaýda diri galan oýunçylary we märekäni aýlanýar. ",
   "tooltip.fun_tnt.restoration.description": "Partlama radiusynda partlamany we ýerüsti zeperleri doly yzyna öwürýän ýöriteleşdirilen anomaliýa zarýady.",
   "tooltip.fun_tnt.thermal_forge.description": "Magdan böleklerini arassalaýan materiallara arassa eritýän güýçli lokal ýylylyk tolkunyny çykarýar.",
-  "tooltip.fun_tnt.trip_mine.description": "Gizlin, daşdan gizlenen partlaýjy enjam, çykanda derrew partlaýar."
+  "tooltip.fun_tnt.trip_mine.description": "Gizlin, daşdan gizlenen partlaýjy enjam, çykanda derrew partlaýar.",
+  "tooltip.fun_tnt.volcano.description": "Wulkan atylmagyny başlaýar"
 }

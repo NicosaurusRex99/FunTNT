@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "Restauro TNT",
   "block.fun_tnt.thermal_forge": "TNT della Forgia Termica",
   "block.fun_tnt.trip_mine": "Viaggio mio",
+  "block.fun_tnt.volcano": "Vulcano TNT",
   "death.attack.fun_tnt.nuke": "%1$s è stato annientato da un'esplosione nucleare",
   "effect.fun_tnt.party_dance": "Febbre da festa!",
   "entity.fun_tnt.baby_boomer": "Baby Boomer innescato",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "Partito TNT",
   "entity.fun_tnt.restoration": "TNT per restauro innescato",
   "entity.fun_tnt.thermal_forge": "Forgia termica TNT innescata",
+  "entity.fun_tnt.volcano_tnt": "Vulcano TNT innescato",
   "fun_tnt.sly_withers_lately.reference": "Non devi restare così calmo quando cerchi di non crollare",
   "fun_tnt.too_late": "Ormai è troppo tardi...",
   "item.fun_tnt.baby_boomer": "TNT del Baby Boomer",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "Restauro TNT",
   "item.fun_tnt.thermal_forge": "TNT della Forgia Termica",
   "item.fun_tnt.trip_mine": "Viaggio mio",
+  "item.fun_tnt.volcano": "Vulcano TNT",
   "itemGroup.fun_tnt": "Divertente TNT",
   "tooltip.fun_tnt.baby_boomer.description": "Converte tutti i mob nelle loro varianti baby.",
   "tooltip.fun_tnt.cryo.description": "Scatena un'onda d'urto sotto lo zero, congelando i blocchi d'acqua nel ghiaccio e intrappolando le entità nel gelo.",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "Innesca un rave dance autorevole del server, facendo girare a ritmo di giocatori e mob sopravvissuti nelle vicinanze. ",
   "tooltip.fun_tnt.restoration.description": "Una carica anomala specializzata che annulla completamente i danni da esplosione e terreno nel suo raggio di esplosione.",
   "tooltip.fun_tnt.thermal_forge.description": "Emette un'intensa ondata di calore localizzata che fonde in modo pulito i blocchi di minerale in materiali raffinati con rendimenti di Fortune I.",
-  "tooltip.fun_tnt.trip_mine.description": "Un dispositivo esplosivo furtivo, camuffato da pietra, che esplode istantaneamente quando viene tolto."
+  "tooltip.fun_tnt.trip_mine.description": "Un dispositivo esplosivo furtivo, camuffato da pietra, che esplode istantaneamente quando viene tolto.",
+  "tooltip.fun_tnt.volcano.description": "Scatena un'eruzione vulcanica"
 }

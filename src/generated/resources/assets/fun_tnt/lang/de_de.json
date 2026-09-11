@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "Restaurierung TNT",
   "block.fun_tnt.thermal_forge": "Thermoschmiede TNT",
   "block.fun_tnt.trip_mine": "Trip Mine",
+  "block.fun_tnt.volcano": "Vulkan TNT",
   "death.attack.fun_tnt.nuke": "%1$s wurde durch eine nukleare Explosion ausgelöscht",
   "effect.fun_tnt.party_dance": "Partyfieber!",
   "entity.fun_tnt.baby_boomer": "Vorbereiteter Babyboomer",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "Party TNT",
   "entity.fun_tnt.restoration": "Grundierte Restaurierung TNT",
   "entity.fun_tnt.thermal_forge": "Grundiertes Thermal Forge TNT",
+  "entity.fun_tnt.volcano_tnt": "Grundiertes Vulkan-TNT",
   "fun_tnt.sly_withers_lately.reference": "Sie müssen nicht so cool bleiben, wenn Sie versuchen, nicht zusammenzubrechen",
   "fun_tnt.too_late": "Jetzt ist es zu spät...",
   "item.fun_tnt.baby_boomer": "Baby Boomer TNT",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "Restaurierung TNT",
   "item.fun_tnt.thermal_forge": "Thermoschmiede TNT",
   "item.fun_tnt.trip_mine": "Trip Mine",
+  "item.fun_tnt.volcano": "Vulkan TNT",
   "itemGroup.fun_tnt": "Lustiges TNT",
   "tooltip.fun_tnt.baby_boomer.description": "Wandelt alle Mobs in ihre Babyvarianten um.",
   "tooltip.fun_tnt.cryo.description": "Entfesselt eine Schockwelle mit Minusgraden, die Wasserblöcke zu Eis gefriert und Lebewesen im Frost einschließt.",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "Löst einen servergesteuerten Tanz-Rave aus, der Überlebensspieler und Mobs in der Nähe im Takt dreht. ",
   "tooltip.fun_tnt.restoration.description": "Eine spezielle Anomalieladung, die Explosions- und Geländeschaden in ihrem Explosionsradius vollständig rückgängig macht.",
   "tooltip.fun_tnt.thermal_forge.description": "Gibt eine intensive, lokalisierte Hitzewelle ab, die Erzblöcke sauber zu raffinierten Materialien mit Fortune-I-Erträgen verhüttet.",
-  "tooltip.fun_tnt.trip_mine.description": "Ein heimlicher, mit Steinen getarnter Sprengsatz, der beim Abheben sofort explodiert."
+  "tooltip.fun_tnt.trip_mine.description": "Ein heimlicher, mit Steinen getarnter Sprengsatz, der beim Abheben sofort explodiert.",
+  "tooltip.fun_tnt.volcano.description": "Löst einen Vulkanausbruch aus"
 }

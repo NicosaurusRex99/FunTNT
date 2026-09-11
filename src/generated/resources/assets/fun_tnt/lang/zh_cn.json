@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "恢复TNT",
   "block.fun_tnt.thermal_forge": "热熔锻造 TNT",
   "block.fun_tnt.trip_mine": "绊雷",
+  "block.fun_tnt.volcano": "火山TNT",
   "death.attack.fun_tnt.nuke": "%1$s 被核爆炸摧毁",
   "effect.fun_tnt.party_dance": "派对狂热！",
   "entity.fun_tnt.baby_boomer": "婴儿潮一代已做好准备",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "派对TNT",
   "entity.fun_tnt.restoration": "底漆修复 TNT",
   "entity.fun_tnt.thermal_forge": "已涂底漆的热熔锻造 TNT",
+  "entity.fun_tnt.volcano_tnt": "已涂底漆的火山 TNT",
   "fun_tnt.sly_withers_lately.reference": "当你试图不崩溃时，你不必保持冷静",
   "fun_tnt.too_late": "现在已经太晚了...",
   "item.fun_tnt.baby_boomer": "婴儿潮一代 TNT",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "恢复TNT",
   "item.fun_tnt.thermal_forge": "热熔锻造 TNT",
   "item.fun_tnt.trip_mine": "绊雷",
+  "item.fun_tnt.volcano": "火山TNT",
   "itemGroup.fun_tnt": "有趣的TNT",
   "tooltip.fun_tnt.baby_boomer.description": "将所有生物转化为它们的幼体变体。",
   "tooltip.fun_tnt.cryo.description": "释放低于零的冲击波，将水块冻结成冰并将实体困在霜中。",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "触发服务器权威的舞蹈狂欢，让附近的生存玩家和小怪跟着节拍旋转。",
   "tooltip.fun_tnt.restoration.description": "一种特殊的异常炸药，可完全恢复其爆炸半径内的爆炸和地形损坏。",
   "tooltip.fun_tnt.thermal_forge.description": "发出强烈的局部热浪，将矿石块干净地熔炼成具有财富 I 产量的精炼材料。",
-  "tooltip.fun_tnt.trip_mine.description": "一种隐秘的、石头伪装的爆炸装置，一旦踩下就会立即引爆。"
+  "tooltip.fun_tnt.trip_mine.description": "一种隐秘的、石头伪装的爆炸装置，一旦踩下就会立即引爆。",
+  "tooltip.fun_tnt.volcano.description": "引发火山喷发"
 }

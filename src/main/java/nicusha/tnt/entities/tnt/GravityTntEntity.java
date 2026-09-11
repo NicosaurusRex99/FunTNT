@@ -1,4 +1,4 @@
-package nicusha.tnt.entities;
+package nicusha.tnt.entities.tnt;
 
 import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.world.entity.Entity;

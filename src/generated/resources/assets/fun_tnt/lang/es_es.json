@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "Restauración TNT",
   "block.fun_tnt.thermal_forge": "Forja Térmica TNT",
   "block.fun_tnt.trip_mine": "Viaje mío",
+  "block.fun_tnt.volcano": "Volcán TNT",
   "death.attack.fun_tnt.nuke": "%1$s fue destruido por una explosión nuclear",
   "effect.fun_tnt.party_dance": "¡Fiebre de fiesta!",
   "entity.fun_tnt.baby_boomer": "Baby Boomer preparado",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "fiesta tnt",
   "entity.fun_tnt.restoration": "Restauración Imprimada TNT",
   "entity.fun_tnt.thermal_forge": "Forja Térmica Imprimada TNT",
+  "entity.fun_tnt.volcano_tnt": "Volcán imprimado TNT",
   "fun_tnt.sly_withers_lately.reference": "No tienes que mantenerte tan tranquilo cuando intentas no derrumbarte",
   "fun_tnt.too_late": "Ya es demasiado tarde...",
   "item.fun_tnt.baby_boomer": "Baby Boomers TNT",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "Restauración TNT",
   "item.fun_tnt.thermal_forge": "Forja Térmica TNT",
   "item.fun_tnt.trip_mine": "Viaje mío",
+  "item.fun_tnt.volcano": "Volcán TNT",
   "itemGroup.fun_tnt": "TNT divertido",
   "tooltip.fun_tnt.baby_boomer.description": "Convierte a todos los mobs en sus variantes bebés.",
   "tooltip.fun_tnt.cryo.description": "Desata una onda de choque bajo cero, que congela bloques de agua hasta convertirlos en hielo y atrapa entidades en la escarcha.",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "Desencadena un baile rave autorizado por el servidor, que hace girar a los jugadores de supervivencia y mobs cercanos al ritmo. ",
   "tooltip.fun_tnt.restoration.description": "Una carga de anomalía especializada que revierte por completo la explosión y el daño al terreno en su radio de explosión.",
   "tooltip.fun_tnt.thermal_forge.description": "Emite una intensa ola de calor localizada que funde limpiamente bloques de mineral en materiales refinados con rendimientos de Fortune I.",
-  "tooltip.fun_tnt.trip_mine.description": "Un dispositivo explosivo sigiloso disfrazado de piedra que detona instantáneamente cuando se baja."
+  "tooltip.fun_tnt.trip_mine.description": "Un dispositivo explosivo sigiloso disfrazado de piedra que detona instantáneamente cuando se baja.",
+  "tooltip.fun_tnt.volcano.description": "Provoca una erupción volcánica"
 }

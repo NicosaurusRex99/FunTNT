@@ -36,7 +36,9 @@ public class ClientEvents {
         event.registerEntityRenderer(ModEntities.PAINT.get(), context -> new PaintTntEntityRenderer(context));
         event.registerEntityRenderer(ModEntities.PARTY.get(), context -> new GenericTntRenderer(context, ModBlocks.PARTY));
         event.registerEntityRenderer(ModEntities.THERMAL_FORGE.get(), context -> new GenericTntRenderer(context, ModBlocks.THERMAL_FORGE));
+        event.registerEntityRenderer(ModEntities.VOLCANO_TNT.get(), context -> new GenericTntRenderer(context, ModBlocks.VOLCANO));
 
+        event.registerEntityRenderer(ModEntities.MAGMA_BOMB.get(), ThrownItemRenderer::new);
         event.registerEntityRenderer(ModEntities.DYNAMITE.get(), ThrownItemRenderer::new);
     }
 

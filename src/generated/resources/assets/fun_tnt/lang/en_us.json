@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "Restoration TNT",
   "block.fun_tnt.thermal_forge": "Thermal Forge TNT",
   "block.fun_tnt.trip_mine": "Trip Mine",
+  "block.fun_tnt.volcano": "Volcano TNT",
   "death.attack.fun_tnt.nuke": "%1$s was obliterated by a Nuclear Blast",
   "effect.fun_tnt.party_dance": "Party Fever!",
   "entity.fun_tnt.baby_boomer": "Primed Baby Boomer",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "Party TNT",
   "entity.fun_tnt.restoration": "Primed Restoration TNT",
   "entity.fun_tnt.thermal_forge": "Primed Thermal Forge TNT",
+  "entity.fun_tnt.volcano_tnt": "Primed Volcano TNT",
   "fun_tnt.sly_withers_lately.reference": "You don't have to stay so cool when you're trying not to break down",
   "fun_tnt.too_late": "It is too late now...",
   "item.fun_tnt.baby_boomer": "Baby Boomer TNT",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "Restoration TNT",
   "item.fun_tnt.thermal_forge": "Thermal Forge TNT",
   "item.fun_tnt.trip_mine": "Trip Mine",
+  "item.fun_tnt.volcano": "Volcano TNT",
   "itemGroup.fun_tnt": "Fun TNT",
   "tooltip.fun_tnt.baby_boomer.description": "Converts all mobs into their baby variants.",
   "tooltip.fun_tnt.cryo.description": "Unleashes a sub-zero shockwave, freezing water blocks into ice and trapping entities in frost.",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "Triggers a server-authoritative dance rave, spinning nearby survival players and mobs to the beat. Also converts all music discs to the new track!",
   "tooltip.fun_tnt.restoration.description": "A specialized anomaly charge that completely reverts explosion and terrain damage in its blast radius.",
   "tooltip.fun_tnt.thermal_forge.description": "Emits an intense localized heatwave that cleanly smelts ore blocks into refined materials with Fortune I yields.",
-  "tooltip.fun_tnt.trip_mine.description": "A stealthy, stone-disguised explosive device that detonates instantly when stepped off."
+  "tooltip.fun_tnt.trip_mine.description": "A stealthy, stone-disguised explosive device that detonates instantly when stepped off.",
+  "tooltip.fun_tnt.volcano.description": "Sets off a volcanic eruption"
 }

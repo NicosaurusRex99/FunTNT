@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "Restauration TNT",
   "block.fun_tnt.thermal_forge": "Forge Thermique TNT",
   "block.fun_tnt.trip_mine": "Voyage mine",
+  "block.fun_tnt.volcano": "Volcan TNT",
   "death.attack.fun_tnt.nuke": "%1$s a été anéanti par une explosion nucléaire",
   "effect.fun_tnt.party_dance": "La fièvre de la fête !",
   "entity.fun_tnt.baby_boomer": "Un baby-boomer préparé",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "Fête TNT",
   "entity.fun_tnt.restoration": "TNT de restauration apprêté",
   "entity.fun_tnt.thermal_forge": "TNT forgé thermique apprêté",
+  "entity.fun_tnt.volcano_tnt": "TNT volcanique apprêté",
   "fun_tnt.sly_withers_lately.reference": "Tu n'es pas obligé de rester aussi cool quand tu essaies de ne pas t'effondrer",
   "fun_tnt.too_late": "Il est trop tard maintenant...",
   "item.fun_tnt.baby_boomer": "TNT des baby-boomers",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "Restauration TNT",
   "item.fun_tnt.thermal_forge": "Forge Thermique TNT",
   "item.fun_tnt.trip_mine": "Voyage mine",
+  "item.fun_tnt.volcano": "Volcan TNT",
   "itemGroup.fun_tnt": "TNT amusante",
   "tooltip.fun_tnt.baby_boomer.description": "Convertit tous les monstres en leurs variantes bébés.",
   "tooltip.fun_tnt.cryo.description": "Déclenche une onde de choc inférieure à zéro, gelant les blocs d'eau en glace et piégeant les entités dans le givre.",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "Déclenche une rave de danse faisant autorité sur le serveur, faisant tourner les joueurs de survie et les foules à proximité au rythme. ",
   "tooltip.fun_tnt.restoration.description": "Une charge anormale spécialisée qui annule complètement les dégâts d'explosion et de terrain dans son rayon d'explosion.",
   "tooltip.fun_tnt.thermal_forge.description": "Émet une intense vague de chaleur localisée qui transforme proprement les blocs de minerai en matériaux raffinés avec des rendements Fortune I.",
-  "tooltip.fun_tnt.trip_mine.description": "Un engin explosif furtif, déguisé en pierre, qui explose instantanément lorsqu'on en descend."
+  "tooltip.fun_tnt.trip_mine.description": "Un engin explosif furtif, déguisé en pierre, qui explose instantanément lorsqu'on en descend.",
+  "tooltip.fun_tnt.volcano.description": "Déclenche une éruption volcanique"
 }

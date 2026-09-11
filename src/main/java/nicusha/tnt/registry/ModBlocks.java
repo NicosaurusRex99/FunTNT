@@ -14,7 +14,7 @@ import nicusha.tnt.FunTNT;
 import nicusha.tnt.blocks.BaseCustomTntBlock;
 import nicusha.tnt.blocks.PaintTntBlock;
 import nicusha.tnt.blocks.TripMineBlock;
-import nicusha.tnt.entities.*;
+import nicusha.tnt.entities.tnt.*;
 
 import java.util.function.Supplier;
 
@@ -32,6 +32,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PAINT = registerBlock("paint", () -> new PaintTntBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.TNT).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, "paint"))), PaintTntEntity::new, 100));
     public static final DeferredBlock<Block> PARTY = registerTnt("party", PartyTntEntity::new, 40);
     public static final DeferredBlock<Block> THERMAL_FORGE = registerTnt("thermal_forge", ThermalForgeTntEntity::new, 60);
+    public static final DeferredBlock<Block> VOLCANO = registerTnt("volcano", VolcanoEntity::new, 320);
 
     private static DeferredBlock<Block> registerTnt(String name, BaseCustomTntBlock.TntFactory<?> factory, int fuse) {
         return registerBlock(name, () -> new BaseCustomTntBlock(Block.Properties.ofFullCopy(Blocks.TNT).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, name))), factory, fuse));

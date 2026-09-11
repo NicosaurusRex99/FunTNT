@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "การฟื้นฟูทีเอ็นที",
   "block.fun_tnt.thermal_forge": "เทอร์มอลฟอร์จทีเอ็นที",
   "block.fun_tnt.trip_mine": "ทริปไมน์",
+  "block.fun_tnt.volcano": "ภูเขาไฟทีเอ็นที",
   "death.attack.fun_tnt.nuke": "%1$s ถูกทำลายโดยระเบิดนิวเคลียร์",
   "effect.fun_tnt.party_dance": "ปาร์ตี้ฟีเวอร์!",
   "entity.fun_tnt.baby_boomer": "รองพื้นเบบี้บูมเมอร์",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "ปาร์ตี้ ทีเอ็นที",
   "entity.fun_tnt.restoration": "รองพื้นฟื้นฟูทีเอ็นที",
   "entity.fun_tnt.thermal_forge": "รองพื้น Thermal Forge TNT",
+  "entity.fun_tnt.volcano_tnt": "พ่นภูเขาไฟทีเอ็นที",
   "fun_tnt.sly_withers_lately.reference": "คุณไม่จำเป็นต้องใจเย็นมากเมื่อคุณพยายามจะไม่พัง",
   "fun_tnt.too_late": "ตอนนี้มันสายเกินไปแล้ว...",
   "item.fun_tnt.baby_boomer": "เบบี้บูมเมอร์ ทีเอ็นที",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "การฟื้นฟูทีเอ็นที",
   "item.fun_tnt.thermal_forge": "เทอร์มอลฟอร์จทีเอ็นที",
   "item.fun_tnt.trip_mine": "ทริปไมน์",
+  "item.fun_tnt.volcano": "ภูเขาไฟทีเอ็นที",
   "itemGroup.fun_tnt": "ทีเอ็นทีแสนสนุก",
   "tooltip.fun_tnt.baby_boomer.description": "แปลง mobs ทั้งหมดให้กลายเป็นรูปแบบทารกของพวกเขา",
   "tooltip.fun_tnt.cryo.description": "ปล่อยคลื่นกระแทกต่ำกว่าศูนย์ บล็อกน้ำที่กลายเป็นน้ำแข็งและดักจับสิ่งมีชีวิตในน้ำแข็ง",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "กระตุ้นให้เกิดการเต้นรำที่เผด็จการของเซิร์ฟเวอร์ หมุนผู้เล่นและกลุ่มผู้เอาชีวิตรอดที่อยู่ใกล้เคียงให้เข้ากับจังหวะ ",
   "tooltip.fun_tnt.restoration.description": "ประจุความผิดปกติพิเศษที่จะคืนค่าความเสียหายจากการระเบิดและภูมิประเทศในรัศมีการระเบิดอย่างสมบูรณ์",
   "tooltip.fun_tnt.thermal_forge.description": "ปล่อยคลื่นความร้อนเข้มข้นเฉพาะจุดที่จะหลอมบล็อกแร่ให้กลายเป็นวัสดุที่ผ่านการกลั่นอย่างหมดจดด้วย Fortune I",
-  "tooltip.fun_tnt.trip_mine.description": "อุปกรณ์ระเบิดที่ซ่อนเร้นและปลอมตัวเป็นหิน ซึ่งจะระเบิดทันทีเมื่อก้าวออกไป"
+  "tooltip.fun_tnt.trip_mine.description": "อุปกรณ์ระเบิดที่ซ่อนเร้นและปลอมตัวเป็นหิน ซึ่งจะระเบิดทันทีเมื่อก้าวออกไป",
+  "tooltip.fun_tnt.volcano.description": "ทำให้เกิดการปะทุของภูเขาไฟ"
 }

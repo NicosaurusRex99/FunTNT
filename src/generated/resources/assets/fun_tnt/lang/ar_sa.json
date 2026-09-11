@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "استعادة مادة تي ان تي",
   "block.fun_tnt.thermal_forge": "الحرارية فورج تي ان تي",
   "block.fun_tnt.trip_mine": "رحلة الألغام",
+  "block.fun_tnt.volcano": "بركان تي ان تي",
   "death.attack.fun_tnt.nuke": "تم تدمير %1$s بواسطة انفجار نووي",
   "effect.fun_tnt.party_dance": "حمى الحفلات!",
   "entity.fun_tnt.baby_boomer": "معدة بيبي بومر",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "حزب تي ان تي",
   "entity.fun_tnt.restoration": "استعادة معدة تي ان تي",
   "entity.fun_tnt.thermal_forge": "معدة الحرارية صياغة TNT",
+  "entity.fun_tnt.volcano_tnt": "بركان معدة تي ان تي",
   "fun_tnt.sly_withers_lately.reference": "ليس عليك أن تظل هادئًا جدًا عندما تحاول عدم الانهيار",
   "fun_tnt.too_late": "لقد فات الأوان الآن...",
   "item.fun_tnt.baby_boomer": "بيبي بومر تي ان تي",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "استعادة مادة تي ان تي",
   "item.fun_tnt.thermal_forge": "الحرارية فورج تي ان تي",
   "item.fun_tnt.trip_mine": "رحلة الألغام",
+  "item.fun_tnt.volcano": "بركان تي ان تي",
   "itemGroup.fun_tnt": "تي ان تي الممتعة",
   "tooltip.fun_tnt.baby_boomer.description": "يحول جميع الغوغاء إلى متغيرات أطفالهم.",
   "tooltip.fun_tnt.cryo.description": "يطلق العنان لموجة صادمة تحت الصفر، مما يؤدي إلى تجميد كتل المياه وتحويلها إلى جليد ومحاصرة الكيانات في الصقيع.",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "يؤدي إلى إثارة رقصة راقصة من جانب الخادم، مما يؤدي إلى إثارة اللاعبين الغوغاء واللاعبين الناجين القريبين على الإيقاع. ",
   "tooltip.fun_tnt.restoration.description": "شحنة شاذة متخصصة تعمل على عكس الضرر الناتج عن الانفجار والتضاريس بشكل كامل في نصف قطر الانفجار.",
   "tooltip.fun_tnt.thermal_forge.description": "تنبعث منه موجة حارة موضعية مكثفة تعمل على صهر كتل الخام بشكل نظيف وتحويلها إلى مواد مكررة مع عوائد Fortune I.",
-  "tooltip.fun_tnt.trip_mine.description": "عبوة ناسفة مخفية ومخفية بالحجر تنفجر فورًا عند النزول منها."
+  "tooltip.fun_tnt.trip_mine.description": "عبوة ناسفة مخفية ومخفية بالحجر تنفجر فورًا عند النزول منها.",
+  "tooltip.fun_tnt.volcano.description": "يؤدي إلى ثوران بركاني"
 }

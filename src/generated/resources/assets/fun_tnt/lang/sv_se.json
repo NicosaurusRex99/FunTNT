@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "Restaurering TNT",
   "block.fun_tnt.thermal_forge": "Thermal Forge TNT",
   "block.fun_tnt.trip_mine": "Trip Mina",
+  "block.fun_tnt.volcano": "Vulkanen TNT",
   "death.attack.fun_tnt.nuke": "%1$s utplånades av en kärnvapenexplosion",
   "effect.fun_tnt.party_dance": "Festfeber!",
   "entity.fun_tnt.baby_boomer": "Grundmålad Baby Boomer",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "Fest TNT",
   "entity.fun_tnt.restoration": "Grundmålad restaurering TNT",
   "entity.fun_tnt.thermal_forge": "Grundmålad Thermal Forge TNT",
+  "entity.fun_tnt.volcano_tnt": "Grundad vulkan TNT",
   "fun_tnt.sly_withers_lately.reference": "Du behöver inte vara så cool när du försöker att inte gå sönder",
   "fun_tnt.too_late": "Det är för sent nu...",
   "item.fun_tnt.baby_boomer": "Baby Boomer TNT",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "Restaurering TNT",
   "item.fun_tnt.thermal_forge": "Thermal Forge TNT",
   "item.fun_tnt.trip_mine": "Trip Mina",
+  "item.fun_tnt.volcano": "Vulkanen TNT",
   "itemGroup.fun_tnt": "Kul TNT",
   "tooltip.fun_tnt.baby_boomer.description": "Konverterar alla mobbar till sina babyvarianter.",
   "tooltip.fun_tnt.cryo.description": "Utlöser en chockvåg under noll, fryser vatten blockerar till is och fångar enheter i frost.",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "Utlöser ett server-auktoritativt dansrave, som snurrar närliggande överlevnadsspelare och mobbar till takten. ",
   "tooltip.fun_tnt.restoration.description": "En specialiserad anomaliladdning som helt återställer explosions- och terrängskador i sin sprängradie.",
   "tooltip.fun_tnt.thermal_forge.description": "Avger en intensiv lokaliserad värmebölja som rent smälter malmblock till raffinerade material med Fortune I-utbyten.",
-  "tooltip.fun_tnt.trip_mine.description": "En smygande, stenförklädd sprängladdning som detonerar omedelbart när den kliver av."
+  "tooltip.fun_tnt.trip_mine.description": "En smygande, stenförklädd sprängladdning som detonerar omedelbart när den kliver av.",
+  "tooltip.fun_tnt.volcano.description": "Sätter igång ett vulkanutbrott"
 }

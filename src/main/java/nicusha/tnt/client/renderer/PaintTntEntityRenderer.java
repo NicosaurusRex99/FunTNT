@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.entity.TntRenderer;
 import net.minecraft.client.renderer.entity.state.TntRenderState;
 import net.minecraft.client.renderer.state.level.CameraRenderState;
 import net.minecraft.util.Mth;
-import nicusha.tnt.entities.PaintTntEntity;
+import nicusha.tnt.entities.tnt.PaintTntEntity;
 
 public class PaintTntEntityRenderer extends EntityRenderer<PaintTntEntity, TntRenderState> {
     private final BlockModelResolver blockModelResolver;

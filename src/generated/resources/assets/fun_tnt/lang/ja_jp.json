@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "修復TNT",
   "block.fun_tnt.thermal_forge": "熱鍛造TNT",
   "block.fun_tnt.trip_mine": "トリップマイン",
+  "block.fun_tnt.volcano": "火山TNT",
   "death.attack.fun_tnt.nuke": "%1$sは核爆発によって消滅しました",
   "effect.fun_tnt.party_dance": "パーティーフィーバー！",
   "entity.fun_tnt.baby_boomer": "プライムされた団塊の世代",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "パーティーTNT",
   "entity.fun_tnt.restoration": "プライミング修復 TNT",
   "entity.fun_tnt.thermal_forge": "下塗り熱鍛造 TNT",
+  "entity.fun_tnt.volcano_tnt": "プライム火山 TNT",
   "fun_tnt.sly_withers_lately.reference": "体調を崩さないようにするときは、そんなに冷静になる必要はない",
   "fun_tnt.too_late": "もう手遅れです...",
   "item.fun_tnt.baby_boomer": "団塊の世代のTNT",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "修復TNT",
   "item.fun_tnt.thermal_forge": "熱鍛造TNT",
   "item.fun_tnt.trip_mine": "トリップマイン",
+  "item.fun_tnt.volcano": "火山TNT",
   "itemGroup.fun_tnt": "楽しいTNT",
   "tooltip.fun_tnt.baby_boomer.description": "すべてのモブを赤ちゃんのバリアントに変換します。",
   "tooltip.fun_tnt.cryo.description": "氷点下の衝撃波を放ち、水ブロックを凍らせて氷にし、実体を霜の中に閉じ込めます。",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "サーバー権限のあるダンス レイブをトリガーし、近くのサバイバル プレイヤーやモブをビートに合わせて回転させます。",
   "tooltip.fun_tnt.restoration.description": "爆発範囲内の爆発と地形ダメージを完全に元に戻す特殊な異常チャージ。",
   "tooltip.fun_tnt.thermal_forge.description": "集中的な局所的な熱波を発し、鉱石ブロックをきれいに製錬して、フォーチュン I の収量を持つ精製された材料を生成します。",
-  "tooltip.fun_tnt.trip_mine.description": "石で偽装されたステルス式の爆発装置で、降りると即座に爆発します。"
+  "tooltip.fun_tnt.trip_mine.description": "石で偽装されたステルス式の爆発装置で、降りると即座に爆発します。",
+  "tooltip.fun_tnt.volcano.description": "火山の噴火を引き起こす"
 }

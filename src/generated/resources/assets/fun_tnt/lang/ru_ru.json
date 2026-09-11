@@ -10,6 +10,7 @@
   "block.fun_tnt.restoration": "Восстановление ТНТ",
   "block.fun_tnt.thermal_forge": "Термическая кузница ТНТ",
   "block.fun_tnt.trip_mine": "Поездка на шахту",
+  "block.fun_tnt.volcano": "Вулкан ТНТ",
   "death.attack.fun_tnt.nuke": "%1$s был уничтожен ядерным взрывом",
   "effect.fun_tnt.party_dance": "Вечеринка лихорадка!",
   "entity.fun_tnt.baby_boomer": "Праймовый бэби-бумер",
@@ -22,6 +23,7 @@
   "entity.fun_tnt.party": "Вечеринка ТНТ",
   "entity.fun_tnt.restoration": "Праймированное восстановление ТНТ",
   "entity.fun_tnt.thermal_forge": "Загрунтованная термическая кузница TNT",
+  "entity.fun_tnt.volcano_tnt": "Заряженный вулкан ТНТ",
   "fun_tnt.sly_withers_lately.reference": "Тебе не обязательно сохранять хладнокровие, когда пытаешься не сломаться.",
   "fun_tnt.too_late": "Теперь уже слишком поздно...",
   "item.fun_tnt.baby_boomer": "Бэби-бумер ТНТ",
@@ -38,6 +40,7 @@
   "item.fun_tnt.restoration": "Восстановление ТНТ",
   "item.fun_tnt.thermal_forge": "Термическая кузница ТНТ",
   "item.fun_tnt.trip_mine": "Поездка на шахту",
+  "item.fun_tnt.volcano": "Вулкан ТНТ",
   "itemGroup.fun_tnt": "Веселый ТНТ",
   "tooltip.fun_tnt.baby_boomer.description": "Преобразует всех мобов в их детские варианты.",
   "tooltip.fun_tnt.cryo.description": "Выпускает ударную волну ниже нуля, замораживающую водяные блоки в лед и заключающую существ в мороз.",
@@ -49,5 +52,6 @@
   "tooltip.fun_tnt.party.description": "Запускает авторитетный на сервере танцевальный рейв, вращая в такт ближайших игроков и мобов. ",
   "tooltip.fun_tnt.restoration.description": "Специализированный аномальный заряд, полностью компенсирующий урон от взрыва и местности в радиусе взрыва.",
   "tooltip.fun_tnt.thermal_forge.description": "Испускает интенсивную локализованную тепловую волну, которая плавит рудные блоки в очищенные материалы с выходом Fortune I.",
-  "tooltip.fun_tnt.trip_mine.description": "Скрытое, замаскированное под камень взрывное устройство, которое мгновенно взрывается при нажатии на него."
+  "tooltip.fun_tnt.trip_mine.description": "Скрытое, замаскированное под камень взрывное устройство, которое мгновенно взрывается при нажатии на него.",
+  "tooltip.fun_tnt.volcano.description": "Вызывает извержение вулкана"
 }
