@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "C": "minecraft:crying_obsidian",
+    "P": "minecraft:ender_pearl",
+    "T": "minecraft:tnt"
+  },
+  "pattern": [
+    "CPC",
+    "PTP",
+    "CPC"
+  ],
+  "result": {
+    "count": 2,
+    "id": "fun_tnt:rift"
+  }
+}

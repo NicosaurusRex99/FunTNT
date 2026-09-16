@@ -30,8 +30,8 @@ public class ModItemTagsProvider extends ItemTagsProvider {
         var ice = commonTag("ice");
         var musicDiscs = commonTag("music_discs");
 
-        tag(explosives).add(ModBlocks.BABY_BOOMER.asItem(), ModBlocks.NUKE.asItem(), ModItems.DYNAMITE.get(), ModBlocks.CRYO.asItem(), ModBlocks.GRAVITY.asItem(), ModBlocks.PAINT.asItem(), ModBlocks.PARTY.asItem(), ModBlocks.THERMAL_FORGE.asItem(), ModBlocks.VOLCANO.asItem());
-        tag(tnt).add(ModBlocks.BABY_BOOMER.asItem(), ModBlocks.NUKE.asItem(), ModBlocks.FERTILIZER.asItem(), ModBlocks.CRYO.asItem(), ModBlocks.GRAVITY.asItem(), ModBlocks.PAINT.asItem(), ModBlocks.PARTY.asItem(), ModBlocks.VOLCANO.asItem());
+        tag(explosives).add(ModBlocks.BABY_BOOMER.asItem(), ModBlocks.NUKE.asItem(), ModItems.DYNAMITE.get(), ModBlocks.CRYO.asItem(), ModBlocks.GRAVITY.asItem(), ModBlocks.PAINT.asItem(), ModBlocks.PARTY.asItem(), ModBlocks.THERMAL_FORGE.asItem(), ModBlocks.VOLCANO.asItem(), ModBlocks.RIFT.asItem());
+        tag(tnt).add(ModBlocks.BABY_BOOMER.asItem(), ModBlocks.NUKE.asItem(), ModBlocks.FERTILIZER.asItem(), ModBlocks.CRYO.asItem(), ModBlocks.GRAVITY.asItem(), ModBlocks.PAINT.asItem(), ModBlocks.PARTY.asItem(), ModBlocks.VOLCANO.asItem(), ModBlocks.RIFT.asItem());
         tag(ice).add(Items.ICE, Items.BLUE_ICE, Items.PACKED_ICE);
         tag(musicDiscs).add(ModItems.PARTY_MUSIC_DISC.get());
     }

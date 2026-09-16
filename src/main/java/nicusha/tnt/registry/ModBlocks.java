@@ -33,6 +33,7 @@ public class ModBlocks {
     public static final DeferredBlock<Block> PARTY = registerTnt("party", PartyTntEntity::new, 40);
     public static final DeferredBlock<Block> THERMAL_FORGE = registerTnt("thermal_forge", ThermalForgeTntEntity::new, 60);
     public static final DeferredBlock<Block> VOLCANO = registerTnt("volcano", VolcanoEntity::new, 320);
+    public static final DeferredBlock<Block> RIFT = registerTnt("rift", RiftEntity::new, 80);
 
     private static DeferredBlock<Block> registerTnt(String name, BaseCustomTntBlock.TntFactory<?> factory, int fuse) {
         return registerBlock(name, () -> new BaseCustomTntBlock(Block.Properties.ofFullCopy(Blocks.TNT).setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(FunTNT.MODID, name))), factory, fuse));

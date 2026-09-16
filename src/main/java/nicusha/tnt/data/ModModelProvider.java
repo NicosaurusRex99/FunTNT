@@ -38,6 +38,7 @@ public class ModModelProvider extends ModelProvider {
         registerTnt(ModBlocks.THERMAL_FORGE.get(), blockModels);
         registerVolcanoTnt(ModBlocks.VOLCANO.get(), blockModels);
         registerPaintTnt(ModBlocks.PAINT.get(), blockModels);
+        registerTnt(ModBlocks.RIFT.get(), blockModels);
         itemModels.generateFlatItem(ModItems.DYNAMITE.get(), ModelTemplates.FLAT_ITEM);
         itemModels.generateFlatItem(ModItems.PARTY_MUSIC_DISC.get(), ModelTemplates.MUSIC_DISC);
         registerTripMine(ModBlocks.TRIP_MINE.get(), blockModels);

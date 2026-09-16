@@ -19,11 +19,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        this.tag(BlockTags.MINEABLE_WITH_HOE).add(ModBlocks.BABY_BOOMER.get(), ModBlocks.FERTILIZER.get(), ModBlocks.CRYO.get(), ModBlocks.GRAVITY.get(), ModBlocks.RESTORATION.get(), ModBlocks.LATELY.get(), ModBlocks.PAINT.get(), ModBlocks.PARTY.get());
+        this.tag(BlockTags.MINEABLE_WITH_HOE).add(ModBlocks.BABY_BOOMER.get(), ModBlocks.FERTILIZER.get(), ModBlocks.CRYO.get(), ModBlocks.GRAVITY.get(), ModBlocks.RESTORATION.get(), ModBlocks.LATELY.get(), ModBlocks.PAINT.get(), ModBlocks.PARTY.get(), ModBlocks.RIFT.get());
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.NUKE.get(), ModBlocks.TRIP_MINE.get(), ModBlocks.THERMAL_FORGE.get(), ModBlocks.VOLCANO.get());
         this.tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.NUKE.get(), ModBlocks.TRIP_MINE.get(), ModBlocks.THERMAL_FORGE.get());
 
         var tnt = TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath("c", "tnt"));
-        this.tag(tnt).add(ModBlocks.BABY_BOOMER.get(), ModBlocks.NUKE.get(), ModBlocks.FERTILIZER.get(), ModBlocks.GRAVITY.get(), ModBlocks.TRIP_MINE.get(), ModBlocks.RESTORATION.get(), ModBlocks.LATELY.get(), ModBlocks.PAINT.get(), ModBlocks.PARTY.get(), ModBlocks.THERMAL_FORGE.get(), ModBlocks.VOLCANO.get());
+        this.tag(tnt).add(ModBlocks.BABY_BOOMER.get(), ModBlocks.NUKE.get(), ModBlocks.FERTILIZER.get(), ModBlocks.GRAVITY.get(), ModBlocks.TRIP_MINE.get(), ModBlocks.RESTORATION.get(), ModBlocks.LATELY.get(), ModBlocks.PAINT.get(), ModBlocks.PARTY.get(), ModBlocks.THERMAL_FORGE.get(), ModBlocks.VOLCANO.get(), ModBlocks.RIFT.get());
     }
 }

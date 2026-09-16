@@ -14,6 +14,7 @@ public class Config {
     public static final ModConfigSpec.IntValue PAINT_RADIUS = BUILDER.comment("Paint radius").defineInRange("paintRadius", 16, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue PARTY_RADIUS = BUILDER.comment("Party radius").defineInRange("partyRadius", 15, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue THERMAL_FORGE_RADIUS = BUILDER.comment("Thermal forge radius").defineInRange("thermalForgeRadius", 16, 0, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue RIFT_RADIUS = BUILDER.comment("Rift radius").comment("Cuboid half-size of the region each Rift TNT captures and swaps. Both ends must match to line up - changing this mid-pairing cancels the swap.").defineInRange("riftRadius", 5, 1, 16);
 
     public static final ModConfigSpec.IntValue NUKE_FUSE = BUILDER.comment("Nuke fuse").comment("The delay from ignition to explosion").defineInRange("nukeFuse", 300, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue BABY_BOOMER_FUSE = BUILDER.comment("Baby boomer fuse").comment("The delay from ignition to explosion").defineInRange("babyBoomerFuse", 80, 0, Integer.MAX_VALUE);
@@ -24,6 +25,8 @@ public class Config {
     public static final ModConfigSpec.IntValue PAINT_FUSE = BUILDER.comment("Paint fuse").comment("The delay from ignition to explosion").defineInRange("paintFuse", 80, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue PARTY_FUSE = BUILDER.comment("Party fuse").comment("The delay from ignition to explosion").defineInRange("partyFuse", 40, 0, Integer.MAX_VALUE);
     public static final ModConfigSpec.IntValue THERMAL_FORGE_FUSE = BUILDER.comment("Thermal forge fuse").comment("The delay from ignition to explosion").defineInRange("thermalForgeFuse", 60, 0, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue RIFT_FUSE = BUILDER.comment("Rift fuse").comment("The delay from ignition to explosion").defineInRange("riftFuse", 80, 0, Integer.MAX_VALUE);
+    public static final ModConfigSpec.IntValue RIFT_TIMEOUT_TICKS = BUILDER.comment("Rift timeout").comment("How long (in ticks) an armed, unpaired rift waits for a partner detonation before fizzling out. 600 = 30 seconds.").defineInRange("riftTimeoutTicks", 600, 20, Integer.MAX_VALUE);
 
     public static final ModConfigSpec.IntValue VOLCANO_HEIGHT = BUILDER.comment("Volcano target height in blocks/layers").defineInRange("volcanoHeight", 14, 3, 64);
     public static final ModConfigSpec.IntValue VOLCANO_BASE_RADIUS = BUILDER.comment("Volcano base radius in blocks").comment("Higher values create a wider base footprint").defineInRange("volcanoBaseRadius", 38, 4, 128);
