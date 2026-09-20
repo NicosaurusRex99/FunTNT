@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:rift"
+        "recipes": "fun_tnt:rift"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

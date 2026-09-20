@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:baby_boomer"
+        "recipes": "fun_tnt:baby_boomer"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

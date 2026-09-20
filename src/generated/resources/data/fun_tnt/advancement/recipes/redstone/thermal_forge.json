@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:thermal_forge"
+        "recipes": "fun_tnt:thermal_forge"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

@@ -46,7 +46,7 @@ public class ModModelProvider extends ModelProvider {
 
 
     private void registerTnt(Block block, BlockModelGenerators generators) {
-        TexturedModel model = TexturedModel.CUBE_TOP_BOTTOM.get(block);
+        TexturedModel model = TexturedModel.CUBE_BOTTOM_TOP.get(block);
         Identifier modelId = model.create(block, generators.modelOutput);
         generators.blockStateOutput.accept(BlockModelGenerators.createSimpleBlock(block, BlockModelGenerators.plainVariant(modelId)));
         generators.registerSimpleItemModel(block, modelId);

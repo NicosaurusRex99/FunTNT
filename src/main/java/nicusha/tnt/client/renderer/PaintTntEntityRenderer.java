@@ -43,9 +43,9 @@ public class PaintTntEntityRenderer extends EntityRenderer<PaintTntEntity, TntRe
             float scale = 1.0F + Mth.clamp(1.0F - fuse / 10.0F, 0.0F, 1.0F) * 0.3F;
             poseStack.scale(scale, scale, scale);
         }
-        poseStack.mulPose(Axis.YP.rotationDegrees(-90.0F));
+        poseStack.rotate(Axis.YP.rotationDegrees(-90.0F));
         poseStack.translate(-0.5F, -0.5F, 0.5F);
-        poseStack.mulPose(Axis.YP.rotationDegrees(90.0F));
+        poseStack.rotate(Axis.YP.rotationDegrees(90.0F));
         if (!state.blockState.isEmpty()) {
             TntMinecartRenderer.submitWhiteSolidBlock(state.blockState, poseStack, collector, state.lightCoords, (int)fuse / 5 % 2 == 0, state.outlineColor);
         }

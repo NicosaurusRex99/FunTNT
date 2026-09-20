@@ -14,6 +14,7 @@ import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.BonemealSource;
 import net.minecraft.world.level.block.BonemealableBlock;
 import net.minecraft.world.level.block.state.BlockState;
 import nicusha.tnt.Config;
@@ -54,8 +55,8 @@ public class FertilizerEntity extends PrimedTnt {
                     }
 
                     if (block instanceof BonemealableBlock bonemealable) {
-                        if (bonemealable.isValidBonemealTarget(serverLevel, pos, state)) {
-                            bonemealable.performBonemeal(serverLevel, serverLevel.getRandom(), pos, state);
+                        if (bonemealable.isValidBonemealTarget(serverLevel, pos, state, BonemealSource.INTERACTION)) {
+                            bonemealable.performBonemeal(serverLevel, serverLevel.getRandom(), pos, state, BonemealSource.INTERACTION);
                         }
                     }
 

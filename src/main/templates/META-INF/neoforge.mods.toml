@@ -1,5 +1,4 @@
 modLoader="javafml"
-loaderVersion="${loader_version_range}"
 license="${mod_license}"
 
 [[mods]]
@@ -9,19 +8,18 @@ displayName="${mod_name}"
 authors="${mod_authors}"
 description="${mod_description}"
 displayURL="${mod_url}"
-logoFile="${mod_logo}"
+bannerFile="${mod_banner}"
+iconFile="${mod_logo}"
 updateJSONURL="${mod_update_json}"
 
 [[dependencies.crystal_fix]]
 modId="neoforge"
 type="required"
-versionRange="${neo_version_range}"
 ordering="NONE"
 side="BOTH"
 
 [[dependencies.crystal_fix]]
 modId="minecraft"
 type="required"
-versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"

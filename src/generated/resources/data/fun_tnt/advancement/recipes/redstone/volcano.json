@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:volcano"
+        "recipes": "fun_tnt:volcano"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

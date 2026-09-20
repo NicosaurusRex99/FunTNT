@@ -45,7 +45,7 @@ public class PaintTntBlock extends BaseCustomTntBlock {
     }
 
     @Override
-    public boolean onCaughtFire(BlockState state, Level level, BlockPos pos, @Nullable Direction face, @Nullable LivingEntity igniter) {
+    public boolean onCaughtFire(BlockState state, Level level, BlockPos pos, @Nullable Direction face, @Nullable LivingEntity igniter, ItemStack ignitionItem) {
         if (level instanceof ServerLevel serverLevel) {
             if (serverLevel.getGameRules().get(GameRules.TNT_EXPLODES)) {
                 var tnt = getEntityFactory().create(level, pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, igniter);

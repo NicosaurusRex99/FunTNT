@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:paint"
+        "recipes": "fun_tnt:paint"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

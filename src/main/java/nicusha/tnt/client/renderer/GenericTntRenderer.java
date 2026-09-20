@@ -52,9 +52,9 @@ public class GenericTntRenderer extends EntityRenderer<PrimedTnt, TntRenderState
             float scale = 1.0F + scaleProgress * 0.3F;
             poseStack.scale(scale, scale, scale);
         }
-        poseStack.mulPose(Axis.YP.rotationDegrees(-90.0F));
+        poseStack.rotate(Axis.YP, -90.0F);
         poseStack.translate(-0.5F, -0.5F, 0.5F);
-        poseStack.mulPose(Axis.YP.rotationDegrees(90.0F));
+        poseStack.rotate(Axis.YP, 90.0F);
         if (!state.blockState.isEmpty()) {
             TntMinecartRenderer.submitWhiteSolidBlock(state.blockState, poseStack, submitNodeCollector, state.lightCoords, (int)fuse / 5 % 2 == 0, state.outlineColor);
         }

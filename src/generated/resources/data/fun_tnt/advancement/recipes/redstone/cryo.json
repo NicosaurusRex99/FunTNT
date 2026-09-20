@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:cryo"
+        "recipes": "fun_tnt:cryo"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

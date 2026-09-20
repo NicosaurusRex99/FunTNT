@@ -19,11 +19,11 @@ public class ModBlockTagsProvider extends BlockTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        this.tag(BlockTags.MINEABLE_WITH_HOE).add(ModBlocks.BABY_BOOMER.get(), ModBlocks.FERTILIZER.get(), ModBlocks.CRYO.get(), ModBlocks.GRAVITY.get(), ModBlocks.RESTORATION.get(), ModBlocks.LATELY.get(), ModBlocks.PAINT.get(), ModBlocks.PARTY.get(), ModBlocks.RIFT.get());
-        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.NUKE.get(), ModBlocks.TRIP_MINE.get(), ModBlocks.THERMAL_FORGE.get(), ModBlocks.VOLCANO.get());
-        this.tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.NUKE.get(), ModBlocks.TRIP_MINE.get(), ModBlocks.THERMAL_FORGE.get());
+        this.tag(BlockTags.MINEABLE_WITH_HOE).add(ModBlocks.BABY_BOOMER.getKey(), ModBlocks.FERTILIZER.getKey(), ModBlocks.CRYO.getKey(), ModBlocks.GRAVITY.getKey(), ModBlocks.RESTORATION.getKey(), ModBlocks.LATELY.getKey(), ModBlocks.PAINT.getKey(), ModBlocks.PARTY.getKey(), ModBlocks.RIFT.getKey());
+        this.tag(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.NUKE.getKey(), ModBlocks.TRIP_MINE.getKey(), ModBlocks.THERMAL_FORGE.getKey(), ModBlocks.VOLCANO.getKey());
+        this.tag(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.NUKE.getKey(), ModBlocks.TRIP_MINE.getKey(), ModBlocks.THERMAL_FORGE.getKey());
 
         var tnt = TagKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath("c", "tnt"));
-        this.tag(tnt).add(ModBlocks.BABY_BOOMER.get(), ModBlocks.NUKE.get(), ModBlocks.FERTILIZER.get(), ModBlocks.GRAVITY.get(), ModBlocks.TRIP_MINE.get(), ModBlocks.RESTORATION.get(), ModBlocks.LATELY.get(), ModBlocks.PAINT.get(), ModBlocks.PARTY.get(), ModBlocks.THERMAL_FORGE.get(), ModBlocks.VOLCANO.get(), ModBlocks.RIFT.get());
+        this.tag(tnt).add(ModBlocks.BABY_BOOMER.getKey(), ModBlocks.NUKE.getKey(), ModBlocks.FERTILIZER.getKey(), ModBlocks.GRAVITY.getKey(), ModBlocks.TRIP_MINE.getKey(), ModBlocks.RESTORATION.getKey(), ModBlocks.LATELY.getKey(), ModBlocks.PAINT.getKey(), ModBlocks.PARTY.getKey(), ModBlocks.THERMAL_FORGE.getKey(), ModBlocks.VOLCANO.getKey(), ModBlocks.RIFT.getKey());
     }
 }

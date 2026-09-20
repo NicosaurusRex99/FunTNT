@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:restoration"
+        "recipes": "fun_tnt:restoration"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

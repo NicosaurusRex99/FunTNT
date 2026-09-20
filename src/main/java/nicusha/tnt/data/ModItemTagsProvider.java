@@ -22,18 +22,18 @@ public class ModItemTagsProvider extends ItemTagsProvider {
 
     @Override
     protected void addTags(HolderLookup.Provider provider) {
-        tag(ItemTags.CREEPER_IGNITERS).add(ModItems.DYNAMITE.get());
-        tag(ItemTags.CREEPER_DROP_MUSIC_DISCS).add(ModItems.PARTY_MUSIC_DISC.get());
+        tag(ItemTags.CREEPER_IGNITERS).add(ModItems.DYNAMITE.getKey());
+        tag(ItemTags.CREEPER_DROP_MUSIC_DISCS).add(ModItems.PARTY_MUSIC_DISC.getKey());
 
         var explosives = commonTag("explosives");
         var tnt = commonTag("tnt");
         var ice = commonTag("ice");
         var musicDiscs = commonTag("music_discs");
 
-        tag(explosives).add(ModBlocks.BABY_BOOMER.asItem(), ModBlocks.NUKE.asItem(), ModItems.DYNAMITE.get(), ModBlocks.CRYO.asItem(), ModBlocks.GRAVITY.asItem(), ModBlocks.PAINT.asItem(), ModBlocks.PARTY.asItem(), ModBlocks.THERMAL_FORGE.asItem(), ModBlocks.VOLCANO.asItem(), ModBlocks.RIFT.asItem());
-        tag(tnt).add(ModBlocks.BABY_BOOMER.asItem(), ModBlocks.NUKE.asItem(), ModBlocks.FERTILIZER.asItem(), ModBlocks.CRYO.asItem(), ModBlocks.GRAVITY.asItem(), ModBlocks.PAINT.asItem(), ModBlocks.PARTY.asItem(), ModBlocks.VOLCANO.asItem(), ModBlocks.RIFT.asItem());
-        tag(ice).add(Items.ICE, Items.BLUE_ICE, Items.PACKED_ICE);
-        tag(musicDiscs).add(ModItems.PARTY_MUSIC_DISC.get());
+        tag(explosives).add(ModBlocks.BABY_BOOMER.asItem().builtInRegistryHolder().getKey(), ModBlocks.NUKE.asItem().builtInRegistryHolder().key(), ModItems.DYNAMITE.get().builtInRegistryHolder().key(), ModBlocks.CRYO.asItem().builtInRegistryHolder().key(), ModBlocks.GRAVITY.asItem().builtInRegistryHolder().key(), ModBlocks.PAINT.asItem().builtInRegistryHolder().key(), ModBlocks.PARTY.asItem().builtInRegistryHolder().key(), ModBlocks.THERMAL_FORGE.asItem().builtInRegistryHolder().key(), ModBlocks.VOLCANO.asItem().builtInRegistryHolder().key(), ModBlocks.RIFT.asItem().builtInRegistryHolder().key());
+        tag(tnt).add(ModBlocks.BABY_BOOMER.asItem().builtInRegistryHolder().key(), ModBlocks.NUKE.asItem().builtInRegistryHolder().key(), ModBlocks.FERTILIZER.asItem().builtInRegistryHolder().key(), ModBlocks.CRYO.asItem().builtInRegistryHolder().key(), ModBlocks.GRAVITY.asItem().builtInRegistryHolder().key(), ModBlocks.PAINT.asItem().builtInRegistryHolder().key(), ModBlocks.PARTY.asItem().builtInRegistryHolder().key(), ModBlocks.VOLCANO.asItem().builtInRegistryHolder().key(), ModBlocks.RIFT.asItem().builtInRegistryHolder().key());
+        tag(ice).add(Items.ICE.builtInRegistryHolder().key(), Items.BLUE_ICE.builtInRegistryHolder().key(), Items.PACKED_ICE.builtInRegistryHolder().key());
+        tag(musicDiscs).add(ModItems.PARTY_MUSIC_DISC.getKey());
     }
 
     private TagKey<Item> commonTag(String name){

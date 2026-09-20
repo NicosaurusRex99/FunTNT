@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:nuke"
+        "recipes": "fun_tnt:nuke"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

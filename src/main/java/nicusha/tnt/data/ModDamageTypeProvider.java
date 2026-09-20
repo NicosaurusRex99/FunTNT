@@ -15,12 +15,12 @@ import nicusha.tnt.FunTNT;
 import java.util.Set;
 import java.util.concurrent.CompletableFuture;
 
-public class ModDamageTypeProvider extends DatapackBuiltinEntriesProvider {
+public class ModDamageTypeProvider {
 
     public static final ResourceKey<DamageType> NUKE = ResourceKey.create(Registries.DAMAGE_TYPE, Identifier.fromNamespaceAndPath(FunTNT.MODID, "nuke"));
 
-    public ModDamageTypeProvider(PackOutput output, CompletableFuture<HolderLookup.Provider> registries) {
-        super(output, registries, new RegistrySetBuilder().add(Registries.DAMAGE_TYPE, ModDamageTypeProvider::bootstrap).add(Registries.JUKEBOX_SONG, ModJukeboxSongProvider::bootstrap), Set.of(FunTNT.MODID));
+    public static DatapackBuiltinEntriesProvider create(PackOutput output, CompletableFuture<HolderLookup.Provider> world) {
+        return DatapackBuiltinEntriesProvider.forWorldLayer(output,"FunTNT Damage Types", world, new RegistrySetBuilder().add(Registries.DAMAGE_TYPE, ModDamageTypeProvider::bootstrap).add(Registries.JUKEBOX_SONG, ModJukeboxSongProvider::bootstrap), Set.of(FunTNT.MODID));
     }
 
     private static void bootstrap(BootstrapContext<DamageType> context) {

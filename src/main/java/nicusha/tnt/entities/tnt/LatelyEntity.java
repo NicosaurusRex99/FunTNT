@@ -8,10 +8,7 @@ import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.entity.EntityReference;
-import net.minecraft.world.entity.EntitySpawnReason;
-import net.minecraft.world.entity.EntityType;
-import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.*;
 import net.minecraft.world.entity.animal.feline.Cat;
 import net.minecraft.world.entity.item.PrimedTnt;
 import net.minecraft.world.entity.player.Player;
@@ -55,7 +52,7 @@ public class LatelyEntity extends PrimedTnt {
         }
         var variantRegistry = this.level().registryAccess().lookupOrThrow(Registries.CAT_VARIANT);
         for (int i = 0; i < 25; i++) {
-            Cat cat = EntityType.CAT.create(this.level(), EntitySpawnReason.EVENT);
+            Cat cat = EntityTypes.CAT.create(this.level(), EntitySpawnReason.EVENT);
             if (cat != null) {
                 cat.setPos(position());
                 cat.setYHeadRot(this.level().getRandom().nextFloat() * 360.0F);

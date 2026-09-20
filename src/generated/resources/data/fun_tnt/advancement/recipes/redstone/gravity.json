@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:gravity"
+        "recipes": "fun_tnt:gravity"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

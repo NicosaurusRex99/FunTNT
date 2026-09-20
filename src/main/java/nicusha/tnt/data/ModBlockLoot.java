@@ -1,7 +1,7 @@
 package nicusha.tnt.data;
 
-import net.minecraft.core.HolderLookup;
 import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.data.loot.LootTableSubProvider;
 import net.minecraft.world.flag.FeatureFlags;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.registries.DeferredHolder;
@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
 
 public class ModBlockLoot extends BlockLootSubProvider {
 
-    protected ModBlockLoot(HolderLookup.Provider registries) {
-        super(Collections.emptySet(), FeatureFlags.REGISTRY.allFlags(), registries);
+    public ModBlockLoot(LootTableSubProvider.Context context) {
+        super(Collections.emptySet(), FeatureFlags.REGISTRY.allFlags(), context);
     }
 
     @Override

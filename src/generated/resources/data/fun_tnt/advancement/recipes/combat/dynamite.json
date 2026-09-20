@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:dynamite"
+        "recipes": "fun_tnt:dynamite"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

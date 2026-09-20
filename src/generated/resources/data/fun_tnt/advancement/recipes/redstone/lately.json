@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:lately"
+        "recipes": "fun_tnt:lately"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

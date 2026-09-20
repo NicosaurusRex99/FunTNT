@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:party"
+        "recipes": "fun_tnt:party"
       },
       "trigger": "minecraft:recipe_unlocked"
     }

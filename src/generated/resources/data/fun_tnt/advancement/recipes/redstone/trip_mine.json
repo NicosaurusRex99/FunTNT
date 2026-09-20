@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:trip_mine"
+        "recipes": "fun_tnt:trip_mine"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

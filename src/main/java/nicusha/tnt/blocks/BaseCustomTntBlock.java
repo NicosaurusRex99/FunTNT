@@ -38,7 +38,7 @@ public class BaseCustomTntBlock extends TntBlock {
     }
 
     @Override
-    public boolean onCaughtFire(BlockState state, Level level, BlockPos pos, @Nullable Direction face, @Nullable LivingEntity igniter) {
+    public boolean onCaughtFire(BlockState state, Level level, BlockPos pos, @Nullable Direction face, @Nullable LivingEntity igniter, ItemStack ignitionItem) {
         if (level instanceof ServerLevel serverLevel) {
             if (serverLevel.getGameRules().get(GameRules.TNT_EXPLODES)) {
                 PrimedTnt tnt = entityFactory.create(level, pos.getX() + 0.5, pos.getY(), pos.getZ() + 0.5, igniter);
@@ -57,7 +57,7 @@ public class BaseCustomTntBlock extends TntBlock {
     protected void onPlace(BlockState state, Level level, BlockPos pos, BlockState oldState, boolean isMoving) {
         if (!oldState.is(state.getBlock())) {
             if (level.getBestNeighborSignal(pos) > 0) {
-                if (this.onCaughtFire(state, level, pos, null, null)) {
+                if (this.onCaughtFire(state, level, pos, null, null, null)) {
                     level.removeBlock(pos, false);
                 }
             }
@@ -67,7 +67,7 @@ public class BaseCustomTntBlock extends TntBlock {
     @Override
     protected void neighborChanged(BlockState state, Level level, BlockPos pos, Block block, @Nullable Orientation orientation, boolean movedByPiston) {
         if (level.getBestNeighborSignal(pos) > 0 || level.hasNeighborSignal(pos)) {
-            if (this.onCaughtFire(state, level, pos, null, null)) {
+            if (this.onCaughtFire(state, level, pos, null, null, null)) {
                 level.removeBlock(pos, false);
             }
         }
@@ -77,7 +77,7 @@ public class BaseCustomTntBlock extends TntBlock {
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
         ItemStack itemstack = player.getItemInHand(player.getUsedItemHand());
         if (itemstack.is(Items.FLINT_AND_STEEL) || itemstack.is(Items.FIRE_CHARGE)) {
-            if (this.onCaughtFire(state, level, pos, hitResult.getDirection(), player)) {
+            if (this.onCaughtFire(state, level, pos, hitResult.getDirection(), player, null)) {
                 level.setBlock(pos, Blocks.AIR.defaultBlockState(), 11);
                 itemstack.hurtAndBreak(1, player, player.getUsedItemHand());
             }
@@ -105,7 +105,7 @@ public class BaseCustomTntBlock extends TntBlock {
                 }
 
                 if (isActive) {
-                    if (this.onCaughtFire(state, realLevel, pos, directionToNeighbour, null)) {
+                    if (this.onCaughtFire(state, realLevel, pos, directionToNeighbour, null, null)) {
                         realLevel.setBlock(pos, Blocks.AIR.defaultBlockState(), 3);
                     }
                 }

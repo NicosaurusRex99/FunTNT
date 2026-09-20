@@ -3,7 +3,7 @@
   "criteria": {
     "has_the_recipe": {
       "conditions": {
-        "recipe": "fun_tnt:fertilizer"
+        "recipes": "fun_tnt:fertilizer"
       },
       "trigger": "minecraft:recipe_unlocked"
     },

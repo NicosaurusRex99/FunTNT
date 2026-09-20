@@ -1,35 +1,37 @@
 package nicusha.tnt.data;
 
+import net.minecraft.advancements.Advancement;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.data.worldgen.BootstrapContext;
 import net.minecraft.resources.Identifier;
 import net.minecraft.tags.ItemTags;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.level.block.Blocks;
 import nicusha.tnt.registry.ModBlocks;
 import nicusha.tnt.registry.ModItems;
 
 public class ModRecipeProvider extends RecipeProvider {
 
-    public ModRecipeProvider(HolderLookup.Provider registries, RecipeOutput output) {
-        super(registries, output);
+    public ModRecipeProvider(BootstrapContext<Recipe<?>> recipeOutput, BootstrapContext<Advancement> advancementOutput) {
+        super(recipeOutput, advancementOutput);
     }
-
     @Override
     protected void buildRecipes() {
-        shaped(RecipeCategory.REDSTONE, ModBlocks.BABY_BOOMER.get(), 2).pattern(" P ").pattern("GFG").pattern(" G ").define('P', Items.PAPER).define('G', Items.GUNPOWDER).define('F', ItemTags.SMALL_FLOWERS).unlockedBy("has_gunpowder", this.has(Items.GUNPOWDER)).save(this.output);
+        shaped(RecipeCategory.REDSTONE, ModBlocks.BABY_BOOMER.get(), 2).pattern(" P ").pattern("GFG").pattern(" G ").define('P', Items.PAPER).define('G', Items.GUNPOWDER).define('F', ItemTags.create(Identifier.parse("small_flowers"))).unlockedBy("has_gunpowder", this.has(Items.GUNPOWDER)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.NUKE.get()).pattern("FCF").pattern("GTG").pattern("FCF").define('F', Items.TNT).define('C', Items.NETHERITE_BLOCK).define('G', Items.REPEATER).define('T', Items.HEAVY_CORE).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
         shaped(RecipeCategory.COMBAT, ModItems.DYNAMITE.get(), 3).pattern("S").pattern("G").pattern("P").define('S', Items.STRING).define('G', Items.GUNPOWDER).define('P', Items.PAPER).unlockedBy("has_gunpowder", this.has(Items.GUNPOWDER)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.FERTILIZER.get()).pattern("BBB").pattern("BTB").pattern("SSS").define('B', ItemTags.create(Identifier.fromNamespaceAndPath("c", "fertilizers"))).define('T', Items.TNT).define('S', ItemTags.VILLAGER_PLANTABLE_SEEDS).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.CRYO.get()).pattern(" I ").pattern("ITI").pattern(" I ").define('T', Items.TNT).define('I', ItemTags.create(Identifier.fromNamespaceAndPath("c", "ice"))).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.GRAVITY.get()).pattern(" C ").pattern("PTP").pattern(" C ").define('C', Items.COPPER_INGOT).define('P', Blocks.STICKY_PISTON).define('T', Items.TNT).unlockedBy("has_copper", this.has(Items.COPPER_INGOT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.TRIP_MINE.get()).pattern("P").pattern("T").define('P', Items.STONE_PRESSURE_PLATE).define('T', Items.TNT).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
-        shaped(RecipeCategory.REDSTONE, ModBlocks.RESTORATION.get()).define('T', Blocks.TNT).define('G', ItemTags.GRASS_BLOCKS).define('S', ItemTags.SAPLINGS).define('B', Blocks.BONE_BLOCK).pattern("SGS").pattern("BTB").pattern("SGS").unlockedBy("has_tnt", has(Blocks.TNT)).save(output);
+        shaped(RecipeCategory.REDSTONE, ModBlocks.RESTORATION.get()).define('T', Blocks.TNT).define('G', ItemTags.create(Identifier.parse("grass_blocks"))).define('S', ItemTags.SAPLINGS).define('B', Blocks.BONE_BLOCK).pattern("SGS").pattern("BTB").pattern("SGS").unlockedBy("has_tnt", has(Blocks.TNT)).save(output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.LATELY.get()).pattern("SFS").pattern("FTF").pattern("SFS").define('S', Items.STRING).define('F', ItemTags.FISHES).define('T', Items.TNT).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.PAINT.get()).define('T', Items.TNT).define('D', ItemTags.DYES).define('P', Items.PAPER).pattern("DPD").pattern("PTP").pattern("DPD").unlockedBy("has_tnt", has(Items.TNT)).save(output);
-        shaped(RecipeCategory.REDSTONE, ModBlocks.PARTY.get()).pattern("MDM").pattern("CTC").pattern("MPM").define('T', Items.TNT).define('D', ItemTags.create(Identifier.fromNamespaceAndPath("c", "music_discs"))).define('M', Items.MAGENTA_DYE).define('C', Items.CYAN_DYE).define('P', Items.PAPER).unlockedBy("has_party_disc", this.has(ModItems.PARTY_MUSIC_DISC.get())).save(this.output);
+        shaped(RecipeCategory.REDSTONE, ModBlocks.PARTY.get()).pattern("MDM").pattern("CTC").pattern("MPM").define('T', Items.TNT).define('D', ItemTags.create(Identifier.fromNamespaceAndPath("c", "music_discs"))).define('M', Items.DYE.magenta()).define('C', Items.DYE.cyan()).define('P', Items.PAPER).unlockedBy("has_party_disc", this.has(ModItems.PARTY_MUSIC_DISC.get())).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.THERMAL_FORGE.get(), 4).pattern(" F ").pattern("FTF").pattern(" F ").define('T', Blocks.TNT).define('F', Blocks.FURNACE).unlockedBy("has_tnt", has(Blocks.TNT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.VOLCANO.get()).pattern("BLB").pattern("MTM").pattern("BBB").define('B', Blocks.BASALT).define('M', Blocks.MAGMA_BLOCK).define('L', Items.LAVA_BUCKET).define('T', Items.TNT).unlockedBy("has_tnt", this.has(Items.TNT)).save(this.output);
         shaped(RecipeCategory.REDSTONE, ModBlocks.RIFT.get(), 2).pattern("CPC").pattern("PTP").pattern("CPC").define('T', Blocks.TNT).define('P', Items.ENDER_PEARL).define('C', Blocks.CRYING_OBSIDIAN).unlockedBy("has_tnt", has(Blocks.TNT)).unlockedBy("has_ender_pearl", has(Items.ENDER_PEARL)).save(output);

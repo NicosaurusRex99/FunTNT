@@ -58,7 +58,6 @@ public class GravityTntEntity extends PrimedTnt {
                         }
                         Vec3 currentMotion = victim.getDeltaMovement();
                         victim.setDeltaMovement(currentMotion.add(pullDir.x * strength, 0.08D, pullDir.z * strength));
-                        victim.hurtMarked = true;
                     }
                     if (this.level().isClientSide()) {
                         if (this.random.nextFloat() < 0.3F) {
