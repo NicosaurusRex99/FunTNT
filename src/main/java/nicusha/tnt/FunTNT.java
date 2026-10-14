@@ -32,11 +32,11 @@ public class FunTNT {
             NeoForge.EVENT_BUS.addListener(ClientEvents::onItemTooltip);
         }
         bus.addListener(NetworkingRegistration::registerPackets);
-        container.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        container.registerConfig(ModConfig.Type.LOCAL, Config.SPEC);
     }
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if (event.getTabKey() == ModCreativeTabs.FUN_TNT_TAB.getKey()) {
+        if (event.getTabKey() == ModCreativeTabs.FUN_TNT_TAB.key()) {
             ModItems.ITEMS.getEntries().forEach(item -> event.accept(item.get()));
         }
     }
